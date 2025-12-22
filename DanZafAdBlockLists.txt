@@ -30,7 +30,7 @@
 *,~/jav(gg|hd)\.(net|today)/##+js(no-window-open-if)
 *,~/(javenglish)\.(cc)/##+js(disable-newtab-links)
 *##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
-*,~/jav(-vids|ggvideo|streamhg)\.xyz/##+js(addEventListener-defuser, , direct)
+*,~/(jav(-vids|ggvideo|streamhg)|dood)\.(ovh|xyz)/##+js(addEventListener-defuser, , direct)
 *##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , vast)
