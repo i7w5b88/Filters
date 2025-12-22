@@ -8,6 +8,8 @@
 !------------------------------------------------------------------------------!
 !-------------------------------- Network Start --------------------------------!
 !------------------------------------------------------------------------------!
+*##+js(no-xhr-if, /metrika\/tag\.js$/ method:/HEAD|POST|GET/)
+*##+js(no-fetch-if, /metrika\/tag\.js$/ method:/HEAD|POST|GET/)
 *$script,subdocument,xhr,3p
 *$popunder,popup,3p
 *$object,3p
