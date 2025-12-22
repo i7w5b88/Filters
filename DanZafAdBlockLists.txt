@@ -24,8 +24,8 @@
 !------------------------------------------------------------------------------!
 !------------------------------ Scriptlets Start ------------------------------!
 !------------------------------------------------------------------------------!
-*##+js(set-cookie, _blocker_hidden, 1)
-*##+js(set-cookie, popunder, 1)
+! *##+js(set-cookie, _blocker_hidden, 1)
+! *##+js(set-cookie, popunder, 1)
 !----------------------------------- Canvas -----------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(ico3c|javggvideo|luluvid|streamio|turbocloud)\.(com|to|xyz)/##+js(prevent-canvas)
@@ -53,13 +53,13 @@
 *##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(cloudwish|jav(-vids|ggvideo|streamhg)|dood|mycloudz|streamio|turbocloud|vstream)\.(cc|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
-*##+js(addEventListener-defuser, , pop)
-*##+js(addEventListener-defuser, , popunder)
-*##+js(addEventListener-defuser, , vast)
-*##+js(addEventListener-defuser, load, adblock)
-*##+js(addEventListener-defuser, load, blockAdBlock)
-*##+js(addEventListener-defuser, load, detectAdBlock)
+! *,~/(cloudwish|jav(-vids|ggvideo|streamhg)|dood|mycloudz|streamio|turbocloud|vstream)\.(cc|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
+! *##+js(addEventListener-defuser, , pop)
+! *##+js(addEventListener-defuser, , popunder)
+! *##+js(addEventListener-defuser, , vast)
+! *##+js(addEventListener-defuser, load, adblock)
+! *##+js(addEventListener-defuser, load, blockAdBlock)
+! *##+js(addEventListener-defuser, load, detectAdBlock)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
@@ -69,26 +69,26 @@
 *##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 !------------------------------------ Test ------------------------------------!
 !------------------------------------------------------------------------------!
-*##+js(addEventListener-defuser, DOMContentLoaded, -banner)
-*##+js(addEventListener-defuser, DOMContentLoaded, Popunder)
-*##+js(addEventListener-defuser, DOMContentLoaded, checkAdBlocker)
-*##+js(addEventListener-defuser, click, PopURL)
-*##+js(addEventListener-defuser, click, popMagic)
-*##+js(addEventListener-defuser, click, popupInterval)
-*##+js(abort-current-script, addEventListener, /detect|lastPopupTime/)
-*##+js(abort-on-property-read, ConsoleBan)
-*##+js(abort-on-property-read, disableDevtool)
-*##+js(abort-on-property-read, ondevtoolopen)
-*##+js(nobab)
-*##+js(nobab2)
-*##+js(nofab)
-*##+js(popads)
-*##+js(popads-dummy)
-*##+js(prebid-ads)
-*##+js(set-constant, adblockDetected, false)
-*##+js(set-constant, adBlockEnabled, false)
-*##+js(set-constant, detectAdblock, noopFunc)
-*##+js(set-constant, window.adLink, null)
+! *##+js(addEventListener-defuser, DOMContentLoaded, -banner)
+! *##+js(addEventListener-defuser, DOMContentLoaded, Popunder)
+! *##+js(addEventListener-defuser, DOMContentLoaded, checkAdBlocker)
+! *##+js(addEventListener-defuser, click, PopURL)
+! *##+js(addEventListener-defuser, click, popMagic)
+! *##+js(addEventListener-defuser, click, popupInterval)
+! *##+js(abort-current-script, addEventListener, /detect|lastPopupTime/)
+! *##+js(abort-on-property-read, ConsoleBan)
+! *##+js(abort-on-property-read, disableDevtool)
+! *##+js(abort-on-property-read, ondevtoolopen)
+! *##+js(nobab)
+! *##+js(nobab2)
+! *##+js(nofab)
+! *##+js(popads)
+! *##+js(popads-dummy)
+! *##+js(prebid-ads)
+! *##+js(set-constant, adblockDetected, false)
+! *##+js(set-constant, adBlockEnabled, false)
+! *##+js(set-constant, detectAdblock, noopFunc)
+! *##+js(set-constant, window.adLink, null)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
