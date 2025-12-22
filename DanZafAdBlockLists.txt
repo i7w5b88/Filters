@@ -89,6 +89,7 @@
 ! *##+js(set-constant, adBlockEnabled, false)
 ! *##+js(set-constant, detectAdblock, noopFunc)
 ! *##+js(set-constant, window.adLink, null)
+*##+js(addEventListener-defuser)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
