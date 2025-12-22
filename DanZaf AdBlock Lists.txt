@@ -1,0 +1,156 @@
+! Title: DanZaf AdBlock Lists
+! Author: Dwi Arianto
+! Version: 202503120817
+! Description: DanZaf Custom Filter
+! Last modified: Tue, 12 Dec 2025 08:17:24 +0000
+! Expires: 1 days (update frequency)
+!
+! -------- Network Filters start -------- !
+*$script,subdocument,xhr,3p
+*$popunder,popup,3p
+*$object,3p
+*$other,3p
+/\/adblock\-detector/$script
+! ------ Network Filters Exclusion ------ !
+@@/(^https:\/\/(((ajax|cdn|l(ocal|tn)|p[0-9]{1,2}|s(f[0-9]{1,2}|sl))?([a-z0-9\.\-]{1,19})?)?(a(cek|d(guard|vertape)|h|nyflix|vcrot)|bestwish|c(allistanise|dntrex|l(ftbvp|oud(flare|wish)))|d(oo(oo)?d(stream)?|ramiyos|svplay)|e(dgeon|mturbovid|xternulls)|f(antasab|ilemoon|luidplayer|oudsea)|g(ithub(assets|usercontent)|oogle(apis|usercontent)?|static|u(ardstorage|pload))|h(avenfile|g(player|slave)|qq)|i(8yz83pn|byteimg|co3c)|j(av(-vids|cl(an|ub)|g(gvideo|uard)|miku|play(a)?|streamhg)?|sdelivr|wp(latform)?)|kamehaus|l(i((x)?st(r)?(eam(ed|ingcaio)))|ulu(vid)?)|m(a(n(damla|techz)|xstream)|ixdrop([0-9]{1,2})?|xdrop|y(cloudz|vidplay))|o(nelinevideo|uo)|p(emersatu|hn|l(ayerwish|yr)|remilkyway)|r(dt|n|yderjet)|s(a(mtnauo|vefiles)|b|t(bhg|r(eam(io|tape)|mup|tape)))|t(i(ktok|nusoud)|nmr|railerhg|ur(bo(cloud|(s)?player(s)?|vi(dhls|play))|tleviplay))|u(nlockapk|pn|sergeneratedcontent)|v(gembed|i(banes|d(guard|hideplus|oy))|oe|stream|t(u)?be)|walterprettytheir|x(hping|videos)|ypn)((\-)?(bandwidth|cd(n([0-9]{1,2})?)?))?(\.(a(c|rt)|c(c|fd|l(ick|oud|ub)|om)|i(d|n|o)|l(i(nk)?|ol)|net(work)|o(ne|rg|vh)|s(bs|t|x)|to|vip|xyz))|[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\/|(cf\-)?((in(dex|it)|seg)((-[a-z0-9]{1,3})?-[a-z0-9]{1,2})?(-[a-z]{1,2}[0-9]{1,2}-[a-z]{1,2}[0-9]{1,2})|jquery|lazyload|master)(\.([0-9]{9,10}|min))?(\.(js|txt|m3u8|woff([0-9]{1,2})?))$)/$script,subdocument,xhr,3p
+@@/(^https:\/\/((ajax|cdn|l(ocal|tn)|p[0-9]{1,2}|s(f[0-9]{1,2}|sl))?([a-z0-9\.\-]{1,19})?)?(acek|cloud(switches|wish)|dramiyos|filemoon|g(ithub(assets|usercontent)|oogle(usercontent)?|uardstorage)|i8yz83pn|jav(-vids|g(gvideo|uard)|streamhg)|m(andamla|ycloudz)|p(emersatu|remilkyway)|s(amtnauo|treamio)|t(iktok|urbo(cloud|splayer|viplay))|vstream)(-cdn)?\.(art|c(c|lub|om)|id|link|net|sx|to|xyz)\/|(cf\-)?((index|seg)((-[a-z0-9]{1,2})?-[a-z0-9]{1,2})?(-[a-z]{1,2}[0-9]{1,2}-[a-z]{1,2}[0-9]{1,2})|jquery|lazyload|master)(\.([0-9]{9,10}|min))?(\.(js|txt|m3u8|woff([0-9]{1,2})?))$)/$other,3p
+! --------- Network Filters end --------- !
+! ---------- Scriptlets start ---------- !
+*##+js(set-cookie, popunder, 1)
+*,~/(ico3c|javggvideo|luluvid|streamio|turbocloud)\.(com|to|xyz)/##+js(prevent-canvas)
+*,~/(c(allistanise|loudwish)|dood|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|listeamed|mycloudz|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|v(tbe|stream)|walterprettytheir)\.(c(c|lub|om)|id|net|ovh|sbs|to|xyz)/##+js(abort-on-property-read, jwplayer.utils.Timer)
+*,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
+! *,~/(c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|id|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
+! *,~/(callistanise|playerwish|turbocloud|upn)\.(com|one|xyz)/##+js(prevent-fetch)
+*##+js(prevent-xhr)
+*##+js(prevent-fetch)
+*##+js(set-constant, ServiceWorker, noopFunc)
+*##+js(set-constant, SharedWorker, noopFunc)
+*,~/(anyflix|c(allistanise|loudwish)|dood|eporner|gupload|jav((\-)?(ggvideo|guard|streamhg|vids))|hgplayer|ico3c|my(cloudz|vidplay)|playerwish|ryderjet|s(ebokep|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|o(ne|vh)|sbs|to|xyz)/##+js(set-constant, Worker, noopFunc)
+*,~/jav(gg|hd)\.(net|today)/##+js(no-window-open-if)
+*,~/(javenglish)\.(cc)/##+js(disable-newtab-links)
+*##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
+*,~/jav(-vids|ggvideo|streamhg)\.xyz/##+js(addEventListener-defuser, , direct)
+*##+js(addEventListener-defuser, , pop)
+*##+js(addEventListener-defuser, , popunder)
+*##+js(addEventListener-defuser, , vast)
+/([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
+! ----------- Scriptlets end ----------- !
+! ----- Scriptlets Supplement start ----- !
+*##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
+*##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
+! ------ Scriptlets Supplement end ------ !
+! -------- Scriptlets test start -------- !
+*##+js(addEventListener-defuser, DOMContentLoaded, -banner)
+*##+js(addEventListener-defuser, DOMContentLoaded, Popunder)
+*##+js(addEventListener-defuser, DOMContentLoaded, checkAdBlocker)
+*##+js(addEventListener-defuser, click, PopURL)
+*##+js(addEventListener-defuser, click, popMagic)
+*##+js(addEventListener-defuser, click, popupInterval)
+*##+js(addEventListener-defuser, load, adblock)
+*##+js(addEventListener-defuser, load, blockAdBlock)
+*##+js(abort-current-script, addEventListener, /detect|lastPopupTime/)
+*##+js(abort-on-property-read, ConsoleBan)
+*##+js(abort-on-property-read, disableDevtool)
+*##+js(abort-on-property-read, ondevtoolopen)
+*##+js(nobab)
+*##+js(nobab2)
+*##+js(nofab)
+*##+js(popads)
+*##+js(popads-dummy)
+*##+js(prebid-ads)
+*##+js(set-constant, adblockDetected, false)
+*##+js(set-constant, adBlockEnabled, false)
+*##+js(set-constant, detectAdblock, noopFunc)
+*##+js(set-constant, window.adLink, null)
+! --------- Scriptlets test end --------- !
+! ------- Cosmetic Filters start ------- !
+*###EPimLayerOuter
+*###ad-header-mobile-contener
+*###adHeading
+*###adinhead
+*###admobilefoot
+*###admobilefootinside
+*###admobilemiddle
+*###admobileoutstream
+*###admobiletop
+*###admobiletopinside
+*###adstripe
+*###btasd
+*###cookie_consent_wrapper
+*###deskadmiddle
+*###floatadsbawah
+*###footadframe
+*###globalCookieBanner
+*###ifadmiddle
+*###ifadoutstream
+*###ifdeskadmiddle
+*###movieplayer-box-adv
+*###movieplayer-box-adv-iframe
+*###nadl
+*###onetrust-consent-sdk
+*###previewBox
+*###topBanner
+*###videotextbanner
+*##.ad-container
+*##.ad-tabSplit
+*##.adsbygoogle
+*##.adsbytrafficjunky
+*##.adsinfo
+*##.bottom-ad-container
+*##.cky-consent-container
+*##.cookie_consent_content
+*##.footer-ad-mobile
+*##.header-ad-mobile
+*##.home_iframead
+*##.js-native-ad
+*##.live-models
+*##.middleAdContainer
+*##.nadactive
+*##.non_cookie_consent_wrapper
+*##.premiumPromoBannerWrapper
+*##.related-chips-slot-wrapper
+*##.sidebar-ads
+*##.strpchad
+*##.thumb-image-container__sprite
+*##.topBanner
+*##.under-player-ad-mobile
+*##.video-ad
+*##.video-inline-ads
+*##.video-page__layout-ad
+*##.vjs-docker
+*##.vjs-inplayer-container
+*##.vjs-poster
+*##.watchpageAd
+*##[class*="custom-popup-overlay"]
+*##[style="background-color: #fff; opacity: 1; display: inline-block; text-align: center; position: absolute; top: 0; right: 0; font-size: 80%;"]:remove()
+*##[style="border: 0px; opacity: 0; margin: 0px; padding: 0px; position: relative; color-scheme: light;"]:remove()
+*##[style="display: none;"]:remove()
+*##[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
+*##[style="position: absolute; width: 1060px; height: 596px; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0); display: flex; align-items: center; justify-content: center; z-index: 10000;"]:remove()
+*##[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]:remove()
+*##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:562px;width:998px;cursor:pointer"]:remove()
+*##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:602px;width:1070px;cursor:pointer"]:remove()
+*##[style="visibility: hidden; width: 0px; height: 0px; position: absolute; left: 0px; top: 0px;"]:remove()
+*##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
+*##^[class*="cookiesAnnounce"]
+*##^[data-role*="banner-underplayer"]
+*##^[data-role*="promo-messages-wrapper"]
+*##^[href*="adstub"]
+*##^[src*="/ad?type="]
+*##^[src*="betteradsystem"]
+*##^[src*="cloudflareinsights"]
+*##^[src*="curtcoracii"]
+*##^[src*="googletagmanager"]
+*##^[src*="histats"]
+*##^[src*="imasdk.googleapis.com"]
+*##^[src*="juicyads"]
+*##^[src*="madurird"]
+*##^[src*="mbidadm.com"]
+*##^[src*="nativeads"]
+*##^[src*="new100"]
+*##^[src*="poweredby"]
+*##^[src*="static.javhd.com"]
+*##^[src*="xupload.js"]
+*##^script:has-text(/adsbyjuicy|gtag/)
+! -------- Cosmetic Filters end -------- !
