@@ -24,6 +24,7 @@
 !------------------------------------------------------------------------------!
 !------------------------------ Scriptlets Start ------------------------------!
 !------------------------------------------------------------------------------!
+*##+js(set-cookie, _blocker_hidden, 1)
 *##+js(set-cookie, popunder, 1)
 !----------------------------------- Canvas -----------------------------------!
 !------------------------------------------------------------------------------!
@@ -56,6 +57,9 @@
 *##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , vast)
+*##+js(addEventListener-defuser, load, adblock)
+*##+js(addEventListener-defuser, load, blockAdBlock)
+*##+js(addEventListener-defuser, load, detectAdBlock)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
@@ -71,8 +75,6 @@
 *##+js(addEventListener-defuser, click, PopURL)
 *##+js(addEventListener-defuser, click, popMagic)
 *##+js(addEventListener-defuser, click, popupInterval)
-*##+js(addEventListener-defuser, load, adblock)
-*##+js(addEventListener-defuser, load, blockAdBlock)
 *##+js(abort-current-script, addEventListener, /detect|lastPopupTime/)
 *##+js(abort-on-property-read, ConsoleBan)
 *##+js(abort-on-property-read, disableDevtool)
