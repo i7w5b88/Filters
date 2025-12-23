@@ -54,10 +54,10 @@
 *##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
-! *,~/(cloudwish|jav(-vids|ggvideo|streamhg)|dood|mycloudz|streamio|turbocloud|vstream)\.(cc|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
-! *##+js(addEventListener-defuser, , pop)
-! *##+js(addEventListener-defuser, , popunder)
-! *##+js(addEventListener-defuser, , vast)
+*,~/(cloudwish|jav(-vids|ggvideo|streamhg)|dood|mycloudz|streamio|turbocloud|vstream)\.(cc|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
+*##+js(addEventListener-defuser, , pop)
+*##+js(addEventListener-defuser, , popunder)
+*##+js(addEventListener-defuser, , vast)
 ! *##+js(addEventListener-defuser, load, adblock)
 ! *##+js(addEventListener-defuser, load, blockAdBlock)
 ! *##+js(addEventListener-defuser, load, detectAdBlock)
