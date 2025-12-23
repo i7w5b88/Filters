@@ -23,8 +23,6 @@
 !------------------------------------------------------------------------------!
 !------------------------------ Scriptlets Start ------------------------------!
 !------------------------------------------------------------------------------!
-! *##+js(set-cookie, _blocker_hidden, 1)
-! *##+js(set-cookie, popunder, 1)
 !----------------------------------- Canvas -----------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(ico3c|javggvideo|luluvid|streamio|turbocloud)\.(com|to|xyz)/##+js(prevent-canvas)
@@ -66,16 +64,16 @@
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
 !--------------------------------- Supplements ---------------------------------!
 !------------------------------------------------------------------------------!
-*##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc|yandex\.ru/i)
-*##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc|yandex\.ru/i)
+*##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
+*##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 !------------------------------------ Test ------------------------------------!
 !------------------------------------------------------------------------------!
 ! *##+js(addEventListener-defuser, DOMContentLoaded, -banner)
 ! *##+js(addEventListener-defuser, DOMContentLoaded, Popunder)
 ! *##+js(addEventListener-defuser, DOMContentLoaded, checkAdBlocker)
-! *##+js(addEventListener-defuser, click, PopURL)
-! *##+js(addEventListener-defuser, click, popMagic)
-! *##+js(addEventListener-defuser, click, popupInterval)
+*##+js(addEventListener-defuser, click, PopURL)
+*##+js(addEventListener-defuser, click, popMagic)
+*##+js(addEventListener-defuser, click, popupInterval)
 ! *##+js(abort-current-script, addEventListener, /detect|lastPopupTime/)
 ! *##+js(abort-on-property-read, ConsoleBan)
 ! *##+js(abort-on-property-read, disableDevtool)
