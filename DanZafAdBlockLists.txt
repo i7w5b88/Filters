@@ -58,9 +58,9 @@
 *##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , vast)
-! *##+js(addEventListener-defuser, load, adblock)
-! *##+js(addEventListener-defuser, load, blockAdBlock)
-! *##+js(addEventListener-defuser, load, detectAdBlock)
+*##+js(addEventListener-defuser, load, adblock)
+*##+js(addEventListener-defuser, load, blockAdBlock)
+*##+js(addEventListener-defuser, load, detectAdBlock)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
@@ -90,7 +90,6 @@
 ! *##+js(set-constant, adBlockEnabled, false)
 ! *##+js(set-constant, detectAdblock, noopFunc)
 ! *##+js(set-constant, window.adLink, null)
-*##+js(addEventListener-defuser)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
