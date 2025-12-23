@@ -67,7 +67,7 @@
 *##+js(abort-on-property-write, adBlockDetected)
 *##+js(abort-on-property-read, canRunAds)
 *##+js(abort-on-property-read, _sp_._networkListenerData)
-*##+js(addEventListener-defuser, visibilitychange)
+! *##+js(addEventListener-defuser, visibilitychange)
 *##+js(setTimeout-defuser, adsbygoogle, 2000)
 *##+js(set-constant, block, false)
 *##+js(setTimeout-defuser, checkAdStatus, 500)
