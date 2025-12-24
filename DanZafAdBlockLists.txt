@@ -71,7 +71,6 @@
 *##+js(abort-on-property-read, googletag)
 *##+js(abort-on-property-read, setAdblockerCookie)
 *##+js(abort-on-property-write, $adframe)
-*##+js(abort-on-property-write, ABDSettings)
 *##+js(abort-on-property-write, KillAdBlock)
 *##+js(abort-on-property-write, adBlockDetected)
 *##+js(abort-on-property-write, adBlockEnabled)
