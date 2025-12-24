@@ -80,6 +80,7 @@
 *##+js(abort-on-property-write, adMessage)
 *##+js(abort-on-property-write, hasAdblock)
 *##+js(abort-on-property-write, hidekeep)
+*,~/(cloudwish|jav(-vids|ggvideo|streamhg)|dood|mycloudz|streamio|turbocloud|vstream)\.(cc|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
 *##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , vast)
@@ -94,6 +95,7 @@
 *##+js(addEventListener-defuser, load, blockAdBlock)
 *##+js(addEventListener-defuser, load, detectAdBlock)
 *##+js(addEventListener-defuser, mouseout, pop)
+*,~/(jav(\-)?(ggvideo|streamhg|vids))\.(xyz)/##+js(addEventListener-defuser, visibilitychange)
 *##+js(prevent-setTimeout, #advert-tracker, 500)
 *##+js(prevent-setTimeout, .jw-reset, 500)
 *##+js(prevent-setTimeout, Adblocker, 10000)
@@ -102,7 +104,6 @@
 *##+js(prevent-setTimeout, adBanner)
 *##+js(prevent-setTimeout, adblock, 7000)
 *##+js(prevent-setTimeout, ads, 2000)
-*##+js(prevent-setTimeout, adsBlocked)
 *##+js(prevent-setTimeout, adsBlocked)
 *##+js(prevent-setTimeout, adsbygoogle, 2000)
 *##+js(prevent-setTimeout, checkAdBlock)
@@ -141,8 +142,6 @@
 *##+js(set-constant, sgpbCanRunAds, true)
 *##+js(set-constant, webkitRequestFileSystem, undefined)
 *##+js(set-constant, window.adLink, null)
-*,~/(cloudwish|jav(-vids|ggvideo|streamhg)|dood|mycloudz|streamio|turbocloud|vstream)\.(cc|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
-*,~/(jav(\-)?(ggvideo|streamhg|vids))\.(xyz)/##+js(addEventListener-defuser, visibilitychange)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
