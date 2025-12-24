@@ -116,6 +116,7 @@
 *##+js(addEventListener-defuser, , vast)
 *##+js(addEventListener-defuser, DOMContentLoaded, -banner)
 *##+js(addEventListener-defuser, DOMContentLoaded, .js-popup-adblock)
+*##+js(addEventListener-defuser, DOMContentLoaded, AdProvider)
 *##+js(addEventListener-defuser, DOMContentLoaded, Popunder)
 *##+js(addEventListener-defuser, DOMContentLoaded, checkAdBlocker)
 *##+js(addEventListener-defuser, click, PopURL)
