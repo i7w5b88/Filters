@@ -54,13 +54,13 @@
 *##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
-*##+js(abort-current-inline-script, document.getElementById, ADBlock)
-*##+js(abort-current-inline-script, document.getElementById, ad-blocker)
+! *##+js(abort-current-inline-script, document.getElementById, ADBlock)
+! *##+js(abort-current-inline-script, document.getElementById, ad-blocker)
 *##+js(abort-current-inline-script, document.getElementById, adblocker)
-*##+js(abort-current-inline-script, document.getElementById, adsChecker)
+! *##+js(abort-current-inline-script, document.getElementById, adsChecker)
 ! *##+js(abort-current-inline-script, document.getElementById, advert-tester)
-*##+js(abort-current-inline-script, document.getElementById, block)
-*##+js(abort-current-inline-script, document.getElementById, tester)
+! *##+js(abort-current-inline-script, document.getElementById, block)
+! *##+js(abort-current-inline-script, document.getElementById, tester)
 *##+js(abort-current-inline-script, document.onkeydown)
 *##+js(abort-current-inline-script, jQuery, ads)
 *##+js(abort-on-property-read, ABDSettings)
