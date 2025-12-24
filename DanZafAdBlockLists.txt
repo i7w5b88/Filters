@@ -149,6 +149,12 @@
 *##+js(abort-on-property-read, IS_VIP_PLUS)
 *##+js(prevent-setTimeout, bioEp.showPopup)
 *##+js(set-constant, protect, false)
+*##+js(abort-on-property-write, shortcut)
+*##+js(abort-on-property-read, __cmpGdprAppliesGlobally)
+*##+js(abort-current-inline-script, mischandler)
+*##+js(setTimeout-defuser, __ext_loaded)
+*##+js(set-constant, hideBannerBlockedMessage, true)
+*##+js(abort-on-property-write, stopSelect)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
