@@ -56,7 +56,6 @@
 !------------------------------------------------------------------------------!
 *##+js(abort-current-inline-script, document.onkeydown)
 *##+js(abort-on-property-read, _sp_._networkListenerData)
-*##+js(abort-on-property-read, canRunAds)
 *##+js(abort-on-property-read, setAdblockerCookie)
 *##+js(abort-on-property-write, adBlockDetected)
 *##+js(abort-on-property-write, hasAdblock)
