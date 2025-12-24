@@ -77,6 +77,18 @@
 *##+js(set-constant, killads, true)
 *##+js(prevent-setTimeout, ads, 2000)
 *##+js(prevent-setTimeout, checkAdStatus, 500)
+*##+js(abort-on-property-read.js, fuckAdBlock)
+*##+js(abort-on-property-write.js, adBlockDetected)
+*##+js(set-constant.js, ADBdetected, noopFunc)
+*##+js(set-constant.js, canRunAds, true)
+*##+js(abort-current-inline-script.js, document.getElementById, adblocker)
+*##+js(set-constant.js, is_adblocker_in_use, false)
+*##+js(setTimeout-defuser.js, ads, 2000)
+*##+js(set-constant.js, fakeadloaded, true)
+*##+js(abort-current-inline-script.js, document.getElementById, advert-tester)
+*##+js(set-constant.js, adBlockerDetect, 1)
+*##+js(setTimeout-defuser.js, [native code], 500)
+*##+js(setTimeout-defuser.js, isDetected, 2000)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
