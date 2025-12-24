@@ -146,10 +146,8 @@
 *##+js(abort-on-property-read, contentprotector)
 *##+js(abort-on-property-read, can_i_run_ads)
 *##+js(set-constant, adblock_active, false)
-*##+js(setTimeout-defuser, adsBlocked)
 *##+js(abort-on-property-read, IS_VIP_PLUS)
 *##+js(prevent-setTimeout, bioEp.showPopup)
-*##+js(prevent-setTimeout, checkAdBlock)
 *##+js(set-constant, protect, false)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
