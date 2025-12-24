@@ -101,7 +101,6 @@
 *##+js(abort-current-inline-script, document.getElementById, ADBlock)
 *##+js(abort-current-inline-script, document.getElementById, .ab_detected)
 *##+js(abort-on-property-read, ABDSettings)
-*##+js(set-constant, checkAds, noopFunc)
 *##+js(abort-current-inline-script, document.getElementById, ad-blocker)
 *##+js(abort-on-property-read, _sp_._networkListenerData)
 *##+js(setTimeout-defuser, onload_popup, 8000)
