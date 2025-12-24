@@ -150,7 +150,6 @@
 *##+js(set-constant, is_adblocker_in_use, false)
 *##+js(set-constant, killads, true)
 *##+js(set-constant, protect, false)
-*##+js(set-constant, protect, false)
 *##+js(set-constant, sgpbCanRunAds, true)
 *##+js(set-constant, webkitRequestFileSystem, undefined)
 *##+js(set-constant, window.adLink, null)
