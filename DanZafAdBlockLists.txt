@@ -59,8 +59,8 @@
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
 !--------------------------------- Supplements ---------------------------------!
 !------------------------------------------------------------------------------!
-*##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
-*##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
+! *##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
+! *##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 eporner.com##+js(prevent-setTimeout, (), 1000)
 eporner.com##+js(prevent-setTimeout, (), 300)
 !------------------------------------ Test ------------------------------------!
