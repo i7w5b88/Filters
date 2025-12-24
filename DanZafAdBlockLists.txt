@@ -33,7 +33,7 @@
 !------------------------------- Animation Frame -------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
-*,~/turbocloud\.xyz/##+js(prevent-setInterval, /^/)
+*,~/turboclsoud\.xyz/##+js(prevent-setInterval, /^/)
 *,~/(cloudwish|eporner|jav((\-)?(gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|turbocloud|upn|vstream)\.(c(c|om)|id|net|one|xyz)/##+js(prevent-setTimeout, /^/)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
@@ -110,7 +110,7 @@
 *##+js(addEventListener-defuser, load, blockAdBlock)
 *##+js(addEventListener-defuser, load, detectAdBlock)
 *##+js(addEventListener-defuser, mouseout, pop)
-*##+js(addEventListener-defuser, visibilitychange)
+*,~/turbocloud\.xyz/##+js(addEventListener-defuser, visibilitychange)
 *##+js(aopw, wit-popunder)
 *##+js(nowebrtc)
 *##+js(popads)
