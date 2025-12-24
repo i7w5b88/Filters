@@ -32,9 +32,9 @@
 *,~/(c(allistanise|loudwish)|dood|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|listeamed|mycloudz|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|v(tbe|stream)|walterprettytheir)\.(c(c|lub|om)|id|net|ovh|sbs|to|xyz)/##+js(abort-on-property-read, jwplayer.utils.Timer)
 !------------------------------- Animation Frame -------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(c(allistanise|loudwish)|dood|eporner|github|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
+*,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 *##+js(prevent-setInterval, /^/)
-*,~/(eporner|github|jav((\-)?(gg(video)?|streamhg|vids))|vstream)\.(com|id|net|xyz)/##+js(prevent-setTimeout, /^/)
+*,~/(eporner|jav((\-)?(gg(video)?|streamhg|vids))|vstream)\.(com|id|net|xyz)/##+js(prevent-setTimeout, /^/)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|id|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
@@ -53,21 +53,6 @@
 *##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
-! *##+js(abort-current-inline-script, document.getElementById, ADBlock)
-! *##+js(abort-current-inline-script, document.getElementById, ad-blocker)
-! *##+js(abort-current-inline-script, document.getElementById, adsChecker)
-! *##+js(abort-current-inline-script, document.getElementById, advert-tester)
-! *##+js(abort-current-inline-script, document.getElementById, block)
-! *##+js(abort-current-inline-script, document.getElementById, tester)
-*##+js(abort-current-inline-script, atob, tabunder)
-*##+js(abort-current-inline-script, disableSelection, reEnable)
-*##+js(abort-current-inline-script, document.getElementById, adblocker)
-*##+js(abort-current-inline-script, document.onkeydown)
-*##+js(abort-current-inline-script, isSandboxed, fruitadblock)
-*##+js(abort-current-inline-script, jQuery, ads)
-*##+js(abort-current-inline-script, mischandler)
-*##+js(abort-current-inline-script, puShown , /doOpen|popundr/)
-*##+js(abort-current-inline-script, setTimeout, adback)
 *##+js(abort-on-property-read, ABDSettings)
 *##+js(abort-on-property-read, AaDetector)
 *##+js(abort-on-property-read, BetterJsPop)
@@ -125,7 +110,7 @@
 *##+js(addEventListener-defuser, load, blockAdBlock)
 *##+js(addEventListener-defuser, load, detectAdBlock)
 *##+js(addEventListener-defuser, mouseout, pop)
-*,~/github\.com/##+js(addEventListener-defuser, visibilitychange)
+*##+js(addEventListener-defuser, visibilitychange)
 *##+js(aopw, wit-popunder)
 *##+js(nowebrtc)
 *##+js(popads)
@@ -186,6 +171,7 @@
 *##+js(set-constant, fakeadloaded, true)
 *##+js(set-constant, google_jobrunner, true)
 *##+js(set-constant, hasAdblock, false)
+*##+js(set-constant, hg_function, noopFunc)
 *##+js(set-constant, hideBannerBlockedMessage, true)
 *##+js(set-constant, isAdblockDisabled, true)
 *##+js(set-constant, is_adblocker_in_use, false)
@@ -205,6 +191,7 @@
 *##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|clftbvp|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 eporner.com##+js(prevent-setTimeout, (), 1000)
 eporner.com##+js(prevent-setTimeout, (), 300)
+github.com#@#+js()
 !------------------------------------ Test ------------------------------------!
 !------------------------------------------------------------------------------!
 ! *##+js(abort-current-script, addEventListener, /detect|lastPopupTime/)
