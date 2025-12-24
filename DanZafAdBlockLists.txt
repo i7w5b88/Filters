@@ -154,6 +154,17 @@
 *##+js(set-constant, adBlockEnabled, false)
 *##+js(set-constant, detectAdblock, noopFunc)
 *##+js(set-constant, window.adLink, null)
+*##+js(setTimeout-defuser.js, NoAd, 8000)
+*##+js(set-constant.js, adsEnabled, true)
+*##+js(set-constant.js, webkitRequestFileSystem, undefined)
+*##+js(setTimeout-defuser.js, adsBlocked)
+*##+js(abort-on-property-read.js, a1lck)
+*##+js(addEventListener-defuser.js, mouseout, pop)
+*##+js(abort-on-property-read.js, fuckAdBlock)
+*##+js(set-constant.js, aoezone_adchecker, true)
+*##+js(set-constant.js, detector_active, true)
+*##+js(set-constant.js, abd, false)
+*##+js(set-constant.js, adsAreShown, true)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
