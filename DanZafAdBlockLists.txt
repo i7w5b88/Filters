@@ -64,8 +64,6 @@
 *##+js(abort-current-inline-script, document.onkeydown)
 *##+js(abort-current-inline-script, jQuery, ads)
 *##+js(abort-on-property-read, ABDSettings)
-*##+js(abort-on-property-read, ABDSettings)
-*##+js(abort-on-property-read, _sp_._networkListenerData)
 *##+js(abort-on-property-read, _sp_._networkListenerData)
 *##+js(abort-on-property-read, a1lck)
 *##+js(abort-on-property-read, blockAdBlock)
