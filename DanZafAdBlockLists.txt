@@ -116,7 +116,6 @@
 *##+js(addEventListener-defuser, , vast)
 *##+js(addEventListener-defuser, DOMContentLoaded, -banner)
 *##+js(addEventListener-defuser, DOMContentLoaded, .js-popup-adblock)
-*##+js(addEventListener-defuser, DOMContentLoaded, AdProvider)
 *##+js(addEventListener-defuser, DOMContentLoaded, Popunder)
 *##+js(addEventListener-defuser, DOMContentLoaded, checkAdBlocker)
 *##+js(addEventListener-defuser, click, PopURL)
@@ -263,6 +262,7 @@ eporner.com##+js(prevent-setTimeout, (), 300)
 *##.header-ad-mobile
 *##.home_iframead
 *##.js-native-ad
+*##.jw-logo-top-left
 *##.live-models
 *##.middleAdContainer
 *##.nadactive
