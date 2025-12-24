@@ -98,7 +98,6 @@
 *##+js(setTimeout-defuser, adblock, 7000)
 *##+js(abort-on-property-write, adMessage)
 *##+js(abort-current-inline-script, document.getElementById, ADBlock)
-*##+js(abort-current-inline-script, document.getElementById, .ab_detected)
 *##+js(abort-on-property-read, ABDSettings)
 *##+js(abort-current-inline-script, document.getElementById, ad-blocker)
 *##+js(abort-on-property-read, _sp_._networkListenerData)
