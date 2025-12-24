@@ -171,7 +171,6 @@
 *##+js(set-constant, fakeadloaded, true)
 *##+js(set-constant, google_jobrunner, true)
 *##+js(set-constant, hasAdblock, false)
-*##+js(set-constant, hg_function, noopFunc)
 *##+js(set-constant, hideBannerBlockedMessage, true)
 *##+js(set-constant, isAdblockDisabled, true)
 *##+js(set-constant, is_adblocker_in_use, false)
