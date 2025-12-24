@@ -119,7 +119,7 @@
 *##+js(prevent-setInterval, nrWrapper)
 *##+js(prevent-setTimeout, #advert-tracker, 500)
 *##+js(prevent-setTimeout, .jw-reset, 500)
-*##+js(prevent-setTimeout, /location\.replace|setRefreshAdFloat|setRotateAdSlice/)
+*,~/myvidplay\.com/##+js(prevent-setTimeout, /location\.replace|setRefreshAdFloat|setRotateAdSlice/)
 *##+js(prevent-setTimeout, Adblocker, 10000)
 *##+js(prevent-setTimeout, NoAd, 8000)
 *##+js(prevent-setTimeout, [native code], 500)
