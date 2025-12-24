@@ -34,7 +34,7 @@
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 *##+js(prevent-setInterval, /^/)
-! *,~/(eporner|jav(\-)?(gg(vide)?|streamhg|vids)|vstream)\.(com|id|net|xyz)/##+js(prevent-setTimeout, /^/)
+*,~/(eporner|jav(\-)?(gg(video)?|streamhg|vids)|vstream)\.(com|id|net|xyz)/##+js(prevent-setTimeout, /^/)
 ! eporner.com##+js(prevent-setTimeout, /^/, 21)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
@@ -91,7 +91,7 @@
 *##+js(addEventListener-defuser, click, popupInterval)
 *##+js(addEventListener-defuser, load, adblock)
 *##+js(addEventListener-defuser, load, blockAdBlock)
-*##+js(addEventListener-defuser, load, detectAdBlock)
+! *##+js(addEventListener-defuser, load, detectAdBlock)
 *##+js(addEventListener-defuser, mouseout, pop)
 *,~/(jav(\-)?(ggvideo|streamhg|vids))\.(xyz)/##+js(addEventListener-defuser, visibilitychange)
 *##+js(prevent-setTimeout, adBanner)
