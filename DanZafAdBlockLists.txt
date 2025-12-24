@@ -137,6 +137,12 @@
 *##+js(prevent-setTimeout, isDetected, 2000)
 *##+js(prevent-setTimeout, onload_popup, 8000)
 *##+js(prevent-setTimeout, w3ad, 1000)
+*##+js(prevent-setTimeout, adsBlocked)
+*##+js(set-constant, ads_not_blocked, true)
+*##+js(set-constant, protect, false)
+*##+js(prevent-setTimeout, checkAdBlock)
+*##+js(abort-on-property-read, Date.prototype.toUTCString)
+*##+js(abort-current-inline-script, disableSelection, reEnable)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
