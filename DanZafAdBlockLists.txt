@@ -34,7 +34,7 @@
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|eporner|github|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 *##+js(prevent-setInterval, /^/)
-*,~/(eporner|jav((\-)?(gg(video)?|github|streamhg|vids))|vstream)\.(com|id|net|xyz)/##+js(prevent-setTimeout, /^/)
+*,~/(eporner|jav((\-)?(gg(video)?|streamhg|vids))|github|vstream)\.(com|id|net|xyz)/##+js(prevent-setTimeout, /^/)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|id|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
@@ -125,7 +125,7 @@
 *##+js(addEventListener-defuser, load, blockAdBlock)
 *##+js(addEventListener-defuser, load, detectAdBlock)
 *##+js(addEventListener-defuser, mouseout, pop)
-*##+js(addEventListener-defuser, visibilitychange)
+*,~/github\.com/##+js(addEventListener-defuser, visibilitychange)
 *##+js(aopw, wit-popunder)
 *##+js(nowebrtc)
 *##+js(popads)
