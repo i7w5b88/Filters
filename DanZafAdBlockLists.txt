@@ -216,8 +216,8 @@ eporner.com##+js(prevent-setTimeout, /^/, 1000)
 *##+js(popads)
 *##+js(popads-dummy)
 ! *##+js(prebid-ads)
-eporner.com##+js(set-constant, EP.ads.getAdReqData, noopFunc)
-eporner.com##+js(set-constant, EP.ads.ref.adList, "")
+! eporner.com##+js(set-constant, EP.ads.getAdReqData, noopFunc)
+! eporner.com##+js(set-constant, EP.ads.ref.adList, "")
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
