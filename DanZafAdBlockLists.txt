@@ -75,8 +75,8 @@
 *##+js(set-constant, block, false)
 *,~/(jav(\-)?(ggvideo|streamhg|vids))\.(xyz)/##+js(set-constant, hasAdblock, false)
 *##+js(set-constant, killads, true)
-*##+js(setTimeout-defuser, ads, 2000)
-*##+js(setTimeout-defuser, checkAdStatus, 500)
+*##+js(prevent-setTimeout, ads, 2000)
+*##+js(prevent-setTimeout, checkAdStatus, 500)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
