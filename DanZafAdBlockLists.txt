@@ -288,10 +288,10 @@ eporner.com##+js(prevent-setTimeout, (), 300)
 *##[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
 *##[style="position: absolute; width: 1060px; height: 596px; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0); display: flex; align-items: center; justify-content: center; z-index: 10000;"]:remove()
 *##[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]:remove()
+*##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:536px;width:952px;cursor:pointer"]:remove()
 *##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:562px;width:998px;cursor:pointer"]:remove()
 *##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:602px;width:1070px;cursor:pointer"]:remove()
 *##[style="visibility: hidden; width: 0px; height: 0px; position: absolute; left: 0px; top: 0px;"]:remove()
-*##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:536px;width:952px;cursor:pointer"]:remove()
 *##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
 *##^[class*="cookiesAnnounce"]
 *##^[data-role*="banner-underplayer"]
