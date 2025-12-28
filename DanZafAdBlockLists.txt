@@ -186,7 +186,6 @@
 *##+js(abort-on-property-read, adsBlocked)
 *##+js(abort-on-property-read, adsDisabled)
 *##+js(abort-on-property-read, adsLoaded)
-*##+js(abort-on-property-read, adsShowPopup)
 *##+js(abort-on-property-read, adsanity_ad_block_vars)
 *##+js(abort-on-property-read, adsbygoogle)
 *##+js(abort-on-property-read, adsurfebe)
