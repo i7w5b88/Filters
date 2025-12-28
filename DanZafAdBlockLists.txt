@@ -63,7 +63,7 @@
 *##+js(abort-current-inline-script, $, AdBlockUtil)
 *##+js(abort-current-inline-script, $, AdBlocker)
 *##+js(abort-current-inline-script, $, Adblock)
-*##+js(abort-current-inline-script, $, Adblocker)
+! *##+js(abort-current-inline-script, $, Adblocker)
 *##+js(abort-current-inline-script, $, PopBar)
 *##+js(abort-current-inline-script, $, PopupManager)
 *##+js(abort-current-inline-script, $, PururinPopJs)
