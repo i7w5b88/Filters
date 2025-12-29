@@ -90,7 +90,6 @@
 *##+js(remove-attr, href, [href*="go.php"])
 *##+js(remove-attr, onclick, [onclick^="track"])
 *##+js(set-constant, $.adblock, false)
-*##+js(set-constant, $.adblock, false)
 *##+js(set-constant, $.tstracker, noopFunc)
 *##+js(set-constant, $easyadvtblock, false)
 *##+js(set-constant, ABLK, false)
