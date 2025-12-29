@@ -37,7 +37,7 @@
 !------------------------------------------------------------------------------!
 *,~/(cloudwish|eporner|jav((\-)?(gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|turbocloud|upn|vstream)\.(c(c|om)|id|net|one|xyz)/##+js(prevent-setTimeout, /^/)
 *,~/(mycloudz|turbocloud)\.(cc|xyz)/##+js(prevent-setInterval, /^/)
-*##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
+! *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|id|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
