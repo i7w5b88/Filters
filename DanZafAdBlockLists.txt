@@ -36,11 +36,11 @@
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
 ! *,~/(mycloudz|turbocloud)\.(cc|xyz)/##+js(prevent-setInterval, /^/)
-! *,~/(cloudwish|eporner|jav((\-)?(gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|turbocloud|upn|vstream)\.(c(c|om)|id|net|one|xyz)/##+js(prevent-setTimeout, /^/)
+*,~/(cloudwish|eporner|jav((\-)?(gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|turbocloud|upn|vstream)\.(c(c|om)|id|net|one|xyz)/##+js(prevent-setTimeout, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 ! Debug
 *##+js(prevent-setInterval, /^/)
-*##+js(prevent-setTimeout, /^/)
+! *##+js(prevent-setTimeout, /^/)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|id|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
