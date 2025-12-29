@@ -72,7 +72,15 @@
 !------------------------------------ Test ------------------------------------!
 !------------------------------------------------------------------------------!
 *##+js(set-constant, $.adblock, false)
+mycloudz.cc##+js(prevent-setTimeout, (), 150)
+mycloudz.cc##+js(prevent-setTimeout, (), 2000)
+mycloudz.cc##+js(prevent-setTimeout, (), 45000)
+mycloudz.cc##+js(prevent-setTimeout, (), 50)
+mycloudz.cc##+js(prevent-setTimeout, (), 60000)
+mycloudz.cc##+js(prevent-setTimeout, (), 999)
 mycloudz.cc##+js(prevent-setTimeout, [native code], 0)
+mycloudz.cc##+js(prevent-setTimeout, [native code], 30000)
+mycloudz.cc##+js(prevent-setTimeout, [native code], 55000)
 mycloudz.cc##+js(prevent-setTimeout, a.o, 0)
 mycloudz.cc##+js(prevent-setTimeout, k.o, 5000)
 mycloudz.cc##+js(prevent-setTimeout, n.focus)
