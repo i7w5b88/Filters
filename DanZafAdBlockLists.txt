@@ -35,12 +35,12 @@
 *,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
-*,~/mycloudz\.cc/##+js(prevent-setTimeout, /^/)
+! *,~/mycloudz\.cc/##+js(prevent-setTimeout, /^/)
 ! *,~/(cloudwish|eporner|jav((\-)?(gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|turbocloud|upn|vstream)\.(c(c|om)|id|net|one|xyz)/##+js(prevent-setTimeout, /^/)
 ! *,~/(mycloudz|turbocloud)\.(cc|xyz)/##+js(prevent-setInterval, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 ! Debug
-! *##+js(prevent-setTimeout, /^/)
+*##+js(prevent-setTimeout, /^/)
 *##+js(prevent-setInterval, /^/)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
@@ -72,9 +72,9 @@
 !------------------------------------ Test ------------------------------------!
 !------------------------------------------------------------------------------!
 *##+js(set-constant, $.adblock, false)
+mycloudz.cc##+js(prevent-setTimeout, [native code], 0)
 mycloudz.cc##+js(prevent-setTimeout, a.o, 0)
 mycloudz.cc##+js(prevent-setTimeout, k.o, 5000)
-mycloudz.cc##+js(prevent-setTimeout, [native code], 0)
 mycloudz.cc##+js(prevent-setTimeout, n.focus)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
