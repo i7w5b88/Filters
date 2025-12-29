@@ -68,13 +68,14 @@
 !------------------------------------------------------------------------------!
 ! *##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 ! *##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
-eporner.com##+js(prevent-setTimeout, (), 1000)
-eporner.com##+js(prevent-setTimeout, (), 300)
+! eporner.com##+js(prevent-setTimeout, (), 1000)
+! eporner.com##+js(prevent-setTimeout, (), 300)
 !------------------------------------ Test ------------------------------------!
 !------------------------------------------------------------------------------!
 *##+js(set-constant, $.adblock, false)
 *##+js(prevent-setInterval, [native code], 100)
 *##+js(prevent-setInterval, [native code], 500)
+*##+js(prevent-setTimeout, [native code], 55000)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
