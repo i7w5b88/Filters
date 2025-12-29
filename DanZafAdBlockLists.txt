@@ -168,7 +168,7 @@
 *##^[src*="static.javhd.com"]
 *##^[src*="xupload.js"]
 *##^script:has-text(/adsbyjuicy|gtag/)
-javhd.today###video .right:style(width: 310px;):remove()
+javhd.today###video .right:style(width: 310px;)
 !------------------------------------------------------------------------------!
 !-------------------------------- Cosmetics End --------------------------------!
 !------------------------------------------------------------------------------!
