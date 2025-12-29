@@ -35,7 +35,7 @@
 *,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
-*,~/turbocloud\.xyz/##+js(prevent-setInterval, /^/)
+*,~/(mycloudz|turbocloud)\.(cc|xyz)/##+js(prevent-setInterval, /^/)
 *,~/(cloudwish|eporner|jav((\-)?(gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|turbocloud|upn|vstream)\.(c(c|om)|id|net|one|xyz)/##+js(prevent-setTimeout, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
@@ -70,6 +70,8 @@ eporner.com##+js(prevent-setTimeout, (), 300)
 !------------------------------------ Test ------------------------------------!
 !------------------------------------------------------------------------------!
 *##+js(set-constant, $.adblock, false)
+*##+js(prevent-setInterval, [native code], 100)
+*##+js(prevent-setInterval, [native code], 500)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
