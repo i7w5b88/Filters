@@ -73,14 +73,7 @@
 !------------------------------------ Test ------------------------------------!
 !------------------------------------------------------------------------------!
 *##+js(set-constant, $.adblock, false)
-*##+js(prevent-setInterval, [native code], 100)
-*##+js(prevent-setInterval, [native code], 500)
-*##+js(prevent-setTimeout, [native code], 20000)
-*##+js(prevent-setTimeout, [native code], 55000)
-*##+js(prevent-setTimeout, [native code], 178863)
-*##+js(prevent-setTimeout, (), 300000)
-*##+js(prevent-setTimeout, k.o, 5000)
-*##+js(prevent-setTimeout, a.o, 0)
+mycloudz.cc#@#+js(prevent-setInterval, (), 100)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
