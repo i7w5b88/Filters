@@ -76,6 +76,7 @@
 *##+js(prevent-setInterval, [native code], 100)
 *##+js(prevent-setInterval, [native code], 500)
 *##+js(prevent-setTimeout, [native code], 55000)
+*##+js(prevent-setTimeout, [native code], 300000)
 !------------------------------------------------------------------------------!
 !------------------------------- Scriptlets End -------------------------------!
 !------------------------------------------------------------------------------!
@@ -153,6 +154,7 @@
 *##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:602px;width:1070px;cursor:pointer"]:remove()
 *##[style="visibility: hidden; width: 0px; height: 0px; position: absolute; left: 0px; top: 0px;"]:remove()
 *##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
+*##^.fuckfoot
 *##^[class*="cookiesAnnounce"]
 *##^[data-role*="banner-underplayer"]
 *##^[data-role*="promo-messages-wrapper"]
