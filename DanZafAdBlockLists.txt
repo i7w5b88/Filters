@@ -152,6 +152,7 @@
 *##^[data-role*="promo-messages-wrapper"]
 *##^[href*="adstub"]
 *##^[src*="/ad?type="]
+*##^[src*="/btn_close.gif"]
 *##^[src*="betteradsystem"]
 *##^[src*="cloudflareinsights"]
 *##^[src*="curtcoracii"]
