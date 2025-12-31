@@ -120,6 +120,7 @@
 *##.jw-logo-top-right
 *##.live-models
 *##.middleAdContainer
+*##.modalpop
 *##.nadactive
 *##.non_cookie_consent_wrapper
 *##.premiumPromoBannerWrapper
