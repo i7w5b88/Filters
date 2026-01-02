@@ -39,7 +39,7 @@
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(a2zapk|c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
+! *,~/(a2zapk|c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
 *,~/(callistanise|playerwish|turbocloud|upn)\.(com|one|xyz)/##+js(prevent-fetch)
 *##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 *##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
