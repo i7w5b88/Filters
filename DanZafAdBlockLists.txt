@@ -35,7 +35,7 @@
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
 ! *,~/(a2zapk|cloudwish|eporner|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|turbocloud|upn|vstream)\.(c(c|om)|i(d|o)|net|one|xyz)/##+js(prevent-setTimeout, /^/)
-! *,~/(a2zapk|javgg|mycloudz|turbocloud)\.(io|cc|net|xyz)/##+js(prevent-setInterval, /^/)
+! *,~/(a2zapk|cloudwish|javgg|mycloudz|turbocloud)\.(io|cc|net|xyz)/##+js(prevent-setInterval, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
