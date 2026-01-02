@@ -113,7 +113,7 @@
 *##.cky-consent-container
 *##.cookie_consent_content
 *##.footer-ad-mobile
-##.header-ad-mobile
+*##.header-ad-mobile
 *##.home_iframead
 *##.js-native-ad
 *##.jw-logo-top-left
