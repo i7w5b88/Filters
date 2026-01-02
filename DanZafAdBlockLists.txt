@@ -31,15 +31,15 @@
 *,~/(c(allistanise|loudwish)|dood|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|listeamed|mycloudz|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|v(tbe|stream)|walterprettytheir)\.(c(c|lub|om)|id|net|ovh|sbs|to|xyz)/##+js(abort-on-property-read, jwplayer.utils.Timer)
 !------------------------------- Animation Frame -------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
+*,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ct|ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
-*,~/(a2zapk|cloudwish|eporner|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|t(railerhg|urbocloud)|upn|vstream)\.(c(c|om)|i(d|o)|net|one|xyz)/##+js(prevent-setTimeout, /^/)
+*,~/(a2zapk|cloudwish|eporner|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|streamtape|turbocloud|upn|vstream)\.(c(c|om)|i(d|o)|net|one|xyz)/##+js(prevent-setTimeout, /^/)
 *,~/(a2zapk|javgg|mycloudz|turbocloud)\.(io|cc|net|xyz)/##+js(prevent-setInterval, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(a2zapk|c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ct|ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
+*,~/(a2zapk|c(allistanise|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|p(layerwish|emersatu)|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
 *,~/(callistanise|playerwish|turbocloud|upn)\.(com|one|xyz)/##+js(prevent-fetch)
 *##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 *##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
