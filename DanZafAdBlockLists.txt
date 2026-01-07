@@ -56,7 +56,7 @@
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|streamio|t(railerhg|urbo(cloud|vidhls))|vstream)\.(c(c|om)|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
 *##+js(addEventListener-defuser, , popMagic)
-*##+js(addEventListener-defuser, , pop)
+*,~/turbovidhls\.com/##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , vast)
 *##+js(addEventListener-defuser, , system.popunder)
