@@ -60,7 +60,7 @@
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , vast)
 *##+js(addEventListener-defuser, , system.popunder)
-*##+js(addEventListener-defuser, /^(?:visibilitychange)$/)
+! *##+js(addEventListener-defuser, /^(?:visibilitychange)$/)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
