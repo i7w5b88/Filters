@@ -54,7 +54,7 @@
 *,~/(javenglish)\.(cc)/##+js(disable-newtab-links)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(cloudwish|jav(-vids|ggvideo|streamhg)|dood|mycloudz|streamio|turbocloud|vstream)\.(cc|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
+*,~/(cloudwish|jav(-vids|ggvideo|streamhg)|dood|mycloudz|streamio|turbo(cloud|vidhls)|vstream)\.(c(c|om)|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
 *##+js(addEventListener-defuser, , popMagic)
 *##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
@@ -147,7 +147,7 @@
 *##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:562px;width:998px;cursor:pointer"]:remove()
 *##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:602px;width:1070px;cursor:pointer"]:remove()
 *##[style="visibility: hidden; width: 0px; height: 0px; position: absolute; left: 0px; top: 0px;"]:remove()
-! *##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
+*##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
 *##^.fuckfoot
 *##^[class*="cookiesAnnounce"]
 *##^[data-role*="banner-underplayer"]
