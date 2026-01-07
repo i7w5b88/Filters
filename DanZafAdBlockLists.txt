@@ -34,7 +34,7 @@
 *,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ct|ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
-*,~/(a2zapk|c(allistanise|loudwish)|eporner|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|str((eam)?tape)|turbo(cloud|vidhls)|upn|vstream)\.(c(c|loud|om)|i(d|o)|net|one|xyz)/##+js(prevent-setTimeout, /^/)
+*,~/(a2zapk|c(allistanise|loudwish)|eporner|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|st(r(eam(tape)|tape))|turbo(cloud|vidhls)|upn|vstream)\.(c(c|loud|om)|i(d|o)|net|one|xyz)/##+js(prevent-setTimeout, /^/)
 *,~/(a2zapk|cloudwish|javgg|mycloudz|turbo(cloud|vidhls))\.(io|c(c|om)|net|xyz)/##+js(prevent-setInterval, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
