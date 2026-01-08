@@ -47,7 +47,7 @@
 !------------------------------------------------------------------------------!
 *##+js(set-constant, ServiceWorker, noopFunc)
 *##+js(set-constant, SharedWorker, noopFunc)
-*,~/(a(nyflix|vtub)|c(allistanise|loudwish)|dood|eporner|filevideopmk|gupload|hgslave|jav((\-)?(ggvideo|guard|streamhg|vids))|hgplayer|ico3c|my(cloudz|vidplay)|playerwish|ryderjet|s(ebokep|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(set-constant, Worker, noopFunc)
+*,~/(a(nyflix|vtub)|c(allistanise|loudwish)|dood|eporner|filevideopmk|gupload|hgslave|jav((\-)?(gg(video)?|guard|streamhg|vids))|hgplayer|ico3c|my(cloudz|vidplay)|playerwish|ryderjet|s(ebokep|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(set-constant, Worker, noopFunc)
 !------------------------------- New Tab/Window -------------------------------!
 !------------------------------------------------------------------------------!
 *,~/jav(gg|hd)\.(net|today)/##+js(no-window-open-if)
