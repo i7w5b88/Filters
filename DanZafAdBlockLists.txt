@@ -128,6 +128,7 @@
 *##.premiumPromoBannerWrapper
 *##.related-chips-slot-wrapper
 *##.sidebar-ads
+*##.sideAds
 *##.sniperModeEngaged
 *##.strpchad
 *##.thumb-image-container__sprite
