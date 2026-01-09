@@ -106,6 +106,8 @@
 *###videotextbanner
 *##.ad-container
 *##.ad-tabSplit
+*##.adsRemoveButton
+*##.adsRemoveButtonWrapper
 *##.adsbygoogle
 *##.adsbytrafficjunky
 *##.adsinfo
