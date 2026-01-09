@@ -127,8 +127,8 @@
 *##.non_cookie_consent_wrapper
 *##.premiumPromoBannerWrapper
 *##.related-chips-slot-wrapper
-*##.sidebar-ads
 *##.sideAds
+*##.sidebar-ads
 *##.sniperModeEngaged
 *##.strpchad
 *##.thumb-image-container__sprite
