@@ -153,6 +153,7 @@
 *##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
 *##^.fuckfoot
 *##^[class*="cookiesAnnounce"]
+*##^[class*="promoItem"]
 *##^[data-role*="banner-underplayer"]
 *##^[data-role*="promo-messages-wrapper"]
 *##^[href*="adstub"]
