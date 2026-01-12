@@ -54,7 +54,7 @@
 *,~/(javenglish)\.(cc)/##+js(disable-newtab-links)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|pornhub|streamio|t(railerhg|urbo(cloud|vidhls))|vstream)\.(c(c|om)|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
+*,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|niyaniya|pornhub|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|vstream)\.(c(c|om)|moe|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
 *##+js(addEventListener-defuser, , popMagic)
 *,~/turbovidhls\.com/##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
