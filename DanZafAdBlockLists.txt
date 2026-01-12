@@ -25,7 +25,7 @@
 !------------------------------------------------------------------------------!
 !----------------------------------- Canvas -----------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(challenges\.cloudflare|ico3c|javggvideo|luluvid|streamio|turbocloud)\.(com|to|xyz)/##+js(prevent-canvas)
+*,~/((challenges)(\.))?(cloudflare|ico3c|javggvideo|luluvid|streamio|turbocloud)\.(com|to|xyz)/##+js(prevent-canvas)
 !------------------------------- JW Player Timer -------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|listeamed|mycloudz|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|v(tbe|stream)|walterprettytheir)\.(c(c|lub|om)|id|net|ovh|sbs|to|xyz)/##+js(abort-on-property-read, jwplayer.utils.Timer)
@@ -34,20 +34,20 @@
 *,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ct|ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|niyaniya|playerwish|ryderjet|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
-*,~/(a2zapk|c(allistanise|hallenges\.cloudflare|loudwish)|eporner|google|hgslave|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|niyaniya|pornhub|s(hupogaki|t(r(eam(tape)|tape)))|t(railerhg|urbo(cloud|vidhls))|upn|vstream)\.(c(c|loud|om)|i(d|o)|moe|net|one|xyz)/##+js(prevent-setTimeout, /^/)
-*,~/(a2zapk|c(allistanise|hallenges\.cloudflare|loudwish)|javgg|mycloudz|pornhub|t(railerhg|urbo(cloud|vidhls)))\.(io|c(c|om)|net|xyz)/##+js(prevent-setInterval, /^/)
+*,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|eporner|google|hgslave|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|niyaniya|pornhub|s(hupogaki|t(r(eam(tape)|tape)))|t(railerhg|urbo(cloud|vidhls))|upn|vstream)\.(c(c|loud|om)|i(d|o)|moe|net|one|xyz)/##+js(prevent-setTimeout, /^/)
+*,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|javgg|mycloudz|pornhub|t(railerhg|urbo(cloud|vidhls)))\.(io|c(c|om)|net|xyz)/##+js(prevent-setInterval, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(a2zapk|c(allistanise|hallenges\.cloudflare|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(gg(video)?|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|niyaniya|p(layerwish|emersatu)|ryderjet|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
-*,~/(c(allistanise|hallenges\.cloudflare)|playerwish|turbo(cloud|vidhls)|upn)\.(com|one|xyz)/##+js(prevent-fetch)
+*,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(gg(video)?|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|niyaniya|p(layerwish|emersatu)|ryderjet|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
+*,~/((challenges)(\.))?(c(allistanise|loudflare)|playerwish|turbo(cloud|vidhls)|upn)\.(com|one|xyz)/##+js(prevent-fetch)
 *##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 *##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 !----------------------------------- Worker -----------------------------------!
 !------------------------------------------------------------------------------!
 *,~/challenges\.cloudflare\.com/##+js(set-constant, ServiceWorker, noopFunc)
 *,~/challenges\.cloudflare\.com/##+js(set-constant, SharedWorker, noopFunc)
-*,~/(a(nyflix|vtub)|c(allistanise|hallenges\.cloudflare|loudwish)|dood|eporner|filevideopmk|gupload|hgslave|jav((\-)?(gg(video)?|guard|streamhg|vids))|hgplayer|ico3c|my(cloudz|vidplay)|playerwish|ryderjet|s(ebokep|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(set-constant, Worker, noopFunc)
+*,~/((challenges)(\.))?(a(nyflix|vtub)|c(allistanise|loudflare|loudwish)|dood|eporner|filevideopmk|gupload|hgslave|jav((\-)?(gg(video)?|guard|streamhg|vids))|hgplayer|ico3c|my(cloudz|vidplay)|playerwish|ryderjet|s(ebokep|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(set-constant, Worker, noopFunc)
 !------------------------------- New Tab/Window -------------------------------!
 !------------------------------------------------------------------------------!
 *,~/jav(gg|hd)\.(net|today)/##+js(no-window-open-if)
