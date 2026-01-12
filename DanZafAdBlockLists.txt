@@ -25,7 +25,7 @@
 !------------------------------------------------------------------------------!
 !----------------------------------- Canvas -----------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(ico3c|javggvideo|luluvid|streamio|turbocloud)\.(com|to|xyz)/##+js(prevent-canvas)
+*,~/(challenges\.cloudflare|ico3c|javggvideo|luluvid|streamio|turbocloud)\.(com|to|xyz)/##+js(prevent-canvas)
 !------------------------------- JW Player Timer -------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|listeamed|mycloudz|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|v(tbe|stream)|walterprettytheir)\.(c(c|lub|om)|id|net|ovh|sbs|to|xyz)/##+js(abort-on-property-read, jwplayer.utils.Timer)
