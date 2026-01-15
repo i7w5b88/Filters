@@ -39,7 +39,7 @@
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
-*,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(gg(video)?|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|niyaniya|p(layerwish|emersatu)|ryderjet|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
+*,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(gg(video)?|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|n(ekovid|iyaniya)|p(layerwish|emersatu)|ryderjet|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
 *,~/((challenges)(\.))?(c(allistanise|loudflare)|playerwish|turbo(cloud|vidhls)|upn)\.(com|one|xyz)/##+js(prevent-fetch)
 *##+js(prevent-xhr, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
 *##+js(prevent-fetch, /adcgi\?id\=|\/ads\/|analytic(s)?|(\/)?do(t\/dot\.php|ubleclick)|effectivegatecpm|googlesyndication|holahupa|parklogic|piwik|popCode-|securepubads|twinrdengine|uipseknc/i)
@@ -47,7 +47,7 @@
 !------------------------------------------------------------------------------!
 *,~/challenges\.cloudflare\.com/##+js(set-constant, ServiceWorker, noopFunc)
 *,~/challenges\.cloudflare\.com/##+js(set-constant, SharedWorker, noopFunc)
-*,~/((challenges)(\.))?(a(nyflix|vtub)|c(allistanise|loudflare|loudwish)|dood|eporner|filevideopmk|gupload|hgslave|jav((\-)?(gg(video)?|guard|streamhg|vids))|hgplayer|ico3c|my(cloudz|vidplay)|playerwish|ryderjet|s(ebokep|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(set-constant, Worker, noopFunc)
+*,~/((challenges)(\.))?(a(nyflix|vtub)|c(allistanise|loudflare|loudwish)|dood|eporner|filevideopmk|gupload|hgslave|jav((\-)?(gg(video)?|guard|streamhg|vids))|hgplayer|ico3c|my(cloudz|vidplay)|nekovid|playerwish|ryderjet|s(ebokep|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|net|o(ne|vh)|sbs|to|xyz)/##+js(set-constant, Worker, noopFunc)
 !------------------------------- New Tab/Window -------------------------------!
 !------------------------------------------------------------------------------!
 *,~/jav(gg|hd)\.(net|today)/##+js(no-window-open-if)
