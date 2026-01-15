@@ -52,7 +52,7 @@
 !------------------------------------------------------------------------------!
 *,~/jav(gg|hd)\.(net|today)/##+js(no-window-open-if)
 *,~/(javenglish)\.(cc)/##+js(disable-newtab-links)
-*##+js(no-window-open-if, /boxlikesedativespinach|effectivegatecpm/i)
+*##+js(no-window-open-if, /boxlikesedativespinach|effectivegatecpm|gangwaynumberprivacy/i)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|n(ekovid|iyaniya)|pornhub|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|vstream)\.(c(c|om)|moe|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
