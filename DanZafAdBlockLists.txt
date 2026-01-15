@@ -31,7 +31,7 @@
 *,~/(c(allistanise|loudwish)|dood|hg(player|slave)|ico3c|jav((\-)?(ggvideo|guard|streamhg|vids))|listeamed|mycloudz|nekovid|playerwish|ryderjet|streamio|t(railerhg|urbo(cloud|vidhls))|v(tbe|stream)|walterprettytheir)\.(c(c|lub|om)|id|net|ovh|sbs|to|xyz)/##+js(abort-on-property-read, jwplayer.utils.Timer)
 !------------------------------- Animation Frame -------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ct|ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|niyaniya|playerwish|ryderjet|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
+*,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ct|ggvideo|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|n(ekovid|iyaniya)|playerwish|ryderjet|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster)\.(c(c|lub|om)|id|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
 *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|eporner|google|hgslave|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|n(ekovid|iyaniya)|pornhub|s(hupogaki|t(r(eam(io|tape)|tape)))|t(railerhg|urbo(cloud|vidhls))|upn|vstream)\.(c(c|loud|om)|i(d|o)|moe|net|one|to|xyz)/##+js(prevent-setTimeout, /^/)
@@ -54,7 +54,7 @@
 *,~/(javenglish)\.(cc)/##+js(disable-newtab-links)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|niyaniya|pornhub|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|vstream)\.(c(c|om)|moe|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
+*,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|n(ekovid|iyaniya)|pornhub|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|vstream)\.(c(c|om)|moe|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
 *##+js(addEventListener-defuser, , popMagic)
 *,~/turbovidhls\.com/##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
