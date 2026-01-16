@@ -35,7 +35,7 @@
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
 *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|eporner|google|hgslave|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|n(ekovid|iyaniya)|pornhub|s(hupogaki|t(r(eam(io|tape)|tape)))|t(railerhg|urbo(cloud|vidhls))|upn|vstream)\.(c(c|loud|om)|i(d|o)|moe|net|one|to|xyz)/##+js(prevent-setTimeout, /^/)
-*,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|jav(\-)?(gg|vids)|mycloudz|nekovid|pornhub|t(railerhg|urbo(cloud|vidhls)))\.(io|c(c|om)|net|xyz)/##+js(prevent-setInterval, /^/)
+*,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|jav((\-)?(gg|vids))|mycloudz|nekovid|pornhub|t(railerhg|urbo(cloud|vidhls)))\.(io|c(c|om)|net|xyz)/##+js(prevent-setInterval, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 *##+js(prevent-setInterval, [native code], 100)
 *##+js(prevent-setInterval, [native code], 500)
