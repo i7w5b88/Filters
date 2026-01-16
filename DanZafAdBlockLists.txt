@@ -37,8 +37,8 @@
 *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|eporner|google|hgslave|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|n(ekovid|iyaniya)|pornhub|s(hupogaki|t(r(eam(io|tape)|tape)))|t(railerhg|urbo(cloud|vidhls))|upn|vstream)\.(c(c|loud|om)|i(d|o)|moe|net|one|to|xyz)/##+js(prevent-setTimeout, /^/)
 *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|jav(\-)?(gg|vids)|mycloudz|nekovid|pornhub|t(railerhg|urbo(cloud|vidhls)))\.(io|c(c|om)|net|xyz)/##+js(prevent-setInterval, /^/)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
-*##+js(prevent-setInterval, [native code], 500)
 *##+js(prevent-setInterval, [native code], 100)
+*##+js(prevent-setInterval, [native code], 500)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
 *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(gg(video)?|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|n(ekovid|iyaniya)|p(layerwish|emersatu)|ryderjet|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir)\.(c(c|lub|om)|i(d|o)|link|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
@@ -61,9 +61,10 @@
 *##+js(addEventListener-defuser, , popMagic)
 *,~/turbovidhls\.com/##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
-*##+js(addEventListener-defuser, , vast)
 *##+js(addEventListener-defuser, , system.popunder)
-! *##+js(addEventListener-defuser, /^(?:visibilitychange)$/)
+*##+js(addEventListener-defuser, , vast)
+*##+js(addEventListener-defuser, /^(?:visibilitychange)$/)
+*##+js(addEventListener-defuser, DOMContentLoaded, [native code])
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
