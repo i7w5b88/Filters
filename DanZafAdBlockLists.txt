@@ -154,6 +154,7 @@
 *##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:536px;width:952px;cursor:pointer"]:remove()
 *##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:562px;width:998px;cursor:pointer"]:remove()
 *##[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:602px;width:1070px;cursor:pointer"]:remove()
+*##[style="text-align: center;margin-bottom: 5px;margin-top: 10px;line-height: 1.2;font-size: 12px;"]:remove()
 *##[style="visibility: hidden; width: 0px; height: 0px; position: absolute; left: 0px; top: 0px;"]:remove()
 *##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
 *##^.fuckfoot
