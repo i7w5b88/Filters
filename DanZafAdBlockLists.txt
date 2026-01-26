@@ -38,8 +38,12 @@
 !------------------------------------------------------------------------------!
 ! *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|eporner|google|hgslave|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|n(ekovid|iyaniya)|pornhub|r66nv9ed|s(hupogaki|t(r(eam(io|tape)|tape)))|t(railerhg|urbo(cloud|vidhls))|upn|v(oe|stream)|ystream)\.(c(c|loud|om)|i(d|o)|moe|net|one|sx|to|xyz)/##+js(prevent-setTimeout, /^/)
 ! *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|jav((\-)?(ct|gg(video)?|streamhg|vids))|mycloudz|nekovid|pornhub|t(railerhg|urbo(cloud|vidhls)))\.(io|c(c|om)|net|xyz)/##+js(prevent-setInterval, /^/)
-*##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 *##+js(prevent-setInterval, [native code], 500)
+*##+js(prevent-setTimeout, (), 3000)
+*##+js(prevent-setTimeout, (), 3500)
+*##+js(prevent-setTimeout, (), 5000)
+*##+js(prevent-setTimeout, (), 6000)
+*##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
 ! *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|dood|gupload|hg(player|slave)|ico3c|jav((\-)?(gg(video)?|guard|streamhg|vids))|l(i(nkvideowvd|steamed)|uluvid|w2cgtcm)|my(cloudz|vidplay)|n(ekovid|iyaniya)|p(layerwish|emersatu)|r(66nv9ed|yderjet)|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(idoy|stream|tbe)|walterprettytheir|ystream)\.(c(c|lub|om)|i(d|o)|link|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-xhr)
@@ -64,7 +68,7 @@
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , system.popunder)
 *##+js(addEventListener-defuser, , vast)
-! *,~/javggvideo\.xyz/##+js(addEventListener-defuser, /^(?:visibilitychange)$/)
+*,~/javggvideo\.xyz/##+js(addEventListener-defuser, /^(?:visibilitychange)$/)
 *##+js(addEventListener-defuser, DOMContentLoaded, [native code])
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
