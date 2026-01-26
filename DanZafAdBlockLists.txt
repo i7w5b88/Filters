@@ -34,6 +34,11 @@
 !------------------------------- Animation Frame -------------------------------!
 !------------------------------------------------------------------------------!
 *,~/(c(allistanise|loudwish)|dood|eporner|hg(player|slave)|ico3c|jav((\-)?(ct|gg(video)?|guard|streamhg|vids))|l(isteamed|uluvid)|my(cloudz|vidplay)|n(ekovid|iyaniya)|playerwish|r(66nv9ed|yderjet)|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|upn|v(stream|tbe)|walterprettytheir|xhamster|ystream)\.(c(c|lub|om)|id|moe|net|o(ne|vh)|sbs|to|xyz)/##+js(prevent-requestAnimationFrame, /^/)
+!---------------------------------- Debugging ----------------------------------!
+!-------------------------------------------------------------------------------!
+! *##+js(prevent-setTimeout, /^/)
+! *##+js(prevent-setInterval, /^/)
+! *##+js(addEventListener-defuser)
 !----------------------------- Timeout n Interval -----------------------------!
 !------------------------------------------------------------------------------!
 ! *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|eporner|google|hgslave|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|n(ekovid|iyaniya)|pornhub|r66nv9ed|s(hupogaki|t(r(eam(io|tape)|tape)))|t(railerhg|urbo(cloud|vidhls))|upn|v(oe|stream)|ystream)\.(c(c|loud|om)|i(d|o)|moe|net|one|sx|to|xyz)/##+js(prevent-setTimeout, /^/)
