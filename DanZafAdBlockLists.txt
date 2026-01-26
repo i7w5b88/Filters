@@ -182,6 +182,18 @@
 *##^script:has-text(/adsbyjuicy|gtag/)
 ||hbvicbe5y.com^$image,3p
 streamkithmc.com##.justify-center.items-center.inset-0.absolute
+*##.lix-traffic-ctrl-mask
+cloudwarebrh.com##.w-full.h-auto.block
+cloudwarebrh.com##.absolute.top-0.left-0.bottom-0.right-0.z-20
+*##.lix-traffic-mask
+cloudwarebrh.com##.trigger
+cloudwarebrh.com##.w-6.h-6
+cloudwarebrh.com##.absolute.inset-0.z-30.bg-black\/80.flex.flex-col.items-center.justify-center
+streamkithmc.com##.absolute.top-0.left-0.bottom-0.right-0.z-20
+streamkithmc.com##.trigger
+streamkithmc.com##.w-full.h-auto.block
+streamkithmc.com##.w-6.h-6
+streamkithmc.com##.absolute.inset-0.z-30.bg-black\/80.flex.flex-col.items-center.justify-center
 !------------------------------------------------------------------------------!
 !-------------------------------- Cosmetics End --------------------------------!
 !------------------------------------------------------------------------------!
