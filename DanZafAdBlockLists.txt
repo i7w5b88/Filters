@@ -67,14 +67,15 @@
 *##+js(no-window-open-if, /boxlikesedativespinach|effectivegatecpm|gangwaynumberprivacy/i)
 !------------------------------ addEventListener ------------------------------!
 !------------------------------------------------------------------------------!
-*,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|n(ekovid|iyaniya)|pornhub|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|vstream|ystream)\.(c(c|om)|moe|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
 *##+js(addEventListener-defuser, , popMagic)
-*,~/turbovidhls\.com/##+js(addEventListener-defuser, , pop)
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , system.popunder)
 *##+js(addEventListener-defuser, , vast)
-*,~/javggvideo\.xyz/##+js(addEventListener-defuser, /^(?:(pagehide|visibilitychange))$/)
 *##+js(addEventListener-defuser, DOMContentLoaded, [native code])
+*##+js(addEventListener-defuser, load, mosevura.com)
+*,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|n(ekovid|iyaniya)|pornhub|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|vstream|ystream)\.(c(c|om)|moe|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
+*,~/javggvideo\.xyz/##+js(addEventListener-defuser, /^(?:(pagehide|visibilitychange))$/)
+*,~/turbovidhls\.com/##+js(addEventListener-defuser, , pop)
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
 /([a-z0-9\.\-]{5,14})?(filemoon|ico3c|pvvstream|st(atic\-sg\-cdn\.eporner|reamio)|u(pn|sergeneratedcontent)|xhping)((\-)?cdn)?\.(art|com|in|net|one|pro|to)/##+js(overlay-buster)
