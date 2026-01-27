@@ -73,7 +73,7 @@
 *##+js(addEventListener-defuser, , popunder)
 *##+js(addEventListener-defuser, , system.popunder)
 *##+js(addEventListener-defuser, , vast)
-*,~/javggvideo\.xyz/##+js(addEventListener-defuser, /^(?:visibilitychange)$/)
+*,~/javggvideo\.xyz/##+js(addEventListener-defuser, /^(?:(pagehide|visibilitychange))$/)
 *##+js(addEventListener-defuser, DOMContentLoaded, [native code])
 !----------------------------------- Overlay -----------------------------------!
 !------------------------------------------------------------------------------!
