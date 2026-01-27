@@ -72,6 +72,7 @@
 *##+js(addEventListener-defuser, , system.popunder)
 *##+js(addEventListener-defuser, , vast)
 *##+js(addEventListener-defuser, DOMContentLoaded, [native code])
+*##+js(addEventListener-defuser, error, /function\([a-z]\){[a-z]\([a-z]\)}/)
 *##+js(addEventListener-defuser, load, mosevura.com)
 *,~/(c(allistanise|loudwish)|jav(-vids|ggvideo|streamhg)|dood|hgslave|mycloudz|n(ekovid|iyaniya)|pornhub|s(hupogaki|treamio)|t(railerhg|urbo(cloud|vidhls))|vstream|ystream)\.(c(c|om)|moe|id|ovh|to|xyz)/##+js(addEventListener-defuser, , direct)
 *,~/javggvideo\.xyz/##+js(addEventListener-defuser, /^(?:(pagehide|visibilitychange))$/)
