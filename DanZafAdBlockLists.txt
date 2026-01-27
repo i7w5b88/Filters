@@ -44,6 +44,8 @@
 ! *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|eporner|google|hgslave|jav((\-)?(ct|gg(video)?|streamhg|vids))|my(cloudz|vidplay)|n(ekovid|iyaniya)|pornhub|r66nv9ed|s(hupogaki|t(r(eam(io|tape)|tape)))|t(railerhg|urbo(cloud|vidhls))|upn|v(oe|stream)|ystream)\.(c(c|loud|om)|i(d|o)|moe|net|one|sx|to|xyz)/##+js(prevent-setTimeout, /^/)
 ! *,~/((challenges)(\.))?(a2zapk|c(allistanise|loudflare|loudwish)|jav((\-)?(ct|gg(video)?|streamhg|vids))|mycloudz|nekovid|pornhub|t(railerhg|urbo(cloud|vidhls)))\.(io|c(c|om)|net|xyz)/##+js(prevent-setInterval, /^/)
 *##+js(prevent-setInterval, [native code], 500)
+*##+js(prevent-setTimeout, (), 50)
+*##+js(prevent-setTimeout, (), 500)
 *##+js(prevent-setTimeout, (), 3000)
 *##+js(prevent-setTimeout, (), 3500)
 *##+js(prevent-setTimeout, (), 5000)
