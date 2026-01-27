@@ -48,6 +48,10 @@
 *##+js(prevent-setTimeout, (), 3500)
 *##+js(prevent-setTimeout, (), 5000)
 *##+js(prevent-setTimeout, (), 6000)
+*##+js(prevent-setTimeout, (), 20000)
+*##+js(prevent-setTimeout, (), 30000)
+*##+js(prevent-setTimeout, (), 55000)
+*##+js(prevent-setTimeout, (), 60000)
 *##+js(prevent-setTimeout, f.parentNode.removeChild(f), 100)
 !--------------------------------- XHR n Fetch ---------------------------------!
 !------------------------------------------------------------------------------!
