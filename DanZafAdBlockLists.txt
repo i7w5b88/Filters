@@ -1,12 +1,23 @@
 ! Title: DanZaf AdBlock Lists
 ! Author: Dwi Arianto
-! Version: 202503120817
+! Version: 202603040817
 ! Description: DanZaf Custom Filter
-! Last modified: Tue, 12 Dec 2025 08:17:24 +0000
+! Last modified: Wed, 04 Mar 2026 22:52:24 +0000
 ! Expires: 1 days (update frequency)
 !
 !------------------------------------------------------------------------------!
-!------------------------------ addEventListener ------------------------------!
+!------------------------------- Network Filter -------------------------------!
 !------------------------------------------------------------------------------!
-*,~/javggvideo\.xyz/##+js(addEventListener-defuser, /^(?:(pagehide|visibilitychange))$/)
+*$script,xhr,frame,popunder,popup,3p
 !------------------------------------------------------------------------------!
+!-------------------------- Network Filter Exception --------------------------!
+!------------------------------------------------------------------------------!
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloudflare|doodcdn|jwpcdn|turboviplay)\.(?:com|io)(?:\/.*)?$/$script,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|dramiyos-cdn|jav(?:-vids|ggvideo|streamhg)|doodcdn|ibyteimg|premilkyway|qooglecdn|tiktokcdn|turbo(?:splayer|viplay))\.(?:c(?:loud|om)|io|xyz)(?:\/.*)?$/$xhr,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloudwish|dooood|jav(?:-vids|ggvideo|streamhg)|my(?:cloudz|vidplay)|turbovid)\.(?:c(?:c|om)|vip|xyz)(?:\/.*)?$/$frame,3p
+!------------------------------------------------------------------------------!
+!------------------------------ Cosmetics Filter ------------------------------!
+!------------------------------------------------------------------------------!
+###floatadsbawah,#headerlink,#previewBox
+!------------------------------------------------------------------------------!
+
