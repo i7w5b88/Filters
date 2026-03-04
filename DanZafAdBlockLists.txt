@@ -13,8 +13,8 @@
 !-------------------------- Network Filter Exception --------------------------!
 !------------------------------------------------------------------------------!
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloudflare|doodcdn|googleapis|jwpcdn|turboviplay)\.(?:com|io)(?:\/.*)?$/$script,3p
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|dramiyos-cdn|jav(?:-vids|ggvideo|streamhg)|doodcdn|ibyteimg|premilkyway|qooglecdn|tiktokcdn|turbo(?:splayer|viplay))\.(?:c(?:loud|om)|io|xyz)(?:\/.*)?$/$xhr,3p
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|dooood|jav(?:-vids|ggvideo|streamhg)|my(?:cloudz|vidplay)|streamtape|turbovid)\.(?:c(?:c|om)|net|vip|xyz)(?:\/.*)?$/$frame,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdn(?:-tnmr|sync)|dramiyos-cdn|jav(?:-vids|ggvideo|streamhg)|doodcdn|ibyteimg|googleusercontent|premilkyway|qooglecdn|tiktokcdn|turbo(?:splayer|viplay))\.(?:c(?:loud|om)|io|org|xyz)(?:\/.*)?$/$xhr,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|dooood|jav(?:-vids|ggvideo|streamhg)|lulustream|my(?:cloudz|vidplay)|streamtape|turbovid)\.(?:c(?:c|om)|fit|net|vip|xyz)(?:\/.*)?$/$frame,3p
 !------------------------------------------------------------------------------!
 !------------------------------ Cosmetics Filter ------------------------------!
 !------------------------------------------------------------------------------!
