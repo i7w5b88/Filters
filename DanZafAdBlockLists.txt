@@ -8,11 +8,27 @@
 !------------------------------------------------------------!
 !---------------------- Network Filter ----------------------!
 !------------------------------------------------------------!
+##+js(set-constant, window.open, noopFunc)
+##+js(window.open-defuser)
+##+js(abort-current-inline-script)
+##+js(no-window-open-if)
 *$script,3p
 *$xhr,3p
 *$frame,3p
-*$popunder,3p
-*$popup,3p
+*$popunder,3p,important
+*$popup,3p,important
+||*pop*^$script,important
+||*pop*^$popup,important
+||*pop*^$popunder,important
+||popads.net^$all,important
+||onclickads.net^$all,important
+||popcash.net^$all,important
+||trafficstars.com^$all,important
+||exoclick.com^$all,important
+||juicyads.com^$all,important
+||hilltopads.net^$all,important
+||adsterra.com^$all,important
+||propellerads.com^$all,important
 !------------------------------------------------------------!
 !----------------- Network Filter Exception -----------------!
 !------------------------------------------------------------!
@@ -23,6 +39,11 @@
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
+##.overlay
+##.popup
+##iframe[src*="ads"]
+##iframe[src*="pop"]
+##a[target="_blank"]
 ###floatadsbawah
 ###globalCookieBanner
 ###headerlink
@@ -30,4 +51,3 @@
 ##.alpha
 ##.outstream-ad-overlay
 !------------------------------------------------------------!
-
