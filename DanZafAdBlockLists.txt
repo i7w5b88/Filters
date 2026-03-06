@@ -8,14 +8,10 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(set-constant, window.open, noopFunc)
-*##+js(window.open-defuser)
-*##+js(abort-current-inline-script)
-*##+js(no-window-open-if)
-*##+js(abort-current-inline-script, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/adraw|https?:\/\/javx\.cc\/.*player\.mp4$/)
-*##+js(abort-current-inline-script, XMLHttpRequest.prototype.open, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/adraw|https?:\/\/javx\.cc\/.*player\.mp4$/)
-*##+js(abort-current-inline-script, HTMLIFrameElement.prototype.setAttribute, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*javx\.cc\/.*player\.mp4$/)
-*##+js(abort-current-inline-script, HTMLIFrameElement.prototype.src, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*javx\.cc\/.*player\.mp4$/)
+*##+js(abort-current-inline-script, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/adraw|https?:\/\/javx\.cc\/.*player\.mp3$/)
+*##+js(abort-current-inline-script, XMLHttpRequest.prototype.open, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/adraw|https?:\/\/javx\.cc\/.*player\.mp3$/)
+*##+js(abort-current-inline-script, HTMLIFrameElement.prototype.setAttribute, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*javx\.cc\/.*player\.mp3$/)
+*##+js(abort-current-inline-script, HTMLIFrameElement.prototype.src, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*javx\.cc\/.*player\.mp3$/)
 !------------------------------------------------------------!
 !---------------------- Network Filter ----------------------!
 !------------------------------------------------------------!
@@ -25,6 +21,8 @@
 *$popup,3p,important
 *$popunder,3p,important
 ||*/adraw$xmlhttprequest,important
+||*ad-provider*.$script,important
+||*jads*.$script,important
 ||*pop*.$script,important
 ||*pop*.$popup,important
 ||*pop*.$popunder,important
