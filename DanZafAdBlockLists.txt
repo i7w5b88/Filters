@@ -8,10 +8,6 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(abort-current-inline-script, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/adraw|https?:\/\/javx\.cc\/.*player\.mp3$/)
-*##+js(abort-current-inline-script, XMLHttpRequest.prototype.open, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/adraw|https?:\/\/javx\.cc\/.*player\.mp3$/)
-*##+js(abort-current-inline-script, HTMLIFrameElement.prototype.setAttribute, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*javx\.cc\/.*player\.mp3$/)
-*##+js(abort-current-inline-script, HTMLIFrameElement.prototype.src, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*javx\.cc\/.*player\.mp3$/)
 !------------------------------------------------------------!
 !---------------------- Network Filter ----------------------!
 !------------------------------------------------------------!
