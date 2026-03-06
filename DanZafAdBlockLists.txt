@@ -17,9 +17,9 @@
 *$frame,3p
 *$popunder,3p,important
 *$popup,3p,important
-||*pop*^$script,important
-||*pop*^$popup,important
-||*pop*^$popunder,important
+||*pop*.$script,3p,important
+||*pop*.$popunder,3p,important
+||*pop*.$popup,3p,important
 ||popads.net^$all,important
 ||onclickads.net^$all,important
 ||popcash.net^$all,important
@@ -51,3 +51,4 @@
 ##.alpha
 ##.outstream-ad-overlay
 !------------------------------------------------------------!
+
