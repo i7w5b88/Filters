@@ -8,19 +8,22 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(acs, /HTMLIFrameElement\.prototype\.(src|srcdoc|setAttribute)/, /^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:javx|javgg)\.(?:cc|net|com)\/[^?#]*\.(?:mp4|m3u|m3u8|avi|mov)(?:\?[^#]*)?(?:#.*)?$/)
-*##+js(acs, XMLHttpRequest.prototype.open, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
-*##+js(acs, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
-*##+js(aeld, /^(?:dblclick|keydown|mouseenter|mouseleave|mouseover|scroll|touchstart)$/)
-*##+js(aeld, /^(?:pagehide|visibilitychange)$/)
-*##+js(aeld, /^(?:pop|popMagic|popunder|vast)$/)
-*##+js(nowoif, /./)
-*##+js(disable-newtab-links, /./)
-! *##+js(norafif, /^/)
-*##+js(set, canRunAds, true)
-*##+js(set, /^(?:ad(?:BlockEnabled|blockDetected)|BlockAdBlock|FuckAdBlock|fuckAdBlock)$/, false)
-*##+js(set, /^(?:alert|confirm|prompt)$/, noopFunc)
-/(?:[a-zA-Z0-9-]+\.)*(?:filemoon|ico3c|pvvstream|st(atic-sg-cdn.eporner|reamio)|u(pn|sergeneratedcontent)|xh(?:ping)?)(?:(-)?cdn)\.(?:art|com|in|net|one|pro|to)/##+js(overlay-buster)
+! *##+js(acs, /HTMLIFrameElement\.prototype\.(src|srcdoc|setAttribute)/, /^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:javx|javgg)\.(?:cc|net|com)\/[^?#]*\.(?:mp4|m3u|m3u8|avi|mov)(?:\?[^#]*)?(?:#.*)?$/)
+! *##+js(acs, XMLHttpRequest.prototype.open, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
+! *##+js(acs, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
+! *##+js(aeld, /^(?:dblclick|keydown|mouseenter|mouseleave|mouseover|scroll|touchstart)$/, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
+! *##+js(aeld, /^(?:pagehide|visibilitychange)$/, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
+! *##+js(aeld, /^(?:pop|popMagic|popunder|vast)$/)
+*##+js(nowoif)
+*,~/(?:javenglish)\.(?:cc)/##+js(disable-newtab-links)
+*##+js(aeld, auxclick)
+*,~/(?:minochinos|ryderjet|turbovidhls)\.(?:com)/##+js(norafif, /^/)
+*##+js(prevent-canvas)
+! *##+js(set, canRunAds, true)
+! *##+js(set, /^(?:ad(?:BlockEnabled|blockDetected)|BlockAdBlock|FuckAdBlock|fuckAdBlock)$/, false)
+! *##+js(set, /^(?:alert|confirm|prompt)$/, noopFunc)
+! *##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager)$/, noopFunc)
+! /(?:[a-zA-Z0-9-]+\.)*(?:filemoon|ico3c|pvvstream|st(atic-sg-cdn.eporner|reamio)|u(pn|sergeneratedcontent)|xh(?:ping)?)(?:(-)?cdn)\.(?:art|com|in|net|one|pro|to)/##+js(overlay-buster)
 !------------------------------------------------------------!
 !--------------------- Scriplets Tester ---------------------!
 !------------------------------------------------------------!
@@ -30,23 +33,13 @@
 ! *##+js(aeld, click)
 ! *##+js(set-constant, ResizeObserver, noopFunc)
 ! *##+js(set-constant, requestAnimationFrame, noopFunc, /popup|overlay|modal|subscribe|newsletter|paywall|push|onesignal|optinmonster/)
-*##+js(abort-current-script, window.open, /./)
-*##+js(abort-current-script, open, /popup|popunder|popads|popcash|popmyads/)
-*##+js(set, location.replace, noopFunc)
-*##+js(set, location.assign, noopFunc)
-*##+js(abort-current-script, Notification, /push|onesignal|pushcrew|pushengage|subscribe/)
-*##+js(abort-current-script, document.querySelector, adblock)
-*##+js(aeld, click, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock|ads?|push|redirect|track|click/)
-*##+js(aeld, scroll, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
-*##+js(aeld, visibilitychange, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
-*##+js(nano-setInterval-booster)
-*##+js(nano-setTimeout-booster)
-*##+js(set-constant, OneSignal, noopFunc)
-*##+js(set-constant, OptinMonster, noopFunc)
-*##+js(set-constant, PushCrew, noopFunc)
-*##+js(set-constant, PushEngage, noopFunc)
-*##+js(set-constant, PushManager, noopFunc)
-*##+js(set-constant, PushManager, noopFunc)
+! *##+js(abort-current-script, window.open, /./)
+! *##+js(abort-current-script, open, /popup|popunder|popads|popcash|popmyads/)
+! *##+js(abort-current-script, Notification, /push|onesignal|pushcrew|pushengage|subscribe/)
+! *##+js(abort-current-script, document.querySelector, adblock)
+! *##+js(aeld, click, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock|ads?|push|redirect|track|click/)
+! *##+js(nano-setInterval-booster)
+! *##+js(nano-setTimeout-booster)
 !------------------------------------------------------------!
 !---------------------- Network Filter ----------------------!
 !------------------------------------------------------------!
@@ -55,12 +48,12 @@
 *$frame,3p
 *$popunder,3p,important
 *$popup,3p,important
-/[\?&](ad(id|unit|slot|zone|size)|banner|campaign|promo)=/i$script,subdocument,image
+/[\?&](ad(id|unit|slot|zone|size)|banner|campaign|promo)=/i$script,subdocument,image,important
 /[\?&](ad(id|unit|slot|zone|size|type)|banner|campaign|affiliate|promo)=/i$script,frame,image,important
-/[\W_](ads?|adserver|adservice|banner|promo|sponsor|pop(up|under))[\W_]/i$script,subdocument
-/[\W_](optinmonster|sleeknote|convertbox|poptin|pushengage|onesignal)[\W_]/i$script
+/[\W_](ads?|adserver|adservice|banner|promo|sponsor|pop(up|under))[\W_]/i$script,subdocument,important
+/[\W_](optinmonster|sleeknote|convertbox|poptin|pushengage|onesignal)[\W_]/i$script,important
 /\/(ad(banner|engine|s|twin)|pop)\//i$frame,important
-/\/(serve|delivery|ads?|advert|banner|clicktrack|track(ad|ing)?)\//i$script,subdocument,image
+/\/(serve|delivery|ads?|advert|banner|clicktrack|track(ad|ing)?)\//i$script,subdocument,image,important
 ||*/adraw$xhr,important
 ||*ad-provider*.$script,important
 ||*dialog*$script,important
@@ -105,8 +98,6 @@
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
-! ##[class*="overlay"]
-! ##body > div[style*="position:fixed"]
 ###floatadsbawah
 ###globalCookieBanner
 ###headerlink
@@ -140,6 +131,7 @@
 ##[class*="membership"]
 ##[class*="modal"]
 ##[class*="newsletter"]
+##[class*="overlay"]
 ##[class*="paywall"]
 ##[class*="popup"]
 ##[class*="promoItem"]
@@ -160,7 +152,6 @@
 ##body > div[style*="position: absolute"][style*="z-index"]
 ##body > div[style*="z-index"][style*="1000"]
 ##body > div[style*="z-index"][style*="999"]
-##iframe[src*="/(?:ad(?:twin|raw|engine|banner))/"]
 ##iframe[src*="/adbanner/"]
 ##iframe[src*="/adengine/"]
 ##iframe[src*="/adraw/"]
@@ -172,9 +163,7 @@
 !------------------------------------------------------------!
 !--------------------- Cosmetics Tester ---------------------!
 !------------------------------------------------------------!
-! ##^script:has-text(/adsbyjuicy|gtag/)
-##script:has-text(/\badsbyjuicy\b|\bpopads\b|\bpopcash\b|\bfuckAdBlock\b/)
-##script:has-text(/\bgtag\(|googletagmanager/)
-! ##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
+*##^script:has-text(/\badsbyjuicy\b|\bpopads\b|\bpopcash\b|\bfuckAdBlock\b/)
+*##^script:has-text(/\bgtag\(|googletagmanager/)
 !------------------------------------------------------------!
 
