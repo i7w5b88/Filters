@@ -172,6 +172,8 @@
 !--------------------- Cosmetics Tester ---------------------!
 !------------------------------------------------------------!
 ! ##^script:has-text(/adsbyjuicy|gtag/)
+##script:has-text(/\badsbyjuicy\b|\bpopads\b|\bpopcash\b|\bfuckAdBlock\b/)
+##script:has-text(/\bgtag\(|googletagmanager/)
 ! ##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
 !------------------------------------------------------------!
 
