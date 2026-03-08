@@ -8,9 +8,17 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
+*##+js(no-window-open-if, .)
+*,~/javggvideo\.xyz/##+js(aeld, /^(?:(pagehide|visibilitychange))$/)
+*,~/javggvideo\.xyz/##+js(aeld, /^(?:(dblclick|keydown|mouseenter|mouseleave|mouseover|scroll|touchstart))$/)
+*##+js(set, canRunAds, false)
+*##+js(set, /^(?:(adBlockEnabled|adblockDetected|BlockAdBlock|FuckAdBlock|fuckAdBlock))$/)
 *##+js(abort-current-inline-script, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
 *##+js(abort-current-inline-script, XMLHttpRequest.prototype.open, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
 *##+js(abort-current-inline-script, /HTMLIFrameElement\.prototype\.(src|srcdoc|setAttribute)/, /^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:javx|javgg)\.(?:cc|net|com)\/[^?#]*\.(?:mp4|m3u|m3u8|avi|mov)(?:\?[^#]*)?(?:#.*)?$/)
+!------------------------------------------------------------!
+!--------------------- Scriplets Tester ---------------------!
+!------------------------------------------------------------!
 !------------------------------------------------------------!
 !---------------------- Network Filter ----------------------!
 !------------------------------------------------------------!
