@@ -39,7 +39,6 @@
 *##+js(aeld, visibilitychange, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
 *##+js(nano-setInterval-booster)
 *##+js(nano-setTimeout-booster)
-*##+js(set-constant, Notification.requestPermission, noopFunc)
 *##+js(set-constant, OneSignal, noopFunc)
 *##+js(set-constant, OptinMonster, noopFunc)
 *##+js(set-constant, PushCrew, noopFunc)
