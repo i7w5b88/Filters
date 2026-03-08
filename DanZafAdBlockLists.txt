@@ -8,37 +8,37 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
+*##+js(acs, /HTMLIFrameElement\.prototype\.(src|srcdoc|setAttribute)/, /^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:javx|javgg)\.(?:cc|net|com)\/[^?#]*\.(?:mp4|m3u|m3u8|avi|mov)(?:\?[^#]*)?(?:#.*)?$/)
+*##+js(acs, XMLHttpRequest.prototype.open, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
+*##+js(acs, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
+*##+js(aeld, /^(?:dblclick|keydown|mouseenter|mouseleave|mouseover|scroll|touchstart)$/)
+*##+js(aeld, /^(?:pagehide|visibilitychange)$/)
 *##+js(no-window-open-if, .)
-*,~/javggvideo\.xyz/##+js(aeld, /^(?:pagehide|visibilitychange)$/)
-*,~/javggvideo\.xyz/##+js(aeld, /^(?:dblclick|keydown|mouseenter|mouseleave|mouseover|scroll|touchstart)$/)
-*##+js(set, canRunAds, true)
 *##+js(set, /^(?:ad(?:BlockEnabled|blockDetected)|BlockAdBlock|FuckAdBlock|fuckAdBlock)$/, false)
 *##+js(set, /^(?:alert|confirm|prompt)$/, noopFunc)
-*##+js(abort-current-inline-script, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
-*##+js(abort-current-inline-script, XMLHttpRequest.prototype.open, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
-*##+js(abort-current-inline-script, /HTMLIFrameElement\.prototype\.(src|srcdoc|setAttribute)/, /^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:javx|javgg)\.(?:cc|net|com)\/[^?#]*\.(?:mp4|m3u|m3u8|avi|mov)(?:\?[^#]*)?(?:#.*)?$/)
+*##+js(set, canRunAds, true)
 !------------------------------------------------------------!
 !--------------------- Scriplets Tester ---------------------!
 !------------------------------------------------------------!
-*##+js(nano-setTimeout-booster)
-*##+js(nano-setInterval-booster)
-! *##+js(aeld, click)
-*##+js(aeld, click, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock|push/)
-! *##+js(abort-current-script, MutationObserver, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock/)
 ! *##+js(abort-current-script, IntersectionObserver, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock/)
-! *##+js(set-constant, ResizeObserver, noopFunc)
+! *##+js(abort-current-script, MutationObserver, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock/)
 ! *##+js(abort-current-script, requestAnimationFrame, /popup|overlay|modal|subscribe|newsletter|paywall|push|onesignal|optinmonster/)
+! *##+js(aeld, click)
+! *##+js(set-constant, ResizeObserver, noopFunc)
 ! *##+js(set-constant, requestAnimationFrame, noopFunc, /popup|overlay|modal|subscribe|newsletter|paywall|push|onesignal|optinmonster/)
+*##+js(abort-current-script, Notification, /push|onesignal|pushcrew|pushengage|subscribe/)
 *##+js(abort-current-script, document.querySelector, adblock)
-*##+js(aeld, visibilitychange, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
+*##+js(aeld, click, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock|push/)
 *##+js(aeld, scroll, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
-*##+js(set-constant, OptinMonster, noopFunc)
+*##+js(aeld, visibilitychange, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
+*##+js(nano-setInterval-booster)
+*##+js(nano-setTimeout-booster)
+*##+js(set-constant, Notification.requestPermission, noopFunc)
 *##+js(set-constant, OneSignal, noopFunc)
+*##+js(set-constant, OptinMonster, noopFunc)
 *##+js(set-constant, PushCrew, noopFunc)
 *##+js(set-constant, PushEngage, noopFunc)
 *##+js(set-constant, PushManager, noopFunc)
-*##+js(abort-current-script, Notification, /push|onesignal|pushcrew|pushengage|subscribe/)
-*##+js(set-constant, Notification.requestPermission, noopFunc)
 *##+js(set-constant, PushManager, noopFunc)
 !------------------------------------------------------------!
 !---------------------- Network Filter ----------------------!
@@ -55,11 +55,8 @@
 /\/(ad(banner|engine|s|twin)|pop)\//i$frame,important
 /\/(serve|delivery|ads?|advert|banner|clicktrack|track(ad|ing)?)\//i$script,subdocument,image
 ||*/adraw$xhr,important
-||*/adraw$xhr,important
-||*ad-provider*.$script,important
 ||*ad-provider*.$script,important
 ||*dialog*$script,important
-||*jads*.$script,important
 ||*jads*.$script,important
 ||*modal*$script,important
 ||*newsletter*$script,important
@@ -74,24 +71,15 @@
 ||*subscribe*$script,important
 ||ad.cpcstar.com^$object,important
 ||adsterra.com^$all,important
-||adsterra.com^$all,important
-||exoclick.com^$all,important
 ||exoclick.com^$all,important
 ||hilltopads.net^$all,important
-||hilltopads.net^$all,important
-||javx.cc^*/player.mp4$frame,important
 ||javx.cc^*/player.mp4$frame,important
 ||juicyads.com^$all,important
-||juicyads.com^$all,important
-||onclickads.net^$all,important
 ||onclickads.net^$all,important
 ||onesignal.com^$script,important
 ||optinmonster.com^$script,important
 ||popads.net^$all,important
-||popads.net^$all,important
 ||popcash.net^$all,important
-||popcash.net^$all,important
-||propellerads.com^$all,important
 ||propellerads.com^$all,important
 ||pushalert.co^$script,important
 ||pushcrew.com^$script,important
@@ -99,8 +87,6 @@
 ||pushnotificationcdn.com^$script,important
 ||pushwoosh.com^$script,important
 ||trafficstars.com^$all,important
-||trafficstars.com^$all,important
-||twinrdengine.com^$xhr,important
 ||twinrdengine.com^$xhr,important
 !------------------------------------------------------------!
 !----------------- Network Filter Exception -----------------!
@@ -112,17 +98,62 @@
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
-##a[target="_blank"]
-##iframe[src*="ads"]
-##iframe[src*="pop"]
-##iframe[src*="/(?:ad(?:twin|raw|engine|banner))/"]
+! ##[class*="overlay"]
+! ##body > div[style*="position:fixed"]
 ###floatadsbawah
 ###globalCookieBanner
 ###headerlink
 ###previewBox
 ##.alpha
+##.app-banner
+##.app-download
+##.cookie-banner
+##.cookie-consent
+##.dialog
+##.gdpr
+##.install-app
+##.lightbox
+##.modal
+##.newsletter
+##.newsletter-popup
 ##.outstream-ad-overlay
 ##.overlay
+##.paywall
 ##.popup
+##.signup-popup
+##.subscribe-popup
+##.subscribe-wall
+##[class*="adblock"]
+##[class*="app-banner"]
+##[class*="dialog"]
+##[class*="install-app"]
+##[class*="membership"]
+##[class*="modal"]
+##[class*="newsletter"]
+##[class*="paywall"]
+##[class*="popup"]
+##[class*="subscribe"]
+##[id*="dialog"]
+##[id*="modal"]
+##[id*="overlay"]
+##[id*="popup"]
+##[role="dialog"]
+##a[target="_blank"]
+##body > div:has([class*="membership"])
+##body > div:has([class*="paywall"])
+##body > div:has([class*="premium"])
+##body > div:has([class*="subscribe"])
+##body > div[style*="position: absolute"][style*="z-index"]
+##body > div[style*="z-index"][style*="1000"]
+##body > div[style*="z-index"][style*="999"]
+##iframe[src*="/(?:ad(?:twin|raw|engine|banner))/"]
+##iframe[src*="/adbanner/"]
+##iframe[src*="/adengine/"]
+##iframe[src*="/adraw/"]
+##iframe[src*="/ads/"]
+##iframe[src*="/adtwin/"]
+##iframe[src*="/pop/"]
+##iframe[src*="ads"]
+##iframe[src*="pop"]
 !------------------------------------------------------------!
 
