@@ -20,38 +20,95 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Tester ---------------------!
 !------------------------------------------------------------!
+*##+js(nano-setTimeout-booster)
+*##+js(nano-setInterval-booster)
+! *##+js(aeld, click)
+*##+js(aeld, click, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock|push/)
+! *##+js(abort-current-script, MutationObserver, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock/)
+! *##+js(abort-current-script, IntersectionObserver, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock/)
+! *##+js(set-constant, ResizeObserver, noopFunc)
+! *##+js(abort-current-script, requestAnimationFrame, /popup|overlay|modal|subscribe|newsletter|paywall|push|onesignal|optinmonster/)
+! *##+js(set-constant, requestAnimationFrame, noopFunc, /popup|overlay|modal|subscribe|newsletter|paywall|push|onesignal|optinmonster/)
+*##+js(abort-current-script, document.querySelector, adblock)
+*##+js(aeld, visibilitychange, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
+*##+js(aeld, scroll, /popunder|popup|overlay|modal|subscribe|newsletter|paywall/)
+*##+js(set-constant, OptinMonster, noopFunc)
+*##+js(set-constant, OneSignal, noopFunc)
+*##+js(set-constant, PushCrew, noopFunc)
+*##+js(set-constant, PushEngage, noopFunc)
+*##+js(set-constant, PushManager, noopFunc)
+*##+js(abort-current-script, Notification, /push|onesignal|pushcrew|pushengage|subscribe/)
+*##+js(set-constant, Notification.requestPermission, noopFunc)
+*##+js(set-constant, PushManager, noopFunc)
 !------------------------------------------------------------!
 !---------------------- Network Filter ----------------------!
 !------------------------------------------------------------!
 *$script,3p
 *$xhr,3p
 *$frame,3p
-*$popup,3p,important
 *$popunder,3p,important
+*$popup,3p,important
+/[\?&](ad(id|unit|slot|zone|size)|banner|campaign|promo)=/i$script,subdocument,image
+/[\?&](ad(id|unit|slot|zone|size|type)|banner|campaign|affiliate|promo)=/i$script,frame,image,important
+/[\W_](ads?|adserver|adservice|banner|promo|sponsor|pop(up|under))[\W_]/i$script,subdocument
+/[\W_](optinmonster|sleeknote|convertbox|poptin|pushengage|onesignal)[\W_]/i$script
+/\/(ad(banner|engine|s|twin)|pop)\//i$frame,important
+/\/(serve|delivery|ads?|advert|banner|clicktrack|track(ad|ing)?)\//i$script,subdocument,image
+||*/adraw$xhr,important
+||*/adraw$xhr,important
+||*ad-provider*.$script,important
+||*ad-provider*.$script,important
+||*dialog*$script,important
+||*jads*.$script,important
+||*jads*.$script,important
+||*modal*$script,important
+||*newsletter*$script,important
+||*overlay*$script,important
+||*pop*.$popunder,important
+||*pop*.$popup,important
+||*pop*.$script,important
+||*popunder*.$popunder,important
+||*popunder*.$script,important
+||*popup*.$popup,important
+||*popup*.$script,important
+||*subscribe*$script,important
+||ad.cpcstar.com^$object,important
+||adsterra.com^$all,important
 ||adsterra.com^$all,important
 ||exoclick.com^$all,important
+||exoclick.com^$all,important
+||hilltopads.net^$all,important
 ||hilltopads.net^$all,important
 ||javx.cc^*/player.mp4$frame,important
+||javx.cc^*/player.mp4$frame,important
+||juicyads.com^$all,important
 ||juicyads.com^$all,important
 ||onclickads.net^$all,important
+||onclickads.net^$all,important
+||onesignal.com^$script,important
+||optinmonster.com^$script,important
+||popads.net^$all,important
 ||popads.net^$all,important
 ||popcash.net^$all,important
+||popcash.net^$all,important
 ||propellerads.com^$all,important
+||propellerads.com^$all,important
+||pushalert.co^$script,important
+||pushcrew.com^$script,important
+||pushengage.com^$script,important
+||pushnotificationcdn.com^$script,important
+||pushwoosh.com^$script,important
+||trafficstars.com^$all,important
 ||trafficstars.com^$all,important
 ||twinrdengine.com^$xhr,important
-||*ad-provider*.$script,important
-||*jads*.$script,important
-||*pop*.$script,important
-||*/adraw$xhr,important
-||*pop*.$popup,important
-||*pop*.$popunder,important
+||twinrdengine.com^$xhr,important
 !------------------------------------------------------------!
 !----------------- Network Filter Exception -----------------!
 !------------------------------------------------------------!
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:b-cdn|cloudflare|xh(?:ping)?cdn)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$script,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/(?:[^\/]+\/)*(?:embed(?:[1-9]{1,2})|j(?:query|wplayer(?:[1-9]{1,2})?)|lazyload|provider|recaptcha(?:__en)?)(?:\.(?:core\.controls|hlsjs))?(?:\.min)?\.js(?:\?[^#]*)?(?:#.*)?$/$script,3p
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|edgeon-bandwidth|foudsea|googleusercontent|muletten|teifanc|tiktokcdn|turbo(?:splayer|viplay))\.(?:c(?:loud|om))(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$xhr,3p
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|d(?:oo(?:dstream|ood)|svplay)|emturbovid|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|my(?:cloudz|vidplay)|minochinos|peytonepre|ryderjet|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|voe)\.(?:c(?:c|loud|om)|net|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$frame,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|edgeon-bandwidth|foudsea|googleusercontent|muletten|seabreezeartisanatelier|teifanc|tiktokcdn|turbo(?:splayer|viplay))\.(?:c(?:loud|om|you))(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$xhr,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|d(?:oo(?:dstream|ood)|svplay)|emturbovid|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|my(?:cloudz|vidplay)|minochinos|peytonepre|ryderjet|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|voe)\.(?:c(?:c|loud|om)|net|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$frame,3p
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
