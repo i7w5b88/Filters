@@ -24,7 +24,7 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Tester ---------------------!
 !------------------------------------------------------------!
-! *##+js(abort-current-script, IntersectionObserver, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock/)
+! *##+js(abort-current-script, IntersectionObserver, /popup|banner|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock|ads/)
 ! *##+js(abort-current-script, MutationObserver, /popup|popunder|modal|overlay|dialog|subscribe|newsletter|paywall|adblock/)
 ! *##+js(abort-current-script, requestAnimationFrame, /popup|overlay|modal|subscribe|newsletter|paywall|push|onesignal|optinmonster/)
 ! *##+js(aeld, click)
