@@ -13,10 +13,12 @@
 *##+js(acs, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
 *##+js(aeld, /^(?:dblclick|keydown|mouseenter|mouseleave|mouseover|scroll|touchstart)$/)
 *##+js(aeld, /^(?:pagehide|visibilitychange)$/)
-*##+js(no-window-open-if, .)
+*##+js(nowoif, .)
+*##+js(disable-newtab-links, .)
+! *##+js(norafif, /^/)
+*##+js(set, canRunAds, true)
 *##+js(set, /^(?:ad(?:BlockEnabled|blockDetected)|BlockAdBlock|FuckAdBlock|fuckAdBlock)$/, false)
 *##+js(set, /^(?:alert|confirm|prompt)$/, noopFunc)
-*##+js(set, canRunAds, true)
 !------------------------------------------------------------!
 !--------------------- Scriplets Tester ---------------------!
 !------------------------------------------------------------!
