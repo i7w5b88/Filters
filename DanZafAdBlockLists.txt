@@ -13,6 +13,7 @@
 *##+js(acs, fetch, /https?:\/\/(?:[a-zA-Z0-9-]+\.)*twinrdengine\.com|\/(?:ad(?:twin|raw|engine|banner))/)
 *##+js(aeld, /^(?:dblclick|keydown|mouseenter|mouseleave|mouseover|scroll|touchstart)$/)
 *##+js(aeld, /^(?:pagehide|visibilitychange)$/)
+*##+js(aeld, /^(?:pop|popMagic|popunder|vast)$/)
 *##+js(nowoif, .)
 *##+js(disable-newtab-links, .)
 ! *##+js(norafif, /^/)
