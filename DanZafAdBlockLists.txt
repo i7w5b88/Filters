@@ -127,8 +127,11 @@
 ##.signup-popup
 ##.subscribe-popup
 ##.subscribe-wall
+##.watchpageAd
 ##[class*="adblock"]
 ##[class*="app-banner"]
+##[class*="cookiesAnnounce"]
+##[class*="custom-popup-overlay"]
 ##[class*="dialog"]
 ##[class*="install-app"]
 ##[class*="membership"]
@@ -136,7 +139,11 @@
 ##[class*="newsletter"]
 ##[class*="paywall"]
 ##[class*="popup"]
+##[class*="promoItem"]
 ##[class*="subscribe"]
+##[data-role*="banner-underplayer"]
+##[data-role*="promo-messages-wrapper"]
+##[href*="adstub"]
 ##[id*="dialog"]
 ##[id*="modal"]
 ##[id*="overlay"]
@@ -159,5 +166,10 @@
 ##iframe[src*="/pop/"]
 ##iframe[src*="ads"]
 ##iframe[src*="pop"]
+!------------------------------------------------------------!
+!--------------------- Cosmetics Tester ---------------------!
+!------------------------------------------------------------!
+! ##^script:has-text(/adsbyjuicy|gtag/)
+! ##[style="width: 1px; height: 1px; position: absolute; background: transparent;"]:remove()
 !------------------------------------------------------------!
 
