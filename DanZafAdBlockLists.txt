@@ -28,9 +28,9 @@
 !------------------------------------------------------------!
 *,~/(?:turbovidhls)\.(?:com)/##+js(prevent-canvas)
 *##+js(nowoif)
+*,~/(?:cloudwish|hgslave|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?)\.(?:c(?:c|om)|vip|xyz)/##+js(norafif, /^/)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
 *##+js(aeld, auxclick)
-*,~/(?:cloudwish|hgslave|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?)\.(?:c(?:c|om)|vip|xyz)/##+js(norafif, /^/)
 *##+js(overlay-buster)
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
