@@ -12,6 +12,7 @@
 *$xhr,3p
 *$frame,3p
 *$object,3p
+*$other,3p
 *$popunder,3p,important
 *$popup,3p,important
 ||^$popunder,3p,important
