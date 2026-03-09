@@ -1,0 +1,92 @@
+! Title: DanZaf AdBlock Lists
+! Author: Dwi Arianto
+! Version: 202603040817
+! Description: DanZaf Custom Filter
+! Last modified: Wed, 04 Mar 2026 22:52:24 +0000
+! Expires: 1 days (update frequency)
+!
+!------------------------------------------------------------!
+!---------------------- Network Filter ----------------------!
+!------------------------------------------------------------!
+*$script,3p
+*$xhr,3p
+*$frame,3p
+*$object,3p
+*$other,3p
+*$popunder
+*$popup
+!------------------------------------------------------------!
+!----------------- Network Filter Exception -----------------!
+!------------------------------------------------------------!
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:b-cdn|cloudflare|xh(?:ping)?cdn)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$script,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/(?:[^\/]+\/)*(?:embed(?:[1-9]{1,2})|j(?:query|wplayer(?:[1-9]{1,2})?)|lazyload|provider|recaptcha(?:__en)?(?:\/api)?|(?:silvermine-)?video(?:js-quality-selector)?)(?:\.(?:core\.controls|hlsjs))?(?:\.min)?\.js(?:\?[^#]*)?(?:#.*)?$/$script,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|edgeon-bandwidth|foudsea|googleusercontent|muletten|seabreezeartisanatelier|t(?:eifanc|iktokcdn|urbo(?:splayer|viplay)))\.(?:c(?:loud|om|you))(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$xhr,3p
+@@||google.com/recaptcha/api2/$xhr,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|d(?:oo(?:dstream|ood)|svplay)|emturbovid|f75s|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|peytonepre|ryderjet|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|v(?:oe|stream)|ystream)\.(?:c(?:c|loud|om)|id|net|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$frame,3p
+@@||google.com/recaptcha/api2/$frame,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|dooood|my(?:cloudz|vidplay)|streamtape|t(?:iktokcdn|urbo(?:splayer|vi(?:d|play))))\.(?:c(?:c|om)|net|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$other,3p
+!------------------------------------------------------------!
+!--------------------- Scriplets Filter ---------------------!
+!------------------------------------------------------------!
+*,~/(?:hgslave|javct|ryderjet|turbovidhls)\.(?:com|net|xyz)/##+js(prevent-canvas)
+*##+js(nowoif)
+*,~/(?:cloudwish|f75s|hgslave|javct|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?|vstream|ystream)\.(?:c(?:c|om)|id|net|vip|xyz)/##+js(norafif, /^/)
+*,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
+*##+js(aeld, /^(?:auxclick|contextmenu|keydown|wheel|touchmove)$/)
+! *,~/(?:cloudwish|jav(?:hd)|mycloudz|streamtape|turbovid)\.(?:cc|net|today|vip)/##+js(aeld, click)
+! *##+js(overlay-buster)
+*##+js(set, /^(?:ad(?:blockDisabled|sEnabled)|can(?:RunAds|ShowAds)|showAds)$/, true)
+*##+js(set, /^(?:ad(?:Block(?:Active|Detected|Enabled|er(?:Detected)?)?|block(?:Active|Detected|Enabled|er(?:Detected)?)?|s(?:\.blocked|Blocked))|b(?:ab(?:Detected|Enabled)|lockAdBlock)|BlockAdBlock|FuckAdBlock|fuckAdBlock|page\.adsBlocked|window\.adblock)$/, false)
+*##+js(set, /^(?:bab)/, undefined)
+
+*##+js(set, adsBlocked, false)
+*##+js(set, adsEnabled, true)
+*##+js(set, adsLoaded, true)
+*##+js(set, adsVisible, true)
+*##+js(set, adsReady, true)
+*##+js(set, adsRunning, true)
+*##+js(set, detectedAdBlock, false)
+*##+js(set, hasAdBlock, false)
+*##+js(set, isAdBlockActive, false)
+*##+js(set, isAdBlockEnabled, false)
+*##+js(set, adblockPresent, false)
+*##+js(set, adblockInstalled, false)
+*##+js(set, adblockStatus, false)
+*##+js(set, page.adsBlocked, false)
+*##+js(set, window.adsBlocked, false)
+*##+js(set, window.adblockDetected, false)
+*##+js(set, site.adblock, false)
+*##+js(set, config.adblock, false)
+*##+js(set, paywallAdblockDetected, false)
+*##+js(set, disableAdblockMessage, true)
+*##+js(set, adblockWallEnabled, false)
+*##+js(set, adblockGate, false)
+*##+js(set, checkAdBlock, noopFunc)
+*##+js(set, detectAdblock, noopFunc)
+*##+js(set, isAdBlock, false)
+*##+js(set, adblock, false)
+*##+js(set, adblocker, false)
+*##+js(set, adBlockDetected, false)
+*##+js(set, canRunAds, true)
+! *##+js(aopr, adblock)
+
+*##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager)$/, noopFunc)
+*##+js(no-xhr-if, /(google|jogxnkcfhgq|magsrv|twinrdengine)\.(com)/)
+*##+js(no-fetch-if, /(google|jogxnkcfhgq|magsrv|twinrdengine)\.(com)/)
+!------------------------------------------------------------!
+!--------------------- Cosmetics Filter ---------------------!
+!------------------------------------------------------------!
+##[href*="adstub.net"]
+##[src*="/adsx/"]
+###floatadsbawah
+###previewBox
+##.adv-footer
+##.fuckfoot
+##.footer-ad-mobile
+##.header-ad-mobile
+##.under-player-ad-mobile
+! *##^script:has-text(/\badsbyjuicy\b|\bpopads\b|\bpopcash\b|\bfuckAdBlock\b/)
+*##^script:has-text(/(?:adsbyjuicy|pop(?:ads|cash)|fuckAdBlock)/)
+! *##^script:has-text(/\bgtag\(|googletagmanager/)
+*##^script:has-text(/(?:gtag\(|googletagmanager)/)
+!------------------------------------------------------------!
