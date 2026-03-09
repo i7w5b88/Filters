@@ -35,9 +35,11 @@
 *##+js(aeld, /^(?:auxclick|contextmenu|keydown|wheel|touchmove)$/)
 ! *,~/(?:cloudwish|jav(?:hd)|mycloudz|streamtape|turbovid)\.(?:cc|net|today|vip)/##+js(aeld, click)
 ! *##+js(overlay-buster)
-*##+js(set, canRunAds, true)
-*##+js(set, /^(?:ad(?:BlockEnabled|blockDetected)|BlockAdBlock|FuckAdBlock|fuckAdBlock)$/, false)
-*##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager)$/, noopFunc)
+*##+js(set, /^(?:ad(?:blockDisabled|s(?:Enabled|Loaded|R(?:eady|unning)|Visible))|can(?:RunAds|ShowAds)|disableAdblockMessage|showAds)$/, true)
+*##+js(set, /^(?:ad(?:Block(?:Active|Detected|Enabled|er(?:Detected)?)?|block(?:Active|Detected|Enabled|Gate|Installed|Present|Status|WallEnabled|er(?:Detected)?)?|s(?:\.blocked|Blocked))|b(?:ab(?:Detected|Enabled)|lockAdBlock)|BlockAdBlock|FuckAdBlock|fuckAdBlock|config\.adblock|detectedAdBlock|hasAdBlock|isAdBlock(?:Active|Enabled)?|pa(?:ge\.adsBlocked|ywallAdblockDetected)|site\.adblock|window\.ad(?:block(?:Detected)?|sBlocked))$/, false)
+*##+js(set, /^(?:bab)/, undefined)
+! *##+js(aopr, adblock)
+*##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager|checkAdBlock|detectAdblock)$/, noopFunc)
 *##+js(no-xhr-if, /(google|jogxnkcfhgq|magsrv|twinrdengine)\.(com)/)
 *##+js(no-fetch-if, /(google|jogxnkcfhgq|magsrv|twinrdengine)\.(com)/)
 !------------------------------------------------------------!
@@ -57,4 +59,3 @@
 ! *##^script:has-text(/\bgtag\(|googletagmanager/)
 *##^script:has-text(/(?:gtag\(|googletagmanager)/)
 !------------------------------------------------------------!
-
