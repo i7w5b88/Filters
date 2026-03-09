@@ -38,8 +38,8 @@
 !------------------------------------------------------------!
 ##[href*="adstub.net"]
 ##[src*="/adsx/"]
-###previewBox
 ###floatadsbawah
+###previewBox
 ##.footer-ad-mobile
 ##.header-ad-mobile
 ##.under-player-ad-mobile
