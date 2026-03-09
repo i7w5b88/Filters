@@ -31,10 +31,11 @@
 *,~/(?:cloudwish|hgslave|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?)\.(?:c(?:c|om)|vip|xyz)/##+js(norafif, /^/)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
 *##+js(aeld, /(auxclick|contextmenu|keydown|wheel|touchmove)/)
-*##+js(aeld, click)
+*,~/(?:cloudwish|jav(?:hd)|mycloudz|streamtape|turbovid)\.(?:cc|net|today|vip)/##+js(aeld, click)
 *##+js(overlay-buster)
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
+###previewBox
 !------------------------------------------------------------!
 
