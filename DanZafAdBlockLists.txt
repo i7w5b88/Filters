@@ -28,7 +28,7 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
-*,~/(?:hgslave|turbovidhls)\.(?:com|xyz)/##+js(prevent-canvas)
+*,~/(?:hgslave|ryderjet|turbovidhls)\.(?:com|xyz)/##+js(prevent-canvas)
 *##+js(nowoif)
 *,~/(?:cloudwish|f75s|hgslave|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?|vstream|ystream)\.(?:c(?:c|om)|id|vip|xyz)/##+js(norafif, /^/)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
