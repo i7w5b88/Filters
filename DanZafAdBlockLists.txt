@@ -29,6 +29,8 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
+*##+js(nano-sib)
+*##+js(nano-stb)
 *,~/(?:hgslave|javct|ryderjet|turbovidhls)\.(?:com|net|xyz)/##+js(prevent-canvas)
 *##+js(nowoif)
 *,~/(?:cloudwish|f75s|hgslave|javct|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?|vstream|ystream)\.(?:c(?:c|om)|id|net|vip|xyz)/##+js(norafif, /^/)
@@ -41,7 +43,7 @@
 *##+js(set, /^(?:ad(?:blockDisabled|s(?:Enabled|Loaded|R(?:eady|unning)|Visible))|can(?:RunAds|ShowAds)|disableAdblockMessage|showAds)$/, true)
 *##+js(set, /^(?:ad(?:Block(?:Active|Detected|Enabled|er(?:Detected)?)?|block(?:Active|Detected|Enabled|Gate|Installed|Present|Status|WallEnabled|er(?:Detected)?)?|s(?:\.blocked|Blocked))|b(?:ab(?:Detected|Enabled)|lockAdBlock)|BlockAdBlock|FuckAdBlock|fuckAdBlock|config\.adblock|detectedAdBlock|hasAdBlock|isAdBlock(?:Active|Enabled)?|pa(?:ge\.adsBlocked|ywallAdblockDetected)|site\.adblock|window\.ad(?:block(?:Detected)?|sBlocked))$/, false)
 *##+js(set, /^(?:Device(?:Motion|Orientation)Event|bab)/, undefined)
-*##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager|checkAdBlock|detectAdblock)$/, noopFunc)
+*##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager|ResizeObserver|checkAdBlock|detectAdblock)$/, noopFunc)
 *##+js(set, googletag, {})
 *##+js(set, /^(?:MediaDevices|googletag\.cmd)/, [])
 *,~/(?:movearnpre)\.(?:com)/##+js(noeval)
