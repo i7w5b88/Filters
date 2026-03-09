@@ -32,14 +32,18 @@
 *##+js(nowoif)
 *,~/(?:cloudwish|f75s|hgslave|javct|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?|vstream|ystream)\.(?:c(?:c|om)|id|net|vip|xyz)/##+js(norafif, /^/)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
-*##+js(aeld, /^(?:auxclick|contextmenu|keydown|wheel|touchmove)$/)
-*,~/(?:cloudwish|jav(?:hd)|mycloudz|streamtape|turbovid)\.(?:cc|net|today|vip)/##+js(aeld, click)
-*##+js(overlay-buster)
+*##+js(aeld, /^(?:auxclick|contextmenu|keydown|pop(?:Magic|under)|system\.popunder|touchmove|vast|wheel)$/)
+*,~/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|jav(?:hd|x)|lancewhosedifficult|my(?:cloudz|vidplay)|streamtape|turbovid(?:hls))\.(?:c(?:c|om)|net|today|vip)/##+js(aeld, /^(?:click)$/)
+*##+js(aeld, load, adblock)
+! *##+js(overlay-buster)
 ! *##+js(aopw, adblockDetected)
 *##+js(set, /^(?:ad(?:blockDisabled|s(?:Enabled|Loaded|R(?:eady|unning)|Visible))|can(?:RunAds|ShowAds)|disableAdblockMessage|showAds)$/, true)
 *##+js(set, /^(?:ad(?:Block(?:Active|Detected|Enabled|er(?:Detected)?)?|block(?:Active|Detected|Enabled|Gate|Installed|Present|Status|WallEnabled|er(?:Detected)?)?|s(?:\.blocked|Blocked))|b(?:ab(?:Detected|Enabled)|lockAdBlock)|BlockAdBlock|FuckAdBlock|fuckAdBlock|config\.adblock|detectedAdBlock|hasAdBlock|isAdBlock(?:Active|Enabled)?|pa(?:ge\.adsBlocked|ywallAdblockDetected)|site\.adblock|window\.ad(?:block(?:Detected)?|sBlocked))$/, false)
 *##+js(set, /^(?:bab)/, undefined)
 *##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager|checkAdBlock|detectAdblock)$/, noopFunc)
+*##+js(set, googletag, {})
+*##+js(set, googletag.cmd, [])
+*##+js(noeval)
 ! *##+js(aopr, adblock)
 *##+js(no-xhr-if, /(google|jogxnkcfhgq|magsrv|twinrdengine)\.(com)/)
 *##+js(no-fetch-if, /(google|jogxnkcfhgq|magsrv|twinrdengine)\.(com)/)
@@ -50,9 +54,11 @@
 ##[src*="/adsx/"]
 ###floatadsbawah
 ###previewBox
+##.ad-banner
+##.adsbox
 ##.adv-footer
-##.fuckfoot
 ##.footer-ad-mobile
+##.fuckfoot
 ##.header-ad-mobile
 ##.under-player-ad-mobile
 ! *##^script:has-text(/\badsbyjuicy\b|\bpopads\b|\bpopcash\b|\bfuckAdBlock\b/)
@@ -60,3 +66,4 @@
 ! *##^script:has-text(/\bgtag\(|googletagmanager/)
 *##^script:has-text(/(?:gtag\(|googletagmanager)/)
 !------------------------------------------------------------!
+
