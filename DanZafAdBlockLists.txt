@@ -14,6 +14,8 @@
 *$object,3p
 *$popunder,3p,important
 *$popup,3p,important
+||^$popunder,3p,important
+||^$popup,3p,important
 !------------------------------------------------------------!
 !----------------- Network Filter Exception -----------------!
 !------------------------------------------------------------!
