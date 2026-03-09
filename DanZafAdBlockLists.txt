@@ -38,8 +38,8 @@
 *##+js(set, canRunAds, true)
 *##+js(set, /^(?:ad(?:BlockEnabled|blockDetected)|BlockAdBlock|FuckAdBlock|fuckAdBlock)$/, false)
 *##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager)$/, noopFunc)
-*##+js(no-xhr-if, /(?:google|jogxnkcfhgq|twinrdengine)\.(?:com)/)
-*##+js(no-fetch-if, /(?:google|jogxnkcfhgq|twinrdengine)\.(?:com)/)
+*##+js(no-xhr-if, /(google|jogxnkcfhgq|magsrv|twinrdengine)\.(?:com)/)
+*##+js(no-fetch-if, /(google|jogxnkcfhgq|magsrv|twinrdengine)\.(?:com)/)
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
