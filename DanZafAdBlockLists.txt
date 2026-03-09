@@ -48,6 +48,7 @@
 ##[src*="/adsx/"]
 ###floatadsbawah
 ###previewBox
+##.fuckfoot
 ##.footer-ad-mobile
 ##.header-ad-mobile
 ##.under-player-ad-mobile
