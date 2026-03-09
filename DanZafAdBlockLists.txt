@@ -48,9 +48,12 @@
 ##[src*="/adsx/"]
 ###floatadsbawah
 ###previewBox
+##.adv-footer
 ##.fuckfoot
 ##.footer-ad-mobile
 ##.header-ad-mobile
 ##.under-player-ad-mobile
+*##^script:has-text(/\badsbyjuicy\b|\bpopads\b|\bpopcash\b|\bfuckAdBlock\b/)
+*##^script:has-text(/\bgtag\(|googletagmanager/)
 !------------------------------------------------------------!
 
