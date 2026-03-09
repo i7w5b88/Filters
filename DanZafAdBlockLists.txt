@@ -21,7 +21,7 @@
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/(?:[^\/]+\/)*(?:embed(?:[1-9]{1,2})|j(?:query|wplayer(?:[1-9]{1,2})?)|lazyload|provider|recaptcha(?:__en)?(?:\/api)?)(?:\.(?:core\.controls|hlsjs))?(?:\.min)?\.js(?:\?[^#]*)?(?:#.*)?$/$script,3p
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|edgeon-bandwidth|foudsea|googleusercontent|muletten|seabreezeartisanatelier|teifanc|tiktokcdn|turbo(?:splayer|viplay))\.(?:c(?:loud|om|you))(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$xhr,3p
 @@||google.com/recaptcha/api2/$xhr,3p
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|d(?:oo(?:dstream|ood)|svplay)|emturbovid|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|peytonepre|ryderjet|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|voe)\.(?:c(?:c|loud|om)|net|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$frame,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|d(?:oo(?:dstream|ood)|svplay)|emturbovid|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|peytonepre|ryderjet|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|voe|ystream)\.(?:c(?:c|loud|om)|id|net|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?]*)?$/$frame,3p
 @@||google.com/recaptcha/api2/$frame,3p
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
@@ -31,11 +31,17 @@
 *,~/(?:cloudwish|hgslave|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?)\.(?:c(?:c|om)|vip|xyz)/##+js(norafif, /^/)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
 *##+js(aeld, /(auxclick|contextmenu|keydown|wheel|touchmove)/)
-*,~/(?:cloudwish|jav(?:hd)|mycloudz|streamtape|turbovid)\.(?:cc|net|today|vip)/##+js(aeld, click)
-*##+js(overlay-buster)
+! *,~/(?:cloudwish|jav(?:hd)|mycloudz|streamtape|turbovid)\.(?:cc|net|today|vip)/##+js(aeld, click)
+! *##+js(overlay-buster)
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
+##[href*="adstub.net"]
+##[src*="/adsx/"]
 ###previewBox
+###floatadsbawah
+##.footer-ad-mobile
+##.header-ad-mobile
+##.under-player-ad-mobile
 !------------------------------------------------------------!
 
