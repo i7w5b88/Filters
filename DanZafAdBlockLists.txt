@@ -33,6 +33,9 @@
 *##+js(aeld, /(auxclick|contextmenu|keydown|wheel|touchmove)/)
 ! *,~/(?:cloudwish|jav(?:hd)|mycloudz|streamtape|turbovid)\.(?:cc|net|today|vip)/##+js(aeld, click)
 ! *##+js(overlay-buster)
+*##+js(set, canRunAds, true)
+*##+js(set, /^(?:ad(?:BlockEnabled|blockDetected)|BlockAdBlock|FuckAdBlock|fuckAdBlock)$/, false)
+*##+js(set, /^(?:OneSignal|OptinMonster|PushCrew|PushEngage|PushManager)$/, noopFunc)
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
