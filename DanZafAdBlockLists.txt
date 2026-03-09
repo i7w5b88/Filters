@@ -31,6 +31,7 @@
 *,~/(?:cloudwish|hgslave|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?)\.(?:c(?:c|om)|vip|xyz)/##+js(norafif, /^/)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
 *##+js(aeld, /(auxclick|contextmenu|keydown|wheel|touchmove)/)
+*##+js(aeld, click)
 *##+js(overlay-buster)
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
