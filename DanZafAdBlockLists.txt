@@ -30,7 +30,7 @@
 !------------------------------------------------------------!
 *,~/(?:hgslave|javct|ryderjet|turbovidhls)\.(?:com|net|xyz)/##+js(prevent-canvas)
 *##+js(nowoif)
-*,~/(?:cloudwish|f75s|hgslave|javct|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?|vstream|ystream)\.(?:c(?:c|om)|id|net|vip|xyz)/##+js(norafif, /^/)
+*,~/(?:cloudwish|f75s|hgslave|javct|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|smoothpre|turbovid(?:hls)?|vstream|ystream)\.(?:c(?:c|om)|id|net|vip|xyz)/##+js(norafif, /^/)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
 *##+js(aeld, /(auxclick|contextmenu|keydown|wheel|touchmove)/)
 ! *,~/(?:cloudwish|jav(?:hd)|mycloudz|streamtape|turbovid)\.(?:cc|net|today|vip)/##+js(aeld, click)
