@@ -13,7 +13,7 @@
 *$frame,3p
 *$object,3p
 *$other,3p
-*$popunder,important
+*$popunder,3p
 *$popup,3p
 !------------------------------------------------------------!
 !----------------- Network Filter Exception -----------------!
