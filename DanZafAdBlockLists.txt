@@ -41,7 +41,7 @@
 *##+js(set, /^(?:ad(?:blockDisabled|s(?:Enabled|Loaded|R(?:eady|unning)|Visible))|can(?:RunAds|ShowAds)|disableAdblockMessage|showAds)$/, true)
 *##+js(set, /^(?:ad(?:Block(?:Active|Detected|Enabled|er(?:Detected)?)?|block(?:Active|Detected|Enabled|Gate|Installed|Present|Status|WallEnabled|er(?:Detected)?)?|s(?:\.blocked|Blocked|Enabled))|b(?:ab(?:Detected|Enabled)|lockAdBlock)|BlockAdBlock|FuckAdBlock|fuckAdBlock|config\.adblock|detectedAdBlock|hasAdBlock|isAdBlock(?:Active|Enabled)?|p(?:a(?:ge\.adsBlocked|ywallAdblockDetected)|layerAdsEnabled|reroll)|s(?:howAds|ite\.adblock)|window\.ad(?:block(?:Detected)?|sBlocked))$/, false)
 ! *##+js(aopw, adblockDetected)
-*##+js(aopr, /^(?:ad(?:block|s)|preroll)$/)
+! *##+js(aopr, /^(?:ad(?:block|s)|preroll)$/)
 ! *##+js(aeld, load, adblock)
 *##+js(aeld, /^(?:auxclick|contextmenu|keydown|pop(?:Magic|under)|system\.popunder|touchmove|vast|wheel)$/)
 *##+js(nano-sib)
