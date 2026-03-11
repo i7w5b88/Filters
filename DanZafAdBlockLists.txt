@@ -43,17 +43,16 @@
 ! *##+js(aopw, adblockDetected)
 *##+js(aopr, /^(?:ad(?:block|s)|preroll)$/)
 ! *##+js(aeld, load, adblock)
-*##+js(aeld, /^(?:auxclick|contextmenu|pop(?:Magic|under)|system\.popunder|touchmove|vast|wheel)$/)
-*##+js(aeld, /^(?:keydown)$/)
+*##+js(aeld, /^(?:auxclick|contextmenu|keydown|pop(?:Magic|under)|system\.popunder|touchmove|vast|wheel)$/)
 *##+js(nano-sib)
 *##+js(nano-stb)
 ! *,~/(?:hdoujin|shupogaki)\.(?:moe|org)/##+js(overlay-buster)
 *##+js(nowoif)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
 ! *,~/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|hgslave|jav(?:-vids|ct|english|flix|gg(?:video)?|hd|s(?:treamhg|ubbed)|x)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|str(?:eamtape|tape)|turbovid(?:hls)|xhamster)\.(?:c(?:c|loud|om)|net|today|vip|xyz)/##+js(aeld, /^(?:click)$/)
-*,~/(?:callistanise|dhtpre|jav(?:-vids|streamhg)|hgslave|m(?:inochinos|ovearnpre)|smoothpre|ryderjet)\.(?:com|xyz)/##+js(noeval)
+! *,~/(?:callistanise|dhtpre|jav(?:-vids|streamhg)|hgslave|m(?:inochinos|ovearnpre)|smoothpre|ryderjet)\.(?:com|xyz)/##+js(noeval)
 *,~/(?:c(?:allistanise|loudwish)|dhtpre|f75s|h(doujin|gslave)|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|s(?:hupogaki|moothpre)|turbovid(?:hls)?|vstream|xhamster|ystream)\.(?:c(?:c|om)|id|moe|net|org|vip|xyz)/##+js(norafif, /^/)
-*,~/(?:hgslave|f75s|jav(?:streamhg)|ryderjet|turbovidhls|xhamster)\.(?:com|net|xyz)/##+js(prevent-canvas)
+! *,~/(?:hgslave|f75s|jav(?:streamhg)|ryderjet|turbovidhls|xhamster)\.(?:com|net|xyz)/##+js(prevent-canvas)
 !------------------------------------------------------------!
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
