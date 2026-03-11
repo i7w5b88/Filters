@@ -29,11 +29,15 @@
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:c(allistanise|loud(?:flare|wish))|d(?:htpre|oo(?:dstream|ood)|svplay)|emturbovid|f75s|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|peytonepre|r(?:ecaptcha|yderjet)|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|v(?:oe|stream)|ystream)\.(?:c(?:c|loud|om)|id|net|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
 @@||google.com/recaptcha/api2/$frame,3p
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|dooood|jav(?:-vids|javggvideo|javstreamhg)|my(?:cloudz|vidplay)|streamtape|t(?:iktokcdn|urbo(?:splayer|vi(?:d|play))))\.(?:c(?:c|om)|net|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$other,3p
+*$csp=worker-src 'none',domain=~example.com|~github.com
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
 *##+js(no-xhr-if, /(g(oogle|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
 *##+js(no-fetch-if, /(g(oogle|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
+*##+js(set, Worker, noopFunc)
+*##+js(set, ServiceWorker, noopFunc)
+*##+js(set, SharedWorker, noopFunc)
 *##+js(set, googletag, {})
 *##+js(set, /^(?:MediaDevices|googletag\.cmd)/, [])
 *##+js(set, /^(?:Device(?:Motion|Orientation)Event|bab)/, undefined)
