@@ -33,8 +33,8 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(no-xhr-if, /(g(oogle|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
-*##+js(no-fetch-if, /(g(oogle|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
+*##+js(no-xhr-if, /(g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
+*##+js(no-fetch-if, /(g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
 *,~/(?:jav(?:-vids|ggvideo|streamhg)|mycloudz)\.(?:cc|xyz)/##+js(set, Worker, noopFunc)
 ! *##+js(set, ServiceWorker, noopFunc)
 ! *##+js(set, SharedWorker, noopFunc)
