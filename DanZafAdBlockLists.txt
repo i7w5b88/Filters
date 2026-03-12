@@ -11,7 +11,7 @@
 *$script,3p
 *$xhr,3p
 *$frame,3p
-*$csp=worker-src 'none',domain=~jav-vids.xyz|~javggvideo.xyz|~javstreamhg.xyz|~mycloudz.cc
+*$csp=worker-src 'none',domain=~f75s.com|~jav-vids.xyz|~javggvideo.xyz|~javstreamhg.xyz|~mycloudz.cc|~ystream.id
 *$object,3p
 *$other,3p
 *$popunder,3p
@@ -33,11 +33,11 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(no-xhr-if, /(clickadu|g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|pqhdiyvlkeg|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
-*##+js(no-fetch-if, /(clickadu|g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|pqhdiyvlkeg|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
-*,~/(?:jav(?:-vids|ggvideo|streamhg)|mycloudz)\.(?:cc|xyz)/##+js(set, Worker, noopFunc)
-! *##+js(set, ServiceWorker, noopFunc)
-! *##+js(set, SharedWorker, noopFunc)
+*##+js(no-xhr-if, /(c(lickadu|nscutrexeubv)|g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|pqhdiyvlkeg|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
+*##+js(no-fetch-if, /(c(lickadu|nscutrexeubv)|g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|pqhdiyvlkeg|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
+*,~/(?:f75s|jav(?:-vids|ggvideo|streamhg)|mycloudz|ystream)\.(?:c(?:c|om)|id|xyz)/##+js(set, Worker, noopFunc)
+*##+js(set, ServiceWorker, noopFunc)
+*##+js(set, SharedWorker, noopFunc)
 *##+js(set, googletag, {})
 *##+js(set, /^(?:MediaDevices|googletag\.cmd)/, [])
 *##+js(set, /^(?:Device(?:Motion|Orientation)Event|bab)/, undefined)
@@ -50,7 +50,7 @@
 *##+js(aeld, /^(?:auxclick|contextmenu|keydown|pop(?:Magic|under)|system\.popunder|touchmove|vast|wheel)$/)
 *##+js(nano-sib)
 *##+js(nano-stb)
-! *,~/(?:hdoujin|shupogaki)\.(?:moe|org)/##+js(overlay-buster)
+*,~/(?:f75s|hdoujin|shupogaki|ystream)\.(?:com|id|moe|org)/##+js(overlay-buster)
 *##+js(nowoif)
 *,~/(?:jav(?:flix|english|subbed|x))\.(?:cc|net)/##+js(disable-newtab-links)
 ! *,~/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|hgslave|jav(?:-vids|ct|english|flix|gg(?:video)?|hd|s(?:treamhg|ubbed)|x)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|ryderjet|str(?:eamtape|tape)|turbovid(?:hls)|xhamster)\.(?:c(?:c|loud|om)|net|today|vip|xyz)/##+js(aeld, /^(?:click)$/)
