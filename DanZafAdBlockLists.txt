@@ -63,13 +63,21 @@
 ##[href*="adstub.net"]
 ##[src*="/adsx/"]
 ##[class*="cam-thumb--lv-red"][class*="cam-thumb__look-like-item"]
+##[class*="cam-thumb--lv-red"][class*="mobile-video-thumb"]
 ##[class*="cookiesAnnounce"]
+##[class*="container-f57"]
 ##[class*="modalpop"][id*="modalpop"]
+##[class*="mobile-item--widget"]
 ##[class*="premium-n-overlay"]
 ##[class*="thumb-list__item"][class*="video-thumb"][class*="thumbContainer"]
+##[class*="thumb-list-mobile-item"][class*="thumbContainer"]
 ##[class*="thumb-list__item"][class*="video-thumb"][role="button"]
 ##[class*="ts-init"][class*="rectangle--video"]
+##[class*="ts-init"][class*="BL--bottom"]
+##[class*="ts-init"][class*="BL--middle"]
+##[class*="ts-init"][class*="BL--top"]
 ##[class*="ts-init"][role="group"][aria-label="Third Party Content"]
+##[class*="under-player-banner-wrapper"]
 ##[data-role*="bottom"][role="group"][aria-label="Third Party Content"]
 ##[data-role*="promo-messages-wrapper"]
 ##[data-role*="under-comments"][role="group"][aria-label="Third Party Content"]
@@ -87,4 +95,3 @@
 *##^script:has-text(/(?:adsbyjuicy|pop(?:ads|cash)|fuckAdBlock)/)
 *##^script:has-text(/(?:gtag\(|googletagmanager)/)
 !------------------------------------------------------------!
-
