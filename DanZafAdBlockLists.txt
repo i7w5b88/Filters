@@ -63,6 +63,7 @@
 ##[href*="adstub.net"]
 ##[src*="/adsx/"]
 ##[class*="cam-thumb--lv-red"][class*="cam-thumb__look-like-item"]
+##[class*="cookiesAnnounce"]
 ##[class*="modalpop"][id*="modalpop"]
 ##[class*="premium-n-overlay"]
 ##[class*="thumb-list__item"][class*="video-thumb"][class*="thumbContainer"]
