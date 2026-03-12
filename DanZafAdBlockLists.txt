@@ -24,7 +24,7 @@
 !------------------------------------------------------------!
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:b-cdn|cloudflare|g(ithubassets|old-usergeneratedcontent)|xh(?:ping)?cdn)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/(?:[^\/]+\/)*(?:embed(?:[1-9]{1,2})|j(?:query|wplayer(?:[1-9]{1,2})?)|lazyload|provider|re(?:act-dom|captcha(?:__en)?(?:\/api)?)|(?:silvermine-)?video(?:js-quality-selector)?)(?:(-)?[1-9\.]{1,6})?(?:\.(?:c(?:ast|ore\.controls)|get|hlsjs))?(?:\.min)?\.js(?:\?[^#]*)?(?:#.*)?$/$script,3p
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|dramiyos|e(?:dgeon-bandwidth|ro)|foudsea|googleusercontent|ibyteimg|jumirprost|muletten|r66nv9ed|s(?:chale|eabreezeartisanatelier)|t(?:e(?:chmarkz|ifanc)|iktok|urbo(?:splayer|viplay)))(?:(?:-)?cdn)?\.(?:c(?:loud|om|you)|net(?:work)?)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|dramiyos|e(?:dgeon-bandwidth|ro)|foudsea|googleusercontent|ibyteimg|jumirprost|muletten|r66nv9ed|s(?:chale|eabreezeartisanatelier)|t(?:e(?:chmarkz|ifanc)|iktok|urbo(?:splayer|viplay))|unlockapk)(?:(?:-)?cdn)?\.(?:c(?:loud|om|you)|net(?:work)?)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/(?:[^\/]+\/)*(?:master)(?:\.(?:core\.controls|hlsjs))?(?:\.min)?\.txt(?:\?[^#]*)?(?:#.*)?$/$xhr,3p
 @@||google.com/recaptcha/api2/$xhr,3p
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:c(allistanise|loud(?:flare|wish))|d(?:htpre|oo(?:dstream|ood)|svplay)|emturbovid|f75s|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|peytonepre|r(?:ecaptcha|yderjet)|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|v(?:oe|stream)|ystream)\.(?:c(?:c|loud|om)|id|net|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
@@ -33,8 +33,8 @@
 !------------------------------------------------------------!
 !--------------------- Scriplets Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(no-xhr-if, /(g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
-*##+js(no-fetch-if, /(g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
+*##+js(no-xhr-if, /(clickadu|g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
+*##+js(no-fetch-if, /(clickadu|g(oogle|ooglesyndication|rowcdnssedge)|jogxnkcfhgq|magsrv|t(syndicate|winrdengine)|ysckhgcaqo)\.(com)/)
 *,~/(?:jav(?:-vids|ggvideo|streamhg)|mycloudz)\.(?:cc|xyz)/##+js(set, Worker, noopFunc)
 ! *##+js(set, ServiceWorker, noopFunc)
 ! *##+js(set, SharedWorker, noopFunc)
@@ -63,6 +63,7 @@
 ##[href*="adstub.net"]
 ##[src*="/adsx/"]
 ##[class*="cam-thumb--lv-red"][class*="cam-thumb__look-like-item"]
+##[class*="modalpop"][id*="modalpop"]
 ##[class*="premium-n-overlay"]
 ##[class*="thumb-list__item"][class*="video-thumb"][class*="thumbContainer"]
 ##[class*="thumb-list__item"][class*="video-thumb"][role="button"]
