@@ -11,7 +11,7 @@
 *$script,3p
 *$xhr,3p
 *$frame,3p
-! *$csp=worker-src 'none',domain=~f75s.com|~jav-vids.xyz|~javggvideo.xyz|~javstreamhg.xyz|~turbovidhls.com|~mycloudz.cc|~vstream.id|~ystream.id
+*$csp=worker-src 'none',domain=~f75s.com|~jav-vids.xyz|~javggvideo.xyz|~javstreamhg.xyz|~turbovidhls.com|~mycloudz.cc|~vstream.id|~ystream.id
 *$object,3p
 *$other,3p
 *$popunder,3p
