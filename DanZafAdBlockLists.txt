@@ -14,16 +14,16 @@
 !------------------------------------------------------------!
 !--------------------- Internals Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(no-xhr-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|sptvp|twinrdengine)\.(c(om|you)|online|store)/)
-*##+js(no-fetch-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|sptvp|twinrdengine)\.(c(om|you)|online|store)/)
+*##+js(no-xhr-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|mwdeeeljakjb|sptvp|twinrdengine)\.(c(om|you)|online|store)/)
+*##+js(no-fetch-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|mwdeeeljakjb|sptvp|twinrdengine)\.(c(om|you)|online|store)/)
 ! *##+js(prevent-canvas)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
-*,~/(?:jav(?:english|gg|hd(?:z)?))\.(?:cc|net|today)/##+js(window-close-if, /^/)
+! *,~/(?:github|jav(?:english|gg|hd(?:z)?))\.(?:c(?:c|om)|net|today)/##+js(window-close-if, /^/)
 *##+js(nowoif)
-*,~/(?:cloudwish|jav(?:-vids|ggvideo|streamhg)|mycloudz|peytonepre|turbovidhls)\.(?:c(c|om)|xyz)/##+js(norafif, /^/)
+*,~/(?:cloudwish|f75s|jav(?:-vids|ggvideo|streamhg)|mycloudz|peytonepre|turbovidhls|ystream)\.(?:c(c|om)|id|xyz)/##+js(norafif, /^/)
 *##+js(nowebrtc)
 *##+js(prevent-refresh)
-*##+js(overlay-buster)
+! *,~/(?:f75s|ystream)\.(?:com|id)/##+js(overlay-buster)
 *$script,3p
 *$xhr,3p
 *$frame,3p
