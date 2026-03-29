@@ -73,6 +73,10 @@
 !--------------------- Cosmetics Filter ---------------------!
 !------------------------------------------------------------!
 ##[href*="adstub.net"]
+##[href*="iklandesu"]
+##[href*="klik.best"]
+##[href*="klik.top"]
+##[href*="zeus.fun"]
 ##[href*="sextb.live"]
 ##[src*="/adsx/"]
 ##[id*="admobile"]
@@ -117,3 +121,4 @@
 *##^script:has-text(/(?:__CLP|adsbyjuicy|fuckAdBlock|gtag\(|googletagmanager|lczxsusin|pop(?:ads|cash))/)
 javgg.net###headerlink
 !------------------------------------------------------------!
+
