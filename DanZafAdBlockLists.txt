@@ -14,8 +14,8 @@
 !------------------------------------------------------------!
 !--------------------- Internals Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(no-xhr-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|irvtxoquegxq|m(nnxnxalofo|wdeeeljakjb)|s(acdnssedge|ptvp)|t(syndicate|winrdengine)|xhpingcdn)\.(c(om|you)|online|store)/)
-*##+js(no-fetch-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|irvtxoquegxq|m(nnxnxalofo|wdeeeljakjb)|s(acdnssedge|ptvp)|t(syndicate|winrdengine)|xhpingcdn)\.(c(om|you)|online|store)/)
+*##+js(no-xhr-if, /(a(?:hacdn|urorionconsultancy)|evergreenbridgeconsult|g(ardeningessentials|oogle)|irvtxoquegxq|m(nnxnxalofo|wdeeeljakjb)|s(acdnssedge|ptvp)|t(syndicate|winrdengine)|xhpingcdn)\.(c(om|you)|me|online|store)/)
+*##+js(no-fetch-if, /(a(?:hacdn|urorionconsultancy)|evergreenbridgeconsult|g(ardeningessentials|oogle)|irvtxoquegxq|m(nnxnxalofo|wdeeeljakjb)|s(acdnssedge|ptvp)|t(syndicate|winrdengine)|xhpingcdn)\.(c(om|you)|me|online|store)/)
 ! *##+js(prevent-canvas)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 ! *,~/(?:github|jav(?:english|gg|hd(?:z)?))\.(?:c(?:c|om)|net|today)/##+js(window-close-if, /^/)
@@ -117,4 +117,3 @@
 *##^script:has-text(/(?:__CLP|adsbyjuicy|fuckAdBlock|gtag\(|googletagmanager|lczxsusin|pop(?:ads|cash))/)
 javgg.net###headerlink
 !------------------------------------------------------------!
-
