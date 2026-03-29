@@ -14,8 +14,8 @@
 !------------------------------------------------------------!
 !--------------------- Internals Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(no-xhr-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|mwdeeeljakjb|sptvp|twinrdengine)\.(c(om|you)|online|store)/)
-*##+js(no-fetch-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|mwdeeeljakjb|sptvp|twinrdengine)\.(c(om|you)|online|store)/)
+*##+js(no-xhr-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|irvtxoquegxq|m(nnxnxalofo|wdeeeljakjb)|sptvp|twinrdengine)\.(c(om|you)|online|store)/)
+*##+js(no-fetch-if, /(aurorionconsultancy|evergreenbridgeconsult|g(ardeningessentials|oogle)|irvtxoquegxq|m(nnxnxalofo|wdeeeljakjb)|sptvp|twinrdengine)\.(c(om|you)|online|store)/)
 ! *##+js(prevent-canvas)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 ! *,~/(?:github|jav(?:english|gg|hd(?:z)?))\.(?:c(?:c|om)|net|today)/##+js(window-close-if, /^/)
@@ -97,6 +97,8 @@
 ##[data-role*="bottom"][role="group"][aria-label="Third Party Content"]
 ##[data-role*="promo-messages-wrapper"]
 ##[data-role*="under-comments"][role="group"][aria-label="Third Party Content"]
+##[style*="position: fixed"][style*="inset: 0"]
+##[style*="position:fixed"][style*="inset:0"]
 ###adbd
 ###EPimLayerOuter
 ###floatadsbawah
@@ -112,8 +114,7 @@
 ##.under-player-ad-mobile
 ##.vjs-docker
 ##.vjs-poster
-*##^script:has-text(/(?:adsbyjuicy|pop(?:ads|cash)|fuckAdBlock)/)
-*##^script:has-text(/(?:gtag\(|googletagmanager)/)
+*##^script:has-text(/(?:__CLP|adsbyjuicy|fuckAdBlock|gtag\(|googletagmanager|lczxsusin|pop(?:ads|cash))/)
 javgg.net###headerlink
 !------------------------------------------------------------!
 
