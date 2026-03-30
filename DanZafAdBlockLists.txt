@@ -14,8 +14,6 @@
 !------------------------------------------------------------!
 !--------------------- Internals Filter ---------------------!
 !------------------------------------------------------------!
-*##+js(no-xhr-if, /(a(?:hacdn|urorionconsultancy)|evergreenbridgeconsult|g(ardeningessentials|oogle)|irvtxoquegxq|m(nnxnxalofo|wdeeeljakjb)|s(acdnssedge|ptvp)|t(syndicate|winrdengine)|xhpingcdn)\.(c(om|you)|me|online|store)/)
-*##+js(no-fetch-if, /(a(?:hacdn|urorionconsultancy)|evergreenbridgeconsult|g(ardeningessentials|oogle)|irvtxoquegxq|m(nnxnxalofo|wdeeeljakjb)|s(acdnssedge|ptvp)|t(syndicate|winrdengine)|xhpingcdn)\.(c(om|you)|me|online|store)/)
 ! *##+js(prevent-canvas)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 ! *,~/(?:github|jav(?:english|gg|hd(?:z)?))\.(?:c(?:c|om)|net|today)/##+js(window-close-if, /^/)
@@ -39,9 +37,9 @@
 !------------------------------------------------------------!
 !---------------- Internals Filter Exception ----------------!
 !------------------------------------------------------------!
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b-cdn|cloudflare|g(ithubassets|old-usergeneratedcontent)|xh(?:ping)?cdn)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b-cdn|cloudflare|g(ithubassets|old-usergeneratedcontent)|xh(?:ping)?cdn)\.(?:com|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/(?:[^\/]+\/)*(?:embed(?:[1-9]{1,2})|j(?:query|wplayer(?:[1-9]{1,2})?)|lazyload|provider|re(?:act-dom|captcha(?:__en)?(?:\/api)?)|(?:silvermine-)?video(?:js-quality-selector)?)(?:(-)?[1-9\.]{1,6})?(?:\.(?:c(?:ast|ore\.controls)|get|hlsjs))?(?:\.min)?\.js(?:\?[^#]*)?(?:#.*)?$/$script,3p
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|dramiyos|e(?:dgeon-bandwidth|ro)|foudsea|googleusercontent|ibyteimg|jumirprost|muletten|premilkyway|r66nv9ed|s(?:chale|eabreezeartisanatelier)|t(?:e(?:chmarkz|ifanc)|iktok|urbo(?:splayer|viplay))|unlockapk)(?:(?:-)?cdn)?\.(?:c(?:loud|om|you)|net(?:work)?)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|dramiyos|e(?:dgeon-bandwidth|ro)|foudsea|go(?:ld-usergeneratedcontent|ogleusercontent)|ibyteimg|jumirprost|muletten|premilkyway|r66nv9ed|s(?:chale|eabreezeartisanatelier)|t(?:e(?:chmarkz|ifanc)|iktok|urbo(?:splayer|viplay))|unlockapk)(?:(?:-)?cdn)?\.(?:c(?:loud|om|you)|net(?:work)?)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/(?:[^\/]+\/)*(?:index|master)(?:-v[1-9\-]{1,2}a[1-9]{1,2})?\.txt(?:\?[^#]*)?(?:#.*)?$/$xhr,3p
 @@||google.com/recaptcha/api2/$xhr,3p
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:c(allistanise|loud(?:flare|wish))|d(?:htpre|oo(?:dstream|ood)|svplay)|emturbovid|f75s|gupload|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|streamhg)|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|peytonepre|r(?:ecaptcha|yderjet)|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|v(?:idsonic|oe|stream)|ystream)\.(?:c(?:c|loud|om)|id|net|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
