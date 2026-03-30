@@ -18,7 +18,7 @@
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 ! *,~/(?:github|jav(?:english|gg|hd(?:z)?))\.(?:c(?:c|om)|net|today)/##+js(window-close-if, /^/)
 *##+js(nowoif)
-*,~/(?:bokepindoku|cloudwish|f75s|jav(?:-vids|ggvideo|s(?:treamhg|w))|mycloudz|peytonepre|turbovidhls|ystream)\.(?:c(c|om)|id|me|site|xyz)/##+js(norafif, /^/)
+*,~/(?:bokepindoku|cloudwish|f(?:75s|bplay)|jav(?:-vids|ggvideo|s(?:treamhg|w))|mycloudz|peytonepre|turbovidhls|ystream)\.(?:c(c|om)|id|me|site|vip|xyz)/##+js(norafif, /^/)
 *##+js(nowebrtc)
 *##+js(prevent-refresh)
 ! *,~/(?:f75s|ystream)\.(?:com|id)/##+js(overlay-buster)
@@ -29,6 +29,8 @@
 *$other,3p
 *$popunder,3p
 *$popup,3p
+/(?:\/ads\/)/$frame,important
+/(?:\/ads\/)/$script,important
 /^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:avtub|eporner)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$popunder,important
 /^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:avtub)\.(?:net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$popup,important
 /https?:\/\/(?:lcdn\.)?(?:tsyndicate)\.(?:com)\//$css,3p,important
@@ -42,7 +44,7 @@
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|dramiyos|e(?:dgeon-bandwidth|ro)|foudsea|go(?:ld-usergeneratedcontent|ogleusercontent)|ibyteimg|jumirprost|muletten|premilkyway|r66nv9ed|s(?:chale|eabreezeartisanatelier)|t(?:e(?:chmarkz|ifanc)|iktok|urbo(?:splayer|viplay))|unlockapk)(?:(?:-)?cdn)?\.(?:c(?:loud|om|you)|net(?:work)?)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/(?:[^\/]+\/)*(?:index|master)(?:-v[1-9\-]{1,2}a[1-9]{1,2})?\.txt(?:\?[^#]*)?(?:#.*)?$/$xhr,3p
 @@||google.com/recaptcha/api2/$xhr,3p
-@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:bokepindoku|c(allistanise|loud(?:flare|wish))|d(?:htpre|oo(?:dstream|ood)|svplay)|emturbovid|f75s|gupload|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|s(?:treamhg|w))|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|peytonepre|r(?:ecaptcha|yderjet)|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|v(?:idsonic|oe|stream)|ystream)\.(?:c(?:c|loud|om)|id|me|net|s(?:ite|x)|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
+@@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:bokepindoku|c(allistanise|loud(?:flare|wish))|d(?:htpre|oo(?:dstream|ood)|svplay)|emturbovid|f(?:75s|bplay)|filemoon|gupload|h(?:anerix|g(?:cloud|link|slave))|jav(?:-vids|ggvideo|s(?:treamhg|w))|lancewhosedifficult|m(?:inochinos|ovearnpre|y(?:cloudz|vidplay))|peytonepre|r(?:ecaptcha|yderjet)|smoothpre|str(?:eamtape|tape)|turbo(?:players|vid(?:hls)?)|v(?:idsonic|oe|stream)|ystream)\.(?:c(?:c|loud|om)|id|me|net|s(?:ite|x)|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
 @@||google.com/recaptcha/api2/$frame,3p
 @@/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloud(?:flare|wish)|dooood|emturbovid|googleusercontent|jav(?:-vids|javggvideo|javstreamhg)|my(?:cloudz|vidplay)|streamtape|t(?:iktokcdn|urbo(?:splayer|vi(?:d|play))))\.(?:c(?:c|om)|net|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$other,3p
 !----------------------------------------------------------!
@@ -77,6 +79,7 @@
 ##[href*="zeus.fun"]
 ##[href*="sextb.live"]
 ##[src*="/adsx/"]
+##[id*="ExoLayer"]
 ##[id*="admobile"]
 ##[class*="ad-overlay"]
 ##[class*="adnative"]
