@@ -40,8 +40,8 @@
 *$popup,3p
 /(?:\/ads\/)/$frame,important
 /(?:\/ads\/)/$script,important
-/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:avtub|eporner|xhamster)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$popunder,important
-/^https:\/\/(?:[a-zA-Z0-9-]+\.)*(?:avtub|xhamster)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$popup,important
+/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:avtub|eporner|xhamster)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$popunder,important
+/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:avtub|xhamster)\.(?:com|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$popup,important
 /https?:\/\/(?:lcdn\.)?(?:tsyndicate)\.(?:com)\//$css,3p,important
 /https?:\/\/(?:xhvideo\.)?(?:sacdnssedge)\.(?:com)\//$media,3p,important
 /https?:\/\/(?:(?:go|i(?:c-(?:tt-)?(?:nss|vrm-nss)|mg)|static-proxy|thumb-ah|video)\.)?(?:doppiocdn|fli(?:rtify|xcdn)|strpst|x(?:hpingcdn|xxviijmp))\.(?:com)\//$image,3p,important
@@ -109,6 +109,7 @@
 ##[class*="ts-init"][class*="--top"]
 ##[class*="ts-init"][role="group"][aria-label="Third Party Content"]
 ##[class*="under-player-banner-wrapper"]
+##[data-block="moments"]
 ##[data-role*="bottom"][role="group"][aria-label="Third Party Content"]
 ##[data-role*="promo-messages-wrapper"]
 ##[data-role*="under-comments"][role="group"][aria-label="Third Party Content"]
