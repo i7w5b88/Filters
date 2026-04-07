@@ -23,6 +23,7 @@
 *##+js(aeld, mouseout)
 *##+js(set, document.hasFocus, trueFunc)
 *##+js(set, document.hidden, false)
+*##+js(nostif, window.open)
 ! *##+js(prevent-canvas)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 ! *,~/(?:github|jav(?:english|gg|hd(?:z)?))\.(?:c(?:c|om)|net|today)/##+js(window-close-if, /^/)
