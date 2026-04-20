@@ -14,13 +14,8 @@
 !----------------------------------------------------------!
 !-------------------- Internals Filter --------------------!
 !----------------------------------------------------------!
-*##+js(aeld, pagehide)
-*##+js(aeld, visibilitychange)
-*##+js(aeld, blur)
-*##+js(aeld, focus)
-*##+js(aeld, lostpointercapture)
-*##+js(aeld, mouseleave)
-*##+js(aeld, mouseout)
+*##+js(aeld, /^(?:pagehide|visibilitychange)$/)
+! *##+js(aeld, /^(?:blur|focus|lostpointercapture|mouse(?:leave|out))$/)
 *##+js(set, document.hasFocus, trueFunc)
 *##+js(set, document.hidden, false)
 *##+js(nostif, window.open)
@@ -124,6 +119,7 @@
 ##.adsbox
 ##.adv-footer
 ##.expop
+##.div_pop
 ##.footer-ad-mobile
 ##.fuckfoot
 ##.header-ad-mobile
