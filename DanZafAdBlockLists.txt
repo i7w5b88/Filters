@@ -95,6 +95,7 @@
 ##[class*="modalpop"][id*="modalpop"]
 ##[class*="mobile-item--widget"]
 ##[class*="premium-n-overlay"]
+##[class*="stats"][style*="display:block"]
 ##[class*="stripchat"]
 ##[class*="thumb-list__item"][class*="video-thumb"][class*="thumbContainer"]
 ##[class*="thumb-list-mobile-item"][class*="thumbContainer"]
