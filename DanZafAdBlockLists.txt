@@ -14,7 +14,7 @@
 !----------------------------------------------------------!
 !-------------------- Internals Filter --------------------!
 !----------------------------------------------------------!
-! *##+js(aeld, /^(?:pagehide|visibilitychange)$/)
+*##+js(aeld, /^(?:pagehide|visibilitychange)$/)
 ! *##+js(aeld, /^(?:blur|focus|lostpointercapture|mouse(?:leave|out))$/)
 ! *##+js(set, document.hasFocus, trueFunc)
 ! *##+js(set, document.hidden, false)
