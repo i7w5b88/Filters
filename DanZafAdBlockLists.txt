@@ -19,6 +19,8 @@
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(aopr, open)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(aopr, openPopup)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
+! *##+js(prevent-xhr, /(?:analytics|magsrv|yandex)\.(com|ru)/)
+! *##+js(prevent-fetch, /(?:analytics|magsrv|yandex)\.(com|ru)/)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(rmnt, script, openPopup)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nowoif)
