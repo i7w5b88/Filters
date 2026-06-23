@@ -2,7 +2,7 @@
 ! Author: Dwi Arianto
 ! Version: 202603040817
 ! Description: DanZaf Custom Filter
-! Last modified: Wed, 04 Mar 2026 22:52:24 +0000
+! Last modified: Wed, 04 Mar 2026 23:24:24 +0000
 ! Expires: 1 days (update frequency)
 !
 !----------------------------------------------------------!
@@ -16,11 +16,13 @@
 !----------------------------------------------------------!
 *$other,3p
 ! *$script,3p
+!! /^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:magsrv|twinrdengine)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script
+*##+js(acs, createElement, /juicyads/)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(aopr, open)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(aopr, openPopup)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
-! *##+js(prevent-xhr, /(?:analytics|magsrv|yandex)\.(com|ru)/)
-! *##+js(prevent-fetch, /(?:analytics|magsrv|yandex)\.(com|ru)/)
+*##+js(no-xhr-if, /google-analytics|magsrv|pemsrv|twinrdengine|yandex/)
+*##+js(no-fetch-if, /google-analytics|magsrv|pemsrv|twinrdengine|yandex/)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(rmnt, script, openPopup)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nowoif)
