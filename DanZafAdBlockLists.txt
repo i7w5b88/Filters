@@ -2,7 +2,7 @@
 ! Author: Dwi Arianto
 ! Version: 202603040817
 ! Description: DanZaf Custom Filter
-! Last modified: Wed, 04 Mar 2026 23:24:24 +0000
+! Last modified: Wed, 04 Mar 2026 22:52:24 +0000
 ! Expires: 1 days (update frequency)
 !
 !----------------------------------------------------------!
@@ -17,12 +17,9 @@
 *$other,3p
 ! *$script,3p
 !! /^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:magsrv|twinrdengine)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script
-*##+js(acs, createElement, /juicyads/)
-*,~/(?:jav(?:dzpa))\.(?:cc)/##+js(aopr, open)
+*,~/(?:minochinos)\.(?:c(?:c|om))/##+js(aopr, open)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(aopr, openPopup)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
-*##+js(no-xhr-if, /google-analytics|magsrv|pemsrv|twinrdengine|yandex/)
-*##+js(no-fetch-if, /google-analytics|magsrv|pemsrv|twinrdengine|yandex/)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(rmnt, script, openPopup)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nowoif)
@@ -33,10 +30,16 @@
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:dzpa)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$other,3p
 ! @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloudflare|doodcdn|googleapis|jwp)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cloudflare|e(?:arnvidjav|mturbovid)|hugstream|javggvideo|playmogo|streamhgjav|turbovidhls)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:googleusercontent|ibyteimg|pianopic|t(?:iktok|urbo(?:splayer|viplay)))(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:c(?:allistanise|loudflare)|e(?:arnvidjav|mturbovid)|javggvideo|minochinos|playmogo|q8y5z|ryderjet|streamhgjav|turbovidhls|ystream)(?:(?:-)?cdn)?\.(?:c(?:c|om)|id|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:googleusercontent|ibyteimg|r66nv9ed|t(?:iktok|urbo(?:splayer|viplay)))(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
 !----------------------------------------------------------!
+*##[href*="adstub"]
+*##[href*="jads"]
+*##[id^="asg-push"]
 *##[id^="headerlink"]
+*##[class$="ad-mobile"]
+*##[style*="2147483647"]
+
