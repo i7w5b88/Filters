@@ -19,6 +19,8 @@
 !! /^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:magsrv|twinrdengine)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script
 *,~/(?:minochinos)\.(?:c(?:c|om))/##+js(aopr, open)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(aopr, openPopup)
+*##+js(aeld, click, openPopup)
+*##+js(aeld, /mouse(down|up)/)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(rmnt, script, openPopup)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
