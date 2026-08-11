@@ -26,9 +26,9 @@
 *,~/(?:github)\.(?:com)/##+js(rmnt, script, openPopup)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nowoif)
-! some video blank check this start
+! some video blank check this part 1 start
 *$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~playmogo.com
-! some video blank check this end
+! some video blank check this part 1 end
 ! some video cannot played check this start
 *$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~javggvideo.xyz|~streamhgjav.online
 ! some video cannot played check this end
@@ -37,7 +37,9 @@
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:dzpa)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$other,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dnsolutions|loudflare)|g(?:ithubassets|oogleapis)|j(?:sdelivr|wp)|turboviplay)(?:(?:-)?cdn)?\.(?:com|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+! some video blank check this part 2 start
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|hglink|javggvideo|minochinos|playmogo|q8y5z|ryderjet|streamhgjav|turbovidhls|upload18|v(?:ibuxer|stream)|ystream)(?:(?:-)?cdn)?\.(?:c(?:c|om)|id|net|o(?:nline|rg)|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
+! some video blank check this part 2 end
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:googleusercontent|helvid|ibyteimg|owphbf24|r66nv9ed|t(?:iktok|urbo(?:splayer|viplay)))(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
@@ -51,5 +53,4 @@
 *##[class$="ad-overlay"]
 *##[style*="2147483647"]
 *##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive.com"])
-! *##body .site-main.with-sidebar-right:style(margin: 0 !important;)
 
