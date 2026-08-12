@@ -18,9 +18,13 @@
 *$script,3p
 *,~/(?:minochinos)\.(?:cc)/##+js(aopr, open)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aopr, openPopup)
+*##+js(aeld, adb.updated)
 *##+js(aeld, click, [native code], elements, .main-wrap)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aeld, click, openPopup)
-*,~/(?:xhamster)\.(?:com)/##+js(aeld, /mouse(down|up)/)
+*##+js(aeld, load, Object)
+*##+js(aeld, , preventDefault)
+*,~/(?:javbangers|playmogo|xhamster)\.(?:com)/##+js(aeld, /^(?:mouse(?:down|move|up))$/)
+*##+js(aeld, /^(?:touch(?:end|move|start))$/)
 *##+js(set-cookie, pShow, true)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
 *,~/(?:github)\.(?:com)/##+js(rmnt, script, openPopup)
@@ -30,15 +34,15 @@
 *$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com
 ! some video blank check this part 1 end
 ! some video cannot played check this start
-*$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~javggvideo.xyz|~streamhgjav.online
+*$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~luluvdo.com|~playmate.to|~streamhgjav.online|~vidsonic.net
 ! some video cannot played check this end
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:dzpa)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$other,3p
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dnsolutions|loudflare)|g(?:ithubassets|oogleapis)|j(?:sdelivr|wp)|turboviplay)(?:(?:-)?cdn)?\.(?:com|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|oogleapis)|j(?:sdelivr|wp)|plyr|turboviplay)(?:(?:-)?cdn)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 ! some video blank check this part 2 start
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|h(?:anerix|glink|ugstream)|javggvideo|minochinos|playmogo|q8y5z|ryderjet|str(?:eamhgjav|tape)|turbo(?:plays|vidhls)|upload18|v(?:ibuxer|stream)|ystream)(?:(?:-)?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)|id|net|o(?:nline|rg)|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|bysejikuar|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|firestream|h(?:anerix|glink|qq|ugstream)|javggvideo|luluvdo|minochinos|playm(?:ate|ogo)|q8y5z|ryderjet|str(?:eamhgjav|tape)|turbo(?:plays|vidhls)|upload18|v(?:i(?:buxer|dsonic)|stream)|ystream)(?:(?:-)?cdn)?\.(?:ac|c(?:c|l(?:ick|oud)|om)|id|net|o(?:nline|rg)|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
 ! some video blank check this part 2 end
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|googleusercontent|helvid|ibyteimg|maxstream|owphbf24|pianopic|r66nv9ed|streamhls|t(?:iktok|urbo(?:splayer|viplay)))(?:(?:-)?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 !----------------------------------------------------------!
@@ -48,9 +52,12 @@
 *##[href*="adstub"]
 *##[href*="jads"]
 *##[id^="asg-push"]
+*##[id^="floatadsbawah"]
 *##[id^="headerlink"]
 *##[class$="ad-mobile"]
 *##[class$="ad-overlay"]
 *##[style*="2147483647"]
 *##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive.com"])
+*##[class*="box"][class*="search-cloud"]
+*##body .social-share-single:style(margin-bottom: 0 !important;)
 
