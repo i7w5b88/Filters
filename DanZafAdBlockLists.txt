@@ -16,6 +16,7 @@
 !----------------------------------------------------------!
 *$other,3p
 *$script,3p
+/(?:\/ads)/$script,important
 *,~/(?:minochinos)\.(?:cc)/##+js(aopr, open)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aopr, openPopup)
 *##+js(aeld, adb.updated)
@@ -25,6 +26,7 @@
 *##+js(aeld, , preventDefault)
 *,~/(?:javbangers|playmogo|xhamster)\.(?:com)/##+js(aeld, /^(?:mouse(?:down|move|up))$/)
 *##+js(aeld, /^(?:touch(?:end|move|start))$/)
+*##+js(set, AdProvider, noopFunc)
 *##+js(set-cookie, pShow, true)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
 *,~/(?:github)\.(?:com)/##+js(rmnt, script, openPopup)
@@ -51,14 +53,17 @@
 !----------------------------------------------------------!
 *##[href*="adstub"]
 *##[href*="jads"]
+*##[id^="adPopupLayer"]
 *##[id^="asg-push"]
 *##[id^="floatadsbawah"]
 *##[id^="headerlink"]
+*##[class*="box"][class*="search-cloud"]
+*##[class^="ad-popup-layer"]
+*##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive.com"])
 *##[class$="ad-mobile"]
 *##[class$="ad-overlay"]
 *##[style*="2147483647"]
-*##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive.com"])
-*##[class*="box"][class*="search-cloud"]
+*##^script:has-text(/(?:__CLP|AdProvider|adsbyjuicy|FingerprintJS|fuckAdBlock|gtag\(|googletagmanager|lczxsusin|openPopup|pop(?:ads|cash))/)
 *##body .social-share-single:style(margin-bottom: 0 !important;)
 hitomi.*##.content > :first-child
 hitomi.*##.top-content > :first-child
