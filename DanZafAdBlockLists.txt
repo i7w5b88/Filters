@@ -1,8 +1,8 @@
 ! Title: DanZaf AdBlock Lists
 ! Author: Dwi Arianto
-! Version: 202608192433
+! Version: 202603040817
 ! Description: DanZaf Custom Filter
-! Last modified: Wed, 19 Aug 2026 24:33:24 +0000
+! Last modified: Wed, 04 Mar 2026 22:52:24 +0000
 ! Expires: 1 days (update frequency)
 !
 !----------------------------------------------------------!
@@ -26,7 +26,7 @@
 *,~/(?:beeg|earnvidjavgg|javstreamhq|omek|turbovidhls|xvideos)\.(?:co(?:m)?|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
 *##+js(aeld, /^(?:dblclick)$/)
 *,~/(?:javbangers|play(?:mogo|to)|x(?:hamster|videos))\.(?:303in|com)(?:\.(?:top))?/##+js(aeld, /^(?:mouse(?:down|up))$/)
-*,~/(?:earnvidjavgg|fapdiner|javstreamhq|turbovidhls|xvideos)\.(?:com|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
+*,~/(?:earnvidjavgg|fapdiner|javstreamhq|playmogo|rebeccapracticeloss|streamtape|turbovidhls|xvideos)\.(?:com|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
 *,~/(?:xvideos)\.(?:com)/##+js(aeld, /^(?:touch(?:end|move|start))$/)
 *##+js(set, AdProvider, noopFunc)
 *##+js(set-cookie, pShow, true)
@@ -36,10 +36,10 @@
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nowoif)
 ! *##+js(norafif, /^/)
 ! some video blank check this part 1 start
-*$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com
+*$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com|~voe.sx
 ! some video blank check this part 1 end
 ! some video cannot played check this start
-*$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~javstreamhq.xyz|~luluvdo.com|~playmate.to|~streamhgjav.online|~vidsonic.net
+*$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~javstreamhq.xyz|~luluvdo.com|~playmate.to|~rebeccapracticeloss.com|~streamhgjav.online|~turbovidhls.com|~vidsonic.net
 ! some video cannot played check this end
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
@@ -48,7 +48,7 @@
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|o(?:ld-usergeneratedcontent|ogleapis))|j(?:sdelivr|wp)|plyr|turboviplay|xvideos)(?:(?:-)?cdn)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:gstatic)(?:(?:-)?cdn)?\.(?:com)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*\/(?:recaptcha(?:__en)?)\.js)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 ! some video blank check this part 2 start
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|bysejikuar|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|firestream|h(?:anerix|glink|qq|ugstream)|jav(?:ggvideo|streamhq)|luluvdo|minochinos|playm(?:ate|ogo)|q8y5z|ryderjet|str(?:eam)?(?:hgjav|tape)|turbo(?:plays|vidhls)|upload18|v(?:i(?:buxer|dsonic)|stream)|ystream)(?:(?:-)?cdn)?\.(?:ac|c(?:c|l(?:ick|oud)|om)|id|net|o(?:nline|rg)|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|bysejikuar|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|firestream|h(?:anerix|glink|qq|ugstream)|jav(?:ggvideo|streamhq)|luluvdo|minochinos|playm(?:ate|ogo)|q8y5z|ryderjet|str(?:eam)?(?:hgjav|tape)|turbo(?:plays|vidhls)|upload18|v(?:i(?:buxer|dsonic)|stream|oe)|ystream)(?:(?:-)?cdn)?\.(?:ac|c(?:c|l(?:ick|oud)|om)|id|net|o(?:nline|rg)|sx|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
 ! some video blank check this part 2 end
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|externulls|go(?:ld-usergeneratedcontent|ogleusercontent)|helvid|ibyteimg|maxstream|owphbf24|pianopic|r66nv9ed|streamhls|t(?:iktok|urbo(?:splayer|viplay))|xvideos)(?:(?:-)?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)|net|online|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 !----------------------------------------------------------!
