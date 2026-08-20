@@ -26,9 +26,9 @@
 *##+js(aeld, /^(?:dblclick)$/)
 *##+js(aeld, load, Object)
 *,~/(?:javbangers|play(?:mogo|to)|x(?:hamster|videos))\.(?:303in|com)(?:\.(?:top))?/##+js(aeld, /^(?:mouse(?:down|up))$/)
-*,~/(?:303in|audinifer|callistanise|earnvidjavgg|fapdiner|hanerix|javstreamhq|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|vibuxer|x(?:hamster|videos))\.(?:c(?:l(?:ick|oud)|om)|top|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
+*,~/(?:303in|audinifer|callistanise|earnvidjavgg|fapdiner|hanerix|jav(?:hdporn|streamhq)|luluvdo|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|vibuxer|x(?:hamster|videos))\.(?:c(?:l(?:ick|oud)|om)|net|top|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
 *,~/(?:xvideos)\.(?:com)/##+js(aeld, /^(?:touch(?:end|move|start))$/)
-*,~/(?:303in|audinifer|beeg|callistanise|earnvidjavgg|hanerix|javstreamhq|omek|turbo(?:plays|vidhls)|vibuxer|x(?:hamster|videos))\.(?:c(?:lick|o(?:m))?|top|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
+*,~/(?:303in|audinifer|beeg|callistanise|earnvidjavgg|hanerix|jav(?:hdporn|streamhq)|luluvdo|omek|turbo(?:plays|vidhls)|vibuxer|x(?:hamster|videos))\.(?:c(?:lick|o(?:m))?|net|top|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
 *##+js(aeld, , system.popunder)
 *##+js(aeld, /^(?:visibilitychange|blur|focus)$/)
 *##+js(set, AdProvider, noopFunc)
@@ -47,7 +47,7 @@
 *##+js(nowoif, /^/, 1)
 *##+js(nowebrtc)
 ! some video blank check this part 1 start
-*$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com|~voe.sx
+*$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com|~voe.sx|~ystream.id
 ! some video blank check this part 1 end
 ! some video cannot played check this start
 *$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~javstreamhq.xyz|~luluvdo.com|~playmate.to|~rebeccapracticeloss.com|~streamhgjav.online|~turbovidhls.com|~vidsonic.net
