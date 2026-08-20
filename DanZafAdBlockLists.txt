@@ -19,6 +19,7 @@
 /(?:\/ads)/$script,important
 *,~/(?:minochinos)\.(?:cc)/##+js(aopr, open)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aopr, openPopup)
+*##+js(aopw, _pop)
 *##+js(aeld, adb.updated)
 *##+js(aeld, click, [native code], elements, .main-wrap)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aeld, click, openPopup)
@@ -30,9 +31,9 @@
 *,~/(?:audinifer|beeg|callistanise|earnvidjavgg|hanerix|javstreamhq|omek|turbo(?:plays|vidhls)|vibuxer|xvideos)\.(?:c(?:lick|o(?:m))?|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
 *##+js(aeld, , system.popunder)
 *##+js(aeld, /^(?:visibilitychange|blur|focus)$/)
-!c*##+js(aeld, /^(?:visibilitychange)$/)
 *##+js(set, AdProvider, noopFunc)
 *##+js(set, Element.prototype.requestPointerLock, noopFunc)
+! *##+js(set, Element.prototype.removeAttribute, noopFunc)
 *##+js(set, document.exitPointerLock, noopFunc)
 *##+js(set, document.hasFocus, trueFunc)
 *##+js(set, document.hidden, false)
@@ -40,10 +41,10 @@
 *##+js(set, popundersPerIP, 0)
 *##+js(set-cookie, pShow, true)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
+*##+js(set-attr, iframe#myiframe, sandbox, allow-scripts allow-same-origin allow-forms)
 *,~/(?:github)\.(?:com)/##+js(rmnt, script, openPopup)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
-*##+js(popunder)
-*,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nowoif)
+*##+js(nowoif, /^/, 1)
 *##+js(nowebrtc)
 ! some video blank check this part 1 start
 *$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com|~voe.sx
@@ -73,14 +74,17 @@
 *##[id^="asg-push"]
 *##[id^="floatadsbawah"]
 *##[id^="headerlink"]
+*##[id^="ide-"]:has-text(/^[A-Za-z0-9+/=]+$/)
 *##[class$="ad-mobile"]
 *##[class$="ad-overlay"]
 *##[class*="ad-support"][class*="exo-ad"]
 *##[class*="box"][class*="search-cloud"]
+*##[class*="popup"]
 *##[class^="ad-popup-layer"]
 *##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive.com"])
 *##[class^="remove-ads"]
 *##[style*="2147483647"]
+*##[style*="position: absolute"]:has(a[href*="about:blank"])
 *##.banner-slider:has(.banner-goto-redtab)
 *##^script:has-text(/(?:__CLP|AdProvider|adsbyjuicy|FingerprintJS|fuckAdBlock|gtag\(|googletagmanager|lczxsusin|openPopup|pop(?:ads|cash))/)
 *##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
