@@ -26,9 +26,9 @@
 *##+js(aeld, /^(?:dblclick)$/)
 *##+js(aeld, load, Object)
 *,~/(?:javbangers|play(?:mogo|to)|x(?:hamster|videos))\.(?:303in|com)(?:\.(?:top))?/##+js(aeld, /^(?:mouse(?:down|up))$/)
-*,~/(?:audinifer|callistanise|earnvidjavgg|fapdiner|hanerix|javstreamhq|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|vibuxer|xvideos)\.(?:c(?:l(?:ick|oud)|om)|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
+*,~/(?:303in|audinifer|callistanise|earnvidjavgg|fapdiner|hanerix|javstreamhq|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|vibuxer|x(?:hamster|videos))\.(?:c(?:l(?:ick|oud)|om)|top|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
 *,~/(?:xvideos)\.(?:com)/##+js(aeld, /^(?:touch(?:end|move|start))$/)
-*,~/(?:audinifer|beeg|callistanise|earnvidjavgg|hanerix|javstreamhq|omek|turbo(?:plays|vidhls)|vibuxer|xvideos)\.(?:c(?:lick|o(?:m))?|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
+*,~/(?:303in|audinifer|beeg|callistanise|earnvidjavgg|hanerix|javstreamhq|omek|turbo(?:plays|vidhls)|vibuxer|x(?:hamster|videos))\.(?:c(?:lick|o(?:m))?|top|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
 *##+js(aeld, , system.popunder)
 *##+js(aeld, /^(?:visibilitychange|blur|focus)$/)
 *##+js(set, AdProvider, noopFunc)
@@ -91,6 +91,7 @@
 *##body .social-share-single:style(margin-bottom: 0 !important;)
 hitomi.*##.content > :first-child
 hitomi.*##.top-content > :first-child
+javbangers.*###overlay
 xvideos.*###content > :nth-child(2)
 xvideos.*###html5video .top-top
 xvideos.*##[id$="sponsor-links"]
