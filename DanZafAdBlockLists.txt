@@ -33,6 +33,7 @@
 *##+js(aeld, /^(?:visibilitychange|blur|focus)$/)
 *##+js(set, AdProvider, noopFunc)
 *##+js(set, Element.prototype.requestPointerLock, noopFunc)
+! *##+js(set, Element.prototype.removeAttribute, noopFunc)
 *##+js(set, document.exitPointerLock, noopFunc)
 *##+js(set, document.hasFocus, trueFunc)
 *##+js(set, document.hidden, false)
