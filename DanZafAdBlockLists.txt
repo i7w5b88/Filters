@@ -75,6 +75,7 @@
 *##[id^="floatadsbawah"]
 *##[id^="headerlink"]
 *##[id^="ide-"]:has-text(/^[A-Za-z0-9+/=]+$/)
+*##[class$="ad-desktop"]
 *##[class$="ad-mobile"]
 *##[class$="ad-overlay"]
 *##[class*="ad-support"][class*="exo-ad"]
