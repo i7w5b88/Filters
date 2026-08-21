@@ -72,6 +72,7 @@
 *##[href*="jads"]
 *##[id^="ad-footer"]
 *##[id^="ad-middle"]
+*##[id^="adblock-force-overlay"]
 *##[id^="adPopupLayer"]
 *##[id^="asg-push"]
 *##[id^="floatadsbawah"]
@@ -83,7 +84,7 @@
 *##[class*="ad-support"][class*="exo-ad"]
 *##[class*="box"][class*="search-cloud"]
 *##[class*="popup"]
-*##[class^="ad-popup-layer"]
+*##[class^="cookiesAnnounce"]
 *##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive.com"])
 *##[class^="remove-ads"]
 *##[style*="2147483647"]
@@ -92,6 +93,7 @@
 *##^script:has-text(/(?:__CLP|AdProvider|adsbyjuicy|FingerprintJS|fuckAdBlock|gtag\(|googletagmanager|lczxsusin|openPopup|pop(?:ads|cash))/)
 *##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 *##body .social-share-single:style(margin-bottom: 0 !important;)
+a2zapk.*##[id*="modalpop"]
 hitomi.*##.content > :first-child
 hitomi.*##.top-content > :first-child
 javbangers.*###overlay
