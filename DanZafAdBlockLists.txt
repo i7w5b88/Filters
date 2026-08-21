@@ -17,9 +17,11 @@
 *$other,3p
 *$script,3p
 /(?:\/ads)/$script,important
+*##+js(aopr, Notification)
 *,~/(?:minochinos)\.(?:cc)/##+js(aopr, open)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aopr, openPopup)
 *##+js(aopw, _pop)
+*##+js(aopw, Fingerprint2)
 *##+js(aeld, adb.updated)
 *##+js(aeld, click, [native code], elements, .main-wrap)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aeld, click, openPopup)
