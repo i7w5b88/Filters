@@ -52,7 +52,7 @@
 *$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com|~voe.sx|~ystream.id
 ! some video blank check this part 1 end
 ! some video cannot played check this start
-*$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~javstreamhq.xyz|~luluvdo.com|~playmate.to|~rebeccapracticeloss.com|~streamhgjav.online|~turbovidhls.com|~vidsonic.net
+*$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~javstreamhq.xyz|~luluvdo.com|~playmate.to|~rebeccapracticeloss.com|~streamhgjav.online|~turbovidhls.com|~vidsonic.net|~vstream.id
 ! some video cannot played check this end
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
