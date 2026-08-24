@@ -16,7 +16,7 @@
 !----------------------------------------------------------!
 *$other,3p,domain=~earnvidjavgg.xyz|~vstream.id
 *$script,3p
-/(?:\/ads)/$script,important
+/(?:\/(?:ads|popunder))/$script,important
 *##+js(aopr, Notification)
 *,~/(?:minochinos)\.(?:cc)/##+js(aopr, open)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aopr, openPopup)
@@ -28,9 +28,9 @@
 *##+js(aeld, /^(?:dblclick)$/)
 *##+js(aeld, load, Object)
 *,~/(?:javbangers|play(?:mogo|to)|x(?:hamster|videos))\.(?:303in|com)(?:\.(?:top))?/##+js(aeld, /^(?:mouse(?:down|up))$/)
-*,~/(?:303in|audinifer|callistanise|dismz4n3wp6xnr3|earnvidjavgg|fapdiner|hanerix|jav(?:hdporn|streamhq)|luluvdo|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|vibuxer|x(?:hamster|videos))\.(?:c(?:l(?:ick|oud)|om)|net|org|top|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
+*,~/(?:303in|audinifer|callistanise|dismz4n3wp6xnr3|earnvidjavgg|fapdiner|hanerix|jav(?:hdporn|streamhq)|luluvdo|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:l(?:ick|oud)|om)|id|net|org|top|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
 *,~/(?:xvideos)\.(?:com)/##+js(aeld, /^(?:touch(?:end|move|start))$/)
-*,~/(?:303in|audinifer|beeg|callistanise|dismz4n3wp6xnr3|earnvidjavgg|hanerix|jav(?:hdporn|streamhq)|luluvdo|omek|turbo(?:plays|vidhls)|vibuxer|x(?:hamster|videos))\.(?:c(?:lick|o(?:m))?|net|org|top|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
+*,~/(?:303in|audinifer|beeg|callistanise|dismz4n3wp6xnr3|earnvidjavgg|hanerix|jav(?:hdporn|streamhq)|luluvdo|omek|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:lick|o(?:m))?|id|net|org|top|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
 *##+js(aeld, , system.popunder)
 *##+js(aeld, /^(?:visibilitychange|blur|focus)$/)
 *##+js(set, Element.prototype.requestPointerLock, noopFunc)
@@ -42,7 +42,8 @@
 *##+js(set-cookie, pShow, true)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
 *##+js(set-attr, iframe#myiframe, sandbox, allow-scripts allow-same-origin allow-forms)
-*,~/(?:github)\.(?:com)/##+js(rmnt, script, /AdProvider|FingerprintJS|__CLP|adsbyjuicy|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|openPopup|pop(?:ads|cash)|removeShield/)
+*,~/(?:github)\.(?:com)/##+js(rmnt, script, openPopup)
+*,~/(?:github)\.(?:com)/##+js(rmnt, script, /AdProvider|Fingerprint(?:2|JS)|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|openPopup|pop(?:ads|cash)|removeShield/)
 *##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 *##+js(nowoif, /^/, 1)
@@ -71,8 +72,8 @@
 *##[href*="jads"]
 *##[id^="ad-footer"]
 *##[id^="ad-middle"]
-*##[id^="adblock-force-overlay"]
 *##[id^="adPopupLayer"]
+*##[id^="adblock-force-overlay"]
 *##[id^="asg-push"]
 *##[id^="clickShield"]
 *##[id^="floatadsbawah"]
