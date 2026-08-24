@@ -14,7 +14,7 @@
 !----------------------------------------------------------!
 !-------------------- Internals Filter --------------------!
 !----------------------------------------------------------!
-*$other,3p,domain=~vstream.id
+*$other,3p,domain=~earnvidjavgg.xyz|~vstream.id
 *$script,3p
 /(?:\/ads)/$script,important
 *##+js(aopr, Notification)
