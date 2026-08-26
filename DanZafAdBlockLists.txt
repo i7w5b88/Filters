@@ -40,6 +40,8 @@
 *##+js(set, popundersPerIP, 0)
 *##+js(set-cookie, pShow, true)
 *,~/(?:jav(?:dzpa))\.(?:cc)/##+js(nostif, window.open)
+*##+js(no-xhr-if, /hpyjmp|marzaent/)
+*##+js(no-fetch-if, /hpyjmp|marzaent/)
 *##+js(set-attr, iframe#myiframe, sandbox, allow-scripts allow-same-origin allow-forms)
 *,~/(?:github)\.(?:com)/##+js(rmnt, script, openPopup)
 *,~/(?:github)\.(?:com)/##+js(rmnt, script, /AdProvider|Fingerprint(?:2|JS)|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|openPopup|pop(?:ads|cash)|removeShield/)
@@ -52,7 +54,7 @@
 ! some video blank check this part 1 end
 *$popunder,domain=~dzpa.com
 ! some video cannot played check this start
-*$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~javstreamhq.xyz|~luluvdo.com|~playmate.to|~rebeccapracticeloss.com|~streamhgjav.online|~turbovidhls.com|~vidsonic.net|~vstream.id
+*$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~javplayer.cc|~javstreamhq.xyz|~luluvdo.com|~playmate.to|~rebeccapracticeloss.com|~streamhgjav.online|~turbovidhls.com|~vidsonic.net|~vstream.id
 ! some video cannot played check this end
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
@@ -93,8 +95,9 @@
 *##[class^="cookiesAnnounce"]
 *##[class^="js-inline-ad"]
 *##[class^="js-native-ad"]
-*##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive.com"])
+*##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive."])
 *##[class^="remove-ads"]
+*##[class^="video-thumb"]:has([href^="https://xham."])
 *##[data-testid^="trending-live-models"]
 *##[style*="2147483647"]
 *##[style*="9999999"][target="_blank"]
@@ -107,6 +110,7 @@ a2zapk.*##[id*="modalpop"]
 hitomi.*##.content > :first-child
 hitomi.*##.top-content > :first-child
 javbangers.*###overlay
+xhamster.*##.player-container:style(margin-right: unset !important)
 xvideos.*###content > :nth-child(2)
 xvideos.*###html5video .top-top
 xvideos.*##[id$="sponsor-links"]
