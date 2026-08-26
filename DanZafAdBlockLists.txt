@@ -96,9 +96,10 @@
 *##[class^="cookiesAnnounce"]
 *##[class^="js-inline-ad"]
 *##[class^="js-native-ad"]
-*##[class^="mobileHorizontal"]:has([href^="https://xhamsterlive."])
+*##[class^="mobileHorizontal"]:has([href*="xhamsterlive"])
 *##[class^="remove-ads"]
-*##[class^="video-thumb"]:has([href^="https://xham."])
+*##[class^="table"]:has([src*="go.gsrv"])
+*##[class^="video-thumb"]:has([href*="xham."])
 *##[data-testid^="trending-live-models"]
 *##[style*="2147483647"]
 *##[style*="9999999"][target="_blank"]
