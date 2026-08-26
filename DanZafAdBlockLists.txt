@@ -43,8 +43,9 @@
 *##+js(no-xhr-if, /hpyjmp|marzaent/)
 *##+js(no-fetch-if, /hpyjmp|marzaent/)
 *##+js(set-attr, iframe#myiframe, sandbox, allow-scripts allow-same-origin allow-forms)
-*,~/(?:github)\.(?:com)/##+js(rmnt, script, openPopup)
-*,~/(?:github)\.(?:com)/##+js(rmnt, script, /AdProvider|Fingerprint(?:2|JS)|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|openPopup|pop(?:ads|cash)|removeShield/)
+*,~/(?:github|playmogo)\.(?:com)/##+js(rmnt, script, openPopup)
+*,~/(?:playmogo)\.(?:com)/##+js(rmnt, script, /Fingerprint(?:2|JS)/)
+*,~/(?:github)\.(?:com)/##+js(rmnt, script, /AdProvider|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|pop(?:ads|cash)/)
 *##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 *##+js(nowoif, /^/, 1)
@@ -103,7 +104,7 @@
 *##[style*="9999999"][target="_blank"]
 *##[style*="position: absolute"]:has(a[href*="about:blank"])
 *##.banner-slider:has(.banner-goto-redtab)
-*##^script:has-text(/(?:AdProvider|FingerprintJS|__CLP|adsbyjuicy|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|openPopup|pop(?:ads|cash))/)
+*##^script:has-text(/AdProvider|Fingerprint(?:2|JS)|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|openPopup|pop(?:ads|cash)/)
 *##^script[data-cfasync]:has-text(/h=decodeURIComponent|popundersPerIP/)
 *##body .social-share-single:style(margin-bottom: 0 !important;)
 a2zapk.*##[id*="modalpop"]
