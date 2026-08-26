@@ -14,7 +14,6 @@
 !----------------------------------------------------------!
 !-------------------- Internals Filter --------------------!
 !----------------------------------------------------------!
-! *$other,3p,domain=~earnvidjavgg.xyz|~vstream.id
 *$script,3p
 /(?:\/(?:ads|popunder))/$script,important
 *##+js(aopr, Notification)
@@ -27,10 +26,10 @@
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aeld, click, openPopup)
 *##+js(aeld, /^(?:dblclick)$/)
 *##+js(aeld, load, Object)
-*,~/(?:javbangers|play(?:mogo|to)|x(?:hamster|videos))\.(?:303in|com)(?:\.(?:top))?/##+js(aeld, /^(?:mouse(?:down|up))$/)
-*,~/(?:303in|audinifer|callistanise|dismz4n3wp6xnr3|earnvidjavgg|fapdiner|hanerix|jav(?:hdporn|streamhq)|luluvdo|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:l(?:ick|oud)|om)|id|net|org|top|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
-*,~/(?:xvideos)\.(?:com)/##+js(aeld, /^(?:touch(?:end|move|start))$/)
-*,~/(?:303in|audinifer|beeg|callistanise|dismz4n3wp6xnr3|earnvidjavgg|hanerix|jav(?:hdporn|streamhq)|luluvdo|omek|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:lick|o(?:m))?|id|net|org|top|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
+*,~/(?:jav(?:bangers)|play(?:mogo|to)|x(?:hamster|videos))\.(?:303in|c(?:c|om))(?:\.(?:top))?/##+js(aeld, /^(?:mouse(?:down|up))$/)
+*,~/(?:303in|audinifer|callistanise|dismz4n3wp6xnr3|earnvidjavgg|fapdiner|hanerix|jav(?:hdporn|player|streamhq)|luluvdo|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:c|l(?:ick|oud)|om)|id|net|org|top|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
+*,~/(?:xvideos)\.(?:c(?:c|om))/##+js(aeld, /^(?:touch(?:end|move|start))$/)
+*,~/(?:303in|audinifer|beeg|callistanise|dismz4n3wp6xnr3|earnvidjavgg|hanerix|jav(?:hdporn|player|streamhq)|luluvdo|omek|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:c|l(?:ick|oud)|o(?:m))?|id|net|org|top|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
 *##+js(aeld, , system.popunder)
 *##+js(aeld, /^(?:visibilitychange|blur|focus)$/)
 *##+js(set, Element.prototype.requestPointerLock, noopFunc)
@@ -47,23 +46,23 @@
 *##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
 *##+js(nowoif, /^/, 1)
-*##+js(nowebrtc)
+*,~/(?:cloudflare)\.(?:com)/##+js(nowebrtc)
 ! some video blank check this part 1 start
 *$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com|~voe.sx|~ystream.id
 ! some video blank check this part 1 end
+*$popunder,domain=~dzpa.com
 ! some video cannot played check this start
 *$xhr,3p,domain=~earnvidjav.online|~earnvidjavgg.xyz|~firestream.to|~javggvideo.xyz|~javstreamhq.xyz|~luluvdo.com|~playmate.to|~rebeccapracticeloss.com|~streamhgjav.online|~turbovidhls.com|~vidsonic.net|~vstream.id
 ! some video cannot played check this end
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
 !----------------------------------------------------------!
-! @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:github|unlockapk)(?:(?:-)?cdn)?\.(?:c(?:c|om)|net)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$other,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|o(?:ld-usergeneratedcontent|ogleapis))|j(?:sdelivr|wp)|plyr|sb|turboviplay|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:gstatic)(?:(?:-)?cdn)?\.(?:com)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*\/(?:recaptcha(?:__en)?)\.js)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 ! some video blank check this part 2 start
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|bysejikuar|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|firestream|h(?:anerix|glink|qq|ugstream)|jav(?:ggvideo|streamhq)|luluvdo|minochinos|playm(?:ate|ogo)|q8y5z|ryderjet|str(?:eam)?(?:hgjav|p2p|tape)|turbo(?:plays|vidhls)|up(?:load18|n)|v(?:i(?:buxer|dsonic)|stream|oe)|ystream)(?:(?:-)?cdn)?\.(?:ac|c(?:c|l(?:ick|oud)|om)|id|net|o(?:n(?:e|line)|rg)|sx|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|bysejikuar|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|firestream|h(?:anerix|glink|qq|ugstream)|jav(?:ggvideo|player|streamhq)|luluvdo|minochinos|playm(?:ate|ogo)|q8y5z|ryderjet|str(?:eam)?(?:hgjav|p2p|tape)|turbo(?:plays|vidhls)|up(?:load18|n)|v(?:i(?:buxer|dsonic)|stream|oe)|ystream)(?:(?:-)?cdn)?\.(?:ac|c(?:c|l(?:ick|oud)|om)|id|net|o(?:n(?:e|line)|rg)|sx|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
 ! some video blank check this part 2 end
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|drstream|externulls|go(?:ld-usergeneratedcontent|ogleusercontent)|helvid|ibyteimg|kingbokep|maxstream|owphbf24|pianopic|qoogle|r66nv9ed|s(?:b|treamhls)|t(?:iktok|urbo(?:splayer|viplay))|unlockapk|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|om)|net|o(?:nline|rg)|vi(?:deo|p)|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|drstream|externulls|g(?:ithub(?:usercontent)?|(?:o(ld-usergeneratedcontent|ogleusercontent)))|helvid|ibyteimg|kingbokep|maxstream|owphbf24|pianopic|qoogle|r66nv9ed|s(?:b|chale|treamhls|upabase)|t(?:iktok|urbo(?:splayer|viplay))|unlockapk|wowstream(?:[0-9]{1,3})?|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|o(?:m)?)|net(?:work)?|o(?:nline|rg)|vi(?:deo|p)|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
@@ -98,6 +97,7 @@
 *##[class^="remove-ads"]
 *##[data-testid^="trending-live-models"]
 *##[style*="2147483647"]
+*##[style*="9999999"][target="_blank"]
 *##[style*="position: absolute"]:has(a[href*="about:blank"])
 *##.banner-slider:has(.banner-goto-redtab)
 *##^script:has-text(/(?:AdProvider|FingerprintJS|__CLP|adsbyjuicy|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|openPopup|pop(?:ads|cash))/)
