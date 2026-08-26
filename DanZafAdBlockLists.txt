@@ -60,18 +60,19 @@
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
 !----------------------------------------------------------!
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|o(?:ld-usergeneratedcontent|ogleapis))|j(?:sdelivr|wp)|plyr|sb|turboviplay|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|o(?:ld-usergeneratedcontent|ogleapis))|hanime|j(?:sdelivr|wp)|plyr|sb|turboviplay|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:gstatic)(?:(?:-)?cdn)?\.(?:com)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*\/(?:recaptcha(?:__en)?)\.js)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 ! some video blank check this part 2 start
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|bysejikuar|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|firestream|h(?:anerix|glink|qq|ugstream)|jav(?:ggvideo|player|streamhq)|luluvdo|minochinos|playm(?:ate|ogo)|q8y5z|ryderjet|str(?:eam)?(?:hgjav|p2p|tape)|turbo(?:plays|vidhls)|up(?:load18|n)|v(?:i(?:buxer|dsonic)|stream|oe)|ystream)(?:(?:-)?cdn)?\.(?:ac|c(?:c|l(?:ick|oud)|om)|id|net|o(?:n(?:e|line)|rg)|sx|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
 ! some video blank check this part 2 end
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|drstream|externulls|g(?:ithub(?:usercontent)?|(?:o(ld-usergeneratedcontent|ogleusercontent)))|helvid|ibyteimg|kingbokep|maxstream|owphbf24|pianopic|qoogle|r66nv9ed|s(?:b|chale|treamhls|upabase)|t(?:iktok|urbo(?:splayer|viplay))|unlockapk|wowstream(?:[0-9]{1,3})?|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|o(?:m)?)|net(?:work)?|o(?:nline|rg)|vi(?:deo|p)|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|drstream|externulls|freeanimehentai|g(?:ithub(?:usercontent)?|(?:o(ld-usergeneratedcontent|ogleusercontent)))|helvid|ibyteimg|kingbokep|maxstream|owphbf24|pianopic|qoogle|r66nv9ed|s(?:b|chale|treamhls|upabase)|t(?:iktok|urbo(?:splayer|viplay))|unlockapk|wowstream(?:[0-9]{1,3})?|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|o(?:m)?)|net(?:work)?|o(?:nline|rg)|vi(?:deo|p)|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
 !----------------------------------------------------------!
 *##[href*="adstub"]
 *##[href*="jads"]
+! *##[id^="PrerollAd"]
 *##[id^="ad-footer"]
 *##[id^="ad-middle"]
 *##[id^="adPopupLayer"]
@@ -92,6 +93,7 @@
 *##[class^="ad-badge"]
 *##[class^="ad-wrapper"]
 *##[class^="ad_button"]
+*##[class^="banner-ad"]
 *##[class^="banner_ad"]
 *##[class^="cookiesAnnounce"]
 *##[class^="js-inline-ad"]
