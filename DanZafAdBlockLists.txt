@@ -23,6 +23,7 @@
 *##+js(aopw, Fingerprint2)
 *##+js(aeld, adb.updated)
 *##+js(aeld, click, [native code], elements, .main-wrap)
+*##+js(aeld, click, open)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aeld, click, openPopup)
 *##+js(aeld, /^(?:dblclick)$/)
 *##+js(aeld, load, Object)
