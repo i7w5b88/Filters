@@ -44,6 +44,7 @@
 *##+js(no-xhr-if, /hpyjmp|marzaent/)
 *##+js(no-fetch-if, /hpyjmp|marzaent/)
 *##+js(set-attr, iframe#myiframe, sandbox, allow-scripts allow-same-origin allow-forms)
+*##+js(rmnt, script, open)
 *,~/(?:github|playmogo)\.(?:com)/##+js(rmnt, script, openPopup)
 *,~/(?:playmogo)\.(?:com)/##+js(rmnt, script, /Fingerprint(?:2|JS)/)
 *,~/(?:github)\.(?:com)/##+js(rmnt, script, /AdProvider|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|pop(?:ads|cash)/)
