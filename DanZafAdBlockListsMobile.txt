@@ -16,14 +16,33 @@
 !----------------------------------------------------------!
 *$script,3p
 *##+js(aeld, click, [native code], elements, .main-wrap)
+*##+js(set, Element.prototype.requestPointerLock, noopFunc)
+*##+js(set, document.exitPointerLock, noopFunc)
+*$frame,3p
 *$popunder
 *$popup
 *$xhr,3p
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
 !----------------------------------------------------------!
+!----- Internals Filter Scripts Domain Name Exception -----!
+!----------------------------------------------------------!
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|o(?:ld-usergeneratedcontent|ogleapis))|hanime|j(?:sdelivr|wp)|oaistatic|plyr|sb|turboviplay|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+!------ Internals Filter Scripts Path Name Exception ------!
+!----------------------------------------------------------!
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:gstatic)(?:(?:-)?cdn)?\.(?:com)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*\/(?:recaptcha(?:__en)?)\.js)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+!------ Internals Filter Frame Domain Name Exception ------!
+!----------------------------------------------------------!
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|bysejikuar|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|firestream|h(?:anerix|glink|qq|ugstream)|jav(?:ggvideo|player|streamhq)|luluvdo|minochinos|playm(?:ate|ogo)|q8y5z|ryderjet|str(?:eam)?(?:hgjav|p2p|tape)|turbo(?:plays|vidhls)|up(?:load18|n)|v(?:i(?:buxer|dsonic)|stream|oe)|ystream)(?:(?:-)?cdn)?\.(?:ac|c(?:c|l(?:ick|oud)|om)|id|net|o(?:n(?:e|line)|rg)|sx|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
+!------- Internals Filter Frame Path Name Exception -------!
+!----------------------------------------------------------!
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:gstatic)(?:(?:-)?cdn)?\.(?:com)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*\/(?:recaptcha(?:__en)?)\.js)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
+!------- Internals Filter XHR Domain Name Exception -------!
+!----------------------------------------------------------!
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|c(?:dnsync|hatgpt)|drstream|externulls|freeanimehentai|g(?:ithub(?:usercontent)?|(?:o(ld-usergeneratedcontent|ogleusercontent)))|helvid|ibyteimg|kingbokep|maxstream|owphbf24|pianopic|qoogle|r66nv9ed|s(?:b|chale|treamhls|upabase)|t(?:iktok|urbo(?:splayer|viplay))|unlockapk|wowstream(?:[0-9]{1,3})?|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|o(?:m)?)|net(?:work)?|o(?:nline|rg)|vi(?:deo|p)|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
+!-------- Internals Filter XHR Path Name Exception --------!
+!----------------------------------------------------------!
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:gstatic)(?:(?:-)?cdn)?\.(?:com)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*\/(?:recaptcha(?:__en)?)\.js)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
