@@ -69,17 +69,6 @@
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
 !----------------------------------------------------------!
-*##[href*="adstub"]
-*##[href*="jads"]
-*##[id^="ad-footer"]
-*##[id^="ad-middle"]
-*##[id^="adPopupLayer"]
-*##[id^="adblock-force-overlay"]
-*##[id^="asg-push"]
-*##[id^="clickShield"]
-*##[id^="floatadsbawah"]
-*##[id^="headerlink"]
-*##[id^="ide-"]:has-text(/^[A-Za-z0-9+/=]+$/)
 *##[class$="ad-container"]
 *##[class$="ad-desktop"]
 *##[class$="ad-mobile"]
@@ -101,6 +90,17 @@
 *##[class^="table"]:has([src*="go.gsrv"])
 *##[class^="video-thumb"]:has([href*="xham."])
 *##[data-testid^="trending-live-models"]
+*##[href*="adstub"]
+*##[href*="jads"]
+*##[id^="ad-footer"]
+*##[id^="ad-middle"]
+*##[id^="adPopupLayer"]
+*##[id^="adblock-force-overlay"]
+*##[id^="asg-push"]
+*##[id^="clickShield"]
+*##[id^="floatadsbawah"]
+*##[id^="headerlink"]
+*##[id^="ide-"]:has-text(/^[A-Za-z0-9+/=]+$/)
 *##[style*="2147483647"]
 *##[style*="9999999"][target="_blank"]
 *##[style*="position: absolute"]:has(a[href*="about:blank"])
