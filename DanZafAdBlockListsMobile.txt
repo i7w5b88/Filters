@@ -1,0 +1,31 @@
+! Title: DanZaf AdBlock Lists
+! Author: Dwi Arianto
+! Version: 202608281147
+! Description: DanZaf Custom Filter
+! Last modified: Wed, 28 Aug 2026 11:47:24 +0000
+! Expires: 1 days (update frequency)
+!
+!----------------------------------------------------------!
+!--------------------- Network Filter ---------------------!
+!----------------------------------------------------------!
+!----------------------------------------------------------!
+!---------------- Network Filter Exception ----------------!
+!----------------------------------------------------------!
+!----------------------------------------------------------!
+!-------------------- Internals Filter --------------------!
+!----------------------------------------------------------!
+*$script,3p
+*##+js(aeld, click, [native code], elements, .main-wrap)
+*$xhr,3p
+!----------------------------------------------------------!
+!--------------- Internals Filter Exception ---------------!
+!----------------------------------------------------------!
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|o(?:ld-usergeneratedcontent|ogleapis))|hanime|j(?:sdelivr|wp)|oaistatic|plyr|sb|turboviplay|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|c(?:dnsync|hatgpt)|drstream|externulls|freeanimehentai|g(?:ithub(?:usercontent)?|(?:o(ld-usergeneratedcontent|ogleusercontent)))|helvid|ibyteimg|kingbokep|maxstream|owphbf24|pianopic|qoogle|r66nv9ed|s(?:b|chale|treamhls|upabase)|t(?:iktok|urbo(?:splayer|viplay))|unlockapk|wowstream(?:[0-9]{1,3})?|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|o(?:m)?)|net(?:work)?|o(?:nline|rg)|vi(?:deo|p)|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
+!----------------------------------------------------------!
+!-------------------- Cosmetics Filter --------------------!
+!----------------------------------------------------------!
+*##[class*="cookiesAnnounce"]
+*##[class*="--top"]:has([href*="xham"]),[class*="--middle"]:has([href*="xham"]),[class*="--bottom"]:has([href*="xham"]),[class*="--widget"]:has([href*="xham"]),[class*="imageContainer"]:has([href*="xham"]),[class*="layout-ad"]:has([href*="xham"])
+*##[class*="scrollable"]:has([href*="faphouse"]),[class*="thumbContainer"]:has([href*="faphouse"])
+*##[class*="imageContainer"]:has([src*="flirtify"]),[class*="item--type"]:has([src*="flirtify"]),[class*="video-thumb"]:has([src*="flirtify"])
