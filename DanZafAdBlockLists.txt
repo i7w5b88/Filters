@@ -116,6 +116,5 @@ xhamster.*##.player-container:style(margin-right: unset !important)
 xvideos.*###content > :nth-child(2)
 xvideos.*###html5video .top-top
 xvideos.*##[id$="sponsor-links"]
-xvideos.*##[id="mobile-header-links"]
 xvideos.*##[id="mobile-header-links"] + *
 
