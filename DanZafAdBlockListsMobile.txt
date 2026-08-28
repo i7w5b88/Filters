@@ -6,18 +6,14 @@
 ! Expires: 1 days (update frequency)
 !
 !----------------------------------------------------------!
-!--------------------- Network Filter ---------------------!
-!----------------------------------------------------------!
-!----------------------------------------------------------!
-!---------------- Network Filter Exception ----------------!
-!----------------------------------------------------------!
-!----------------------------------------------------------!
 !-------------------- Internals Filter --------------------!
 !----------------------------------------------------------!
 *$script,3p
 *##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(set, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set, document.exitPointerLock, noopFunc)
+*##+js(set, popundersPerIP, 0)
+*##+js(set-cookie, pShow, true)
 *$frame,3p
 *$popunder
 *$popup
@@ -52,7 +48,7 @@
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
+*##[class*="--bottom"]:has([href*="xham"]),[class*="--middle"]:has([href*="xham"]),[class*="--top"]:has([href*="xham"]),[class*="--widget"]:has([href*="xham"]),[class*="imageContainer"]:has([href*="xham"]),[class*="layout-ad"]:has([href*="xham"])
 *##[class*="cookiesAnnounce"]
-*##[class*="--top"]:has([href*="xham"]),[class*="--middle"]:has([href*="xham"]),[class*="--bottom"]:has([href*="xham"]),[class*="--widget"]:has([href*="xham"]),[class*="imageContainer"]:has([href*="xham"]),[class*="layout-ad"]:has([href*="xham"])
-*##[class*="scrollable"]:has([href*="faphouse"]),[class*="thumbContainer"]:has([href*="faphouse"])
 *##[class*="imageContainer"]:has([src*="flirtify"]),[class*="item--type"]:has([src*="flirtify"]),[class*="video-thumb"]:has([src*="flirtify"])
+*##[class*="scrollable"]:has([href*="faphouse"]),[class*="thumbContainer"]:has([href*="faphouse"])
