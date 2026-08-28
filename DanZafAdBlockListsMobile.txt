@@ -59,3 +59,4 @@
 *##[class*="cookiesAnnounce"]
 *##[class*="imageContainer"]:has([src*="flirtify"]),[class*="item--type"]:has([src*="flirtify"]),[class*="video-thumb"]:has([src*="flirtify"])
 *##[class*="scrollable"]:has([href*="faphouse"]),[class*="thumbContainer"]:has([href*="faphouse"])
+a2zapk.*##[id*="modalpop"]
