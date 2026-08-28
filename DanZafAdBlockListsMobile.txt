@@ -14,6 +14,13 @@
 *##+js(set, document.exitPointerLock, noopFunc)
 *##+js(set, popundersPerIP, 0)
 *##+js(set-cookie, pShow, true)
+*##+js(nostif, window.open)
+*##+js(rmnt, script, /AdProvider|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|pop(?:ads|cash)/)
+*##+js(rmnt, script, /Fingerprint(?:2|JS)/)
+*##+js(rmnt, script, openPopup)
+*##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
+*,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
+*##+js(nowoif)
 *$frame,3p
 *$popunder
 *$popup
