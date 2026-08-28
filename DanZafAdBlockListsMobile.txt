@@ -16,6 +16,8 @@
 !----------------------------------------------------------!
 *$script,3p
 *##+js(aeld, click, [native code], elements, .main-wrap)
+*$popunder
+*$popup
 *$xhr,3p
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
