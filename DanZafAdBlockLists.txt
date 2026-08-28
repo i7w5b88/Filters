@@ -16,23 +16,21 @@
 !----------------------------------------------------------!
 *$script,3p
 /(?:\/(?:ads|popunder))/$script,important
-*##+js(aopr, Notification)
+*##+js(aopr, /^Fingerprint(?:2|JS)|Notification|_pop$/)
 *,~/(?:minochinos)\.(?:cc)/##+js(aopr, open)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aopr, openPopup)
-*##+js(aopw, _pop)
-*##+js(aopw, Fingerprint2)
+*##+js(aopw, /^Fingerprint(?:2|JS)|Notification|_pop$/)
 *##+js(aeld, adb.updated)
 *##+js(aeld, click, [native code], elements, .main-wrap)
-*##+js(aeld, click, open)
 *,~/(?:jav(?:gg))\.(?:net)/##+js(aeld, click, openPopup)
-*##+js(aeld, /^(?:dblclick)$/)
+*##+js(aeld, /^dblclick$/)
 *##+js(aeld, load, Object)
-*,~/(?:jav(?:bangers)|play(?:mogo|to)|x(?:hamster|videos))\.(?:303in|c(?:c|om))(?:\.(?:top))?/##+js(aeld, /^(?:mouse(?:down|up))$/)
-*,~/(?:303in|audinifer|callistanise|dismz4n3wp6xnr3|earnvidjavgg|fapdiner|hanerix|jav(?:hdporn|player|streamhq)|luluvdo|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:c|l(?:ick|oud)|om)|id|net|org|top|xyz)/##+js(aeld, /^(?:mouse(?:move))$/)
-*,~/(?:xvideos)\.(?:c(?:c|om))/##+js(aeld, /^(?:touch(?:end|move|start))$/)
+*,~/(?:jav(?:bangers)|play(?:mogo|to)|x(?:hamster|videos))\.(?:303in|c(?:c|om))(?:\.(?:top))?/##+js(aeld, /^mouse(?:down|up)$/)
+*,~/(?:303in|audinifer|callistanise|dismz4n3wp6xnr3|earnvidjavgg|fapdiner|hanerix|jav(?:hdporn|player|streamhq)|luluvdo|playmogo|rebeccapracticeloss|str(?:eam)?tape|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:c|l(?:ick|oud)|om)|id|net|org|top|xyz)/##+js(aeld, /^mouse(?:move)$/)
+*,~/(?:xvideos)\.(?:c(?:c|om))/##+js(aeld, /^touch(?:end|move|start)$/)
 *,~/(?:303in|audinifer|beeg|callistanise|dismz4n3wp6xnr3|earnvidjavgg|hanerix|jav(?:hdporn|player|streamhq)|luluvdo|omek|turbo(?:plays|vidhls)|v(?:ibuxer|stream)|x(?:hamster|videos))\.(?:c(?:c|l(?:ick|oud)|o(?:m))?|id|net|org|top|xyz)(?:\.(?:uk))?/##+js(aeld, , preventDefault)
 *##+js(aeld, , system.popunder)
-*##+js(aeld, /^(?:visibilitychange|blur|focus)$/)
+*##+js(aeld, /^blur|focus|visibilitychange$/)
 *##+js(set, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set, document.exitPointerLock, noopFunc)
 *##+js(set, document.hasFocus, trueFunc)
@@ -44,13 +42,12 @@
 *##+js(no-xhr-if, /hpyjmp|marzaent/)
 *##+js(no-fetch-if, /hpyjmp|marzaent/)
 *##+js(set-attr, iframe#myiframe, sandbox, allow-scripts allow-same-origin allow-forms)
-*##+js(rmnt, script, open)
 *,~/(?:github|playmogo)\.(?:com)/##+js(rmnt, script, openPopup)
 *,~/(?:playmogo)\.(?:com)/##+js(rmnt, script, /Fingerprint(?:2|JS)/)
 *,~/(?:github)\.(?:com)/##+js(rmnt, script, /AdProvider|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|pop(?:ads|cash)/)
 *##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
 *,~/(?:jav(?:english))\.(?:cc)/##+js(disable-newtab-links)
-*##+js(nowoif, /^/, 1)
+*##+js(nowoif)
 *,~/(?:cloudflare)\.(?:com)/##+js(nowebrtc)
 ! some video blank check this part 1 start
 *$frame,3p,domain=~bysejikuar.com|~earnvidjavgg.xyz|~hanerix.com|~hglink.to|~playmogo.com|~voe.sx|~ystream.id
@@ -62,19 +59,18 @@
 !----------------------------------------------------------!
 !--------------- Internals Filter Exception ---------------!
 !----------------------------------------------------------!
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|o(?:ld-usergeneratedcontent|ogleapis))|hanime|j(?:sdelivr|wp)|plyr|sb|turboviplay|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:adguard|b|c(?:dn(?:solutions|trex)|loudflare)|doodcdn|g(?:ithubassets|o(?:ld-usergeneratedcontent|ogleapis))|hanime|j(?:sdelivr|wp)|oaistatic|plyr|sb|turboviplay|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:com|io|media|net|org)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:gstatic)(?:(?:-)?cdn)?\.(?:com)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*\/(?:recaptcha(?:__en)?)\.js)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 ! some video blank check this part 2 start
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:303in|audinifer|bysejikuar|c(?:allistanise|loudflare)|doodstream|e(?:arnvidjav(?:gg)?|mturbovid)|firestream|h(?:anerix|glink|qq|ugstream)|jav(?:ggvideo|player|streamhq)|luluvdo|minochinos|playm(?:ate|ogo)|q8y5z|ryderjet|str(?:eam)?(?:hgjav|p2p|tape)|turbo(?:plays|vidhls)|up(?:load18|n)|v(?:i(?:buxer|dsonic)|stream|oe)|ystream)(?:(?:-)?cdn)?\.(?:ac|c(?:c|l(?:ick|oud)|om)|id|net|o(?:n(?:e|line)|rg)|sx|to(?:p)?|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$frame,3p
 ! some video blank check this part 2 end
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|cdnsync|drstream|externulls|freeanimehentai|g(?:ithub(?:usercontent)?|(?:o(ld-usergeneratedcontent|ogleusercontent)))|helvid|ibyteimg|kingbokep|maxstream|owphbf24|pianopic|qoogle|r66nv9ed|s(?:b|chale|treamhls|upabase)|t(?:iktok|urbo(?:splayer|viplay))|unlockapk|wowstream(?:[0-9]{1,3})?|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|o(?:m)?)|net(?:work)?|o(?:nline|rg)|vi(?:deo|p)|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:acek|c(?:dnsync|hatgpt)|drstream|externulls|freeanimehentai|g(?:ithub(?:usercontent)?|(?:o(ld-usergeneratedcontent|ogleusercontent)))|helvid|ibyteimg|kingbokep|maxstream|owphbf24|pianopic|qoogle|r66nv9ed|s(?:b|chale|treamhls|upabase)|t(?:iktok|urbo(?:splayer|viplay))|unlockapk|wowstream(?:[0-9]{1,3})?|xvideos)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|o(?:m)?)|net(?:work)?|o(?:nline|rg)|vi(?:deo|p)|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xhr,3p
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
 !----------------------------------------------------------!
 *##[href*="adstub"]
 *##[href*="jads"]
-! *##[id^="PrerollAd"]
 *##[id^="ad-footer"]
 *##[id^="ad-middle"]
 *##[id^="adPopupLayer"]
