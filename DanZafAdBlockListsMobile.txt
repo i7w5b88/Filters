@@ -47,8 +47,12 @@
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
 *##.ad-overlay
+*##.adsinfo
 *##.pre-roll-ad
 *##[id*="ad-container"]
+*##[id^="admobile"]
+*##[id^="ifad"]
+*##[id*="adstripe"]:has([href*="twinrdengine"])
 *##[class*="--bottom"]:has([href*="xham"]),[class*="--middle"]:has([href*="xham"]),[class*="--top"]:has([href*="xham"]),[class*="--widget"]:has([href*="xham"]),[class*="imageContainer"]:has([href*="xham"]),[class*="layout-ad"]:has([href*="xham"]),[class*="primary"]:has([href*="xham"])
 *##[class*="container"]:has([href*="faphouse"]),[class*="primary"]:has([href*="faphouse"])
 *##[class*="cookiesAnnounce"]
