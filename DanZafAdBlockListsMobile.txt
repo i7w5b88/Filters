@@ -9,10 +9,13 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,3p
-*##+js(aopr, open)
-*##+js(aopr, openPopup)
-*##+js(aopw, open)
-*##+js(aopw, openPopup)
+/\/ads\/(?:pre-roll|video-ads)\.js$/$script
+! *##+js(aopr, open)
+! *##+js(aopr, openPopup)
+*##+js(aopr, /open(?:Popup)?/)
+! *##+js(aopw, open)
+! *##+js(aopw, openPopup)
+*##+js(aopw, /open(?:Popup)?/)
 *##+js(aeld, click, [native code], elements, .main-wrap)
 ! *##+js(aeld, click, open)
 ! *##+js(aeld, click, openPopup)
@@ -20,12 +23,12 @@
 *##+js(set, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set, document.exitPointerLock, noopFunc)
 *##+js(set, popundersPerIP, 0)
-! *##+js(set-cookie, pShow, true)
-! *##+js(nostif, window.open)
+*##+js(set-cookie, pShow, true)
+*##+js(nostif, window.open)
 ! *##+js(rmnt, script, /AdProvider|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|pop(?:ads|cash)/)
 ! *##+js(rmnt, script, /Fingerprint(?:2|JS)/)
-! *##+js(rmnt, script, openPopup)
-! *##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
+! *##+js(rmnt, script, /(?:__clp|(?:fuck)?ad(?:block|provider|sbyjuicy)|lczxsusin|(?:open)?pop(?:ads|cash|u(?:nder|p)(?:ad(?:s)?)?))/i)
+*##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/i)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|om))/##+js(disable-newtab-links)
 *##+js(nowoif)
 *$subdocument,3p
@@ -34,20 +37,24 @@
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsolutions)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsolutions|githubassets)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,3p
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:doodstream|e(?:arnvidjavgg|mturbovid)|h(?:anerix|glink)|javstreamhq|playmogo|ryderjet|str(?:eam)?(?:p2p|tape)|t(?:racylocalschool|urbo(?:plays|vidhls))|upn|v(?:ibuxer|oe))(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,3p
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:googleusercontent)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,3p
-@@/^https?:\/\/(?:[^\/]+\.)*[^\/]+\/(?:(?:recaptcha|turnstile)\/.*|.*\/(?:embed[0-9]{1,3}|j(?:query|wplayer)|lazyload|provider|video)(?:\.(?:core|hls))?(?:js)?(?:\.(?:controls|hotkeys))?(?:\.min)?)\.js(?:[?#].*)?$/$script,3p
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:ero|g(?:ithubassets|oogleusercontent)|schale|unlockapk)(?:(?:-)?cd(?:n)?)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,3p
+@@/^https?:\/\/(?:[^\/]+\.)*[^\/]+\/(?:(?:recaptcha|turnstile)\/.*|.*\/(?:embed[0-9]{1,3}|j(?:query|wplayer)|lazyload|provider|video)(?:\.(?:core|hls|lazyload))?(?:js)?(?:\.(?:controls|hotkeys))?(?:\.min)?)\.js(?:[?#].*)?$/$script,3p
 @@/^https?:\/\/(?:[^\/]+\.)*[^\/]+\/(?:.*\/)?(?:turnstile|recaptcha)(?:\/[^?#]*)?(?:[?#].*)?$/$subdocument,3p
-@@/^https?:\/\/[^\/]+\/(?:.*\/)?(?:recaptcha\/.*|[^\/]+\.(?:m3u8|txt|ts|woff2?))(?:[?#].*)?$/$xmlhttprequest,3p
+@@/^https?:\/\/[^\/]+\/(?:.*\/)?(?:recaptcha\/.*|[^\/]+\.(?:m3u8|mp4|txt|ts|woff2?))(?:[?#].*)?$/$xmlhttprequest,3p
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##[class*="--bottom"]:has([href*="xham"]),[class*="--middle"]:has([href*="xham"]),[class*="--top"]:has([href*="xham"]),[class*="--widget"]:has([href*="xham"]),[class*="imageContainer"]:has([href*="xham"]),[class*="layout-ad"]:has([href*="xham"])
+*##.ad-overlay
+*##.pre-roll-ad
+*##[id*="ad-container"]
+*##[class*="--bottom"]:has([href*="xham"]),[class*="--middle"]:has([href*="xham"]),[class*="--top"]:has([href*="xham"]),[class*="--widget"]:has([href*="xham"]),[class*="imageContainer"]:has([href*="xham"]),[class*="layout-ad"]:has([href*="xham"]),[class*="primary"]:has([href*="xham"])
+*##[class*="container"]:has([href*="faphouse"]),[class*="primary"]:has([href*="faphouse"])
 *##[class*="cookiesAnnounce"]
-*##[class*="imageContainer"]:has([src*="flirtify"]),[class*="item--type"]:has([src*="flirtify"]),[class*="video-thumb"]:has([src*="flirtify"])
+*##[class*="imageContainer"]:has([src*="flirtify"]),[class*="item--type"]:has([src*="flirtify"]),[class*="primary"]:has([src*="flirtify"]),[class*="video-thumb"]:has([src*="flirtify"])
 *##[class*="player-ads"]
-*##[class*="scrollable"]:has([href*="faphouse"]),[class*="thumbContainer"]:has([href*="faphouse"])
+*##[class^="banner-"]
 *##[target="_blank"]:remove-attr(target)
 a2zapk.*##[class*="modalpop"]
 
