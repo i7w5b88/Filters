@@ -25,13 +25,17 @@
 *##+js(set, popundersPerIP, 0)
 *##+js(set-cookie, pShow, true)
 *##+js(nostif, window.open)
-! *##+js(rmnt, script, /AdProvider|Notification|__CLP|ad(?:b\.updated|sbyjuicy)|fuckAdBlock|googletagmanager|gtag\(|lczxsusin|pop(?:ads|cash)/)
-! *##+js(rmnt, script, /Fingerprint(?:2|JS)/)
 *##+js(rmnt, script, /(?:__clp)/i)
+*##+js(rmnt, script, /(?:adb\.updated)/i)
 *##+js(rmnt, script, /(?:adprovider)/i)
 *##+js(rmnt, script, /(?:adsbyjuicy)/i)
+*##+js(rmnt, script, /(?:fingerprint2)/i)
+*##+js(rmnt, script, /(?:fingerprintjs)/i)
 *##+js(rmnt, script, /(?:fuckadblock)/i)
+*##+js(rmnt, script, /(?:googletagmanager)/i)
+*##+js(rmnt, script, /(?:gtag\()/i)
 *##+js(rmnt, script, /(?:lczxsusin)/i)
+*##+js(rmnt, script, /(?:notification)/i)
 *##+js(rmnt, script, /(?:openpopunder)/i)
 *##+js(rmnt, script, /(?:openpopup)/i)
 *##+js(rmnt, script, /(?:popads)/i)
@@ -61,16 +65,15 @@
 *##.ad-overlay
 *##.adsinfo
 *##.pre-roll-ad
-*##[id*="ad-container"]
-*##[id^="admobile"]
-*##[id^="ifad"]
-*##[id*="adstripe"]:has([href*="twinrdengine"])
 *##[class*="--bottom"]:has([href*="xham"]),[class*="--middle"]:has([href*="xham"]),[class*="--top"]:has([href*="xham"]),[class*="--widget"]:has([href*="xham"]),[class*="imageContainer"]:has([href*="xham"]),[class*="layout-ad"]:has([href*="xham"]),[class*="primary"]:has([href*="xham"])
 *##[class*="container"]:has([href*="faphouse"]),[class*="primary"]:has([href*="faphouse"])
 *##[class*="cookiesAnnounce"]
 *##[class*="imageContainer"]:has([src*="flirtify"]),[class*="item--type"]:has([src*="flirtify"]),[class*="primary"]:has([src*="flirtify"]),[class*="video-thumb"]:has([src*="flirtify"])
 *##[class*="player-ads"]
 *##[class^="banner-"]
+*##[id*="ad-container"]
+*##[id*="adstripe"]:has([href*="twinrdengine"])
+*##[id^="admobile"]
+*##[id^="ifad"]
 *##[target="_blank"]:remove-attr(target)
 a2zapk.*##[class*="modalpop"]
-
