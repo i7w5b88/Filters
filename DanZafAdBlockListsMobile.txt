@@ -1,1 +1,54 @@
-
+! Title: DanZaf AdBlock Lists
+! Author: Dwi Arianto
+! Version: 202608281147
+! Description: DanZaf Custom Filter
+! Last modified: Wed, 28 Aug 2026 11:47:24 +0000
+! Expires: 1 days (update frequency)
+!
+!----------------------------------------------------------!
+!------------------------- Filter -------------------------!
+!----------------------------------------------------------!
+*$script,third-party
+/\/ads\/(?:pre-roll|video-ads)\.js$/$script
+*##+js(aopr, /^Fingerprint(?:2|JS)|Notification|_pop$/)
+*##+js(aopr, openPopup)
+*##+js(aopw, /^Fingerprint(?:2|JS)|Notification|_pop$/)
+*##+js(aeld, , system.popunder)
+*##+js(aeld, /^mouse(?:down|up)$/)
+*,~/(?:earnvidjavgg|javstreamhq|streamtape|turbovidhls)\.(?:com|to|xyz)/##+js(aeld, /^mousemove$/)
+*##+js(aeld, adb.updated)
+xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
+*##+js(aeld, click, openPopup)
+*##+js(aeld, /^touch(?:end|start)$/)
+*##+js(aeld, /^touchmove$/)
+*##+js(aeld, dblclick)
+*##+js(set, Element.prototype.requestPointerLock, noopFunc)
+*##+js(set, document.exitPointerLock, noopFunc)
+*##+js(set, document.hasFocus, trueFunc)
+*##+js(set, document.hidden, false)
+*##+js(set, document.visibilityState, visible)
+*##+js(set, popundersPerIP, 0)
+*##+js(no-xhr-if, /hpyjmp|marzaent/)
+*##+js(no-fetch-if, /hpyjmp|marzaent/)
+*##+js(rmnt, script, /AdProvider|__CLP|adsbyjuicy|fuckAdBlock|lczxsusin|pop(?:ads|cash)/)
+*##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
+*##+js(disable-newtab-links)
+*##+js(nowoif)
+*$subdocument,third-party
+*$popup
+*$xmlhttprequest,third-party
+!----------------------------------------------------------!
+!-------------------- Filter Exception --------------------!
+!----------------------------------------------------------!
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsolutions|githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:doodstream|e(?:arnvidjavgg|mturbovid)|h(?:anerix|glink)|javstreamhq|playmogo|ryderjet|str(?:eam)?(?:p2p|tape)|t(?:racylocalschool|urbo(?:plays|vidhls))|upn|v(?:ibuxer|oe))(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:e(?:ro|xternulls)|g(?:ithubassets|oogleusercontent)|schale|tiktok|unlockapk)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\/[^?#]*\/(?:embed[0-9]{1,3}|j(?:query|wplayer[0-9]{0,3})|lazyload|provider|video)(?:[-.](?:core|hls|lazyload|ui))?(?:js)?(?:\.(?:controls|hotkeys))?(?:\.min)?\.js(?:[?#].*)?$/$script,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:turnstile|recaptcha)(?:\/[^?#]*)?(?:[?#].*)?$/$subdocument,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:recaptcha(?:\/[^?#]*)?|[^\/?#]+\.(?:m3u8|mp4|txt|ts|woff2?))(?:[?#].*)?$/$xmlhttprequest,third-party
+!----------------------------------------------------------!
+!-------------------- Cosmetics Filter --------------------!
+!----------------------------------------------------------!
+*##[class*="ad-placement"]
+*##[style*="2147483647"]
+a2zapk.*##[class*="modalpop"]
