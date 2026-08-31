@@ -10,15 +10,9 @@
 !----------------------------------------------------------!
 *$script,3p
 /\/ads\/(?:pre-roll|video-ads)\.js$/$script
-! *##+js(aopr, open)
-! *##+js(aopr, openPopup)
 *##+js(aopr, /open(?:Popup)?/)
-! *##+js(aopw, open)
-! *##+js(aopw, openPopup)
 *##+js(aopw, /open(?:Popup)?/)
 *##+js(aeld, click, [native code], elements, .main-wrap)
-! *##+js(aeld, click, open)
-! *##+js(aeld, click, openPopup)
 *##+js(aeld, /^(?:dbl)?click$/, /^open(?:Popup)?$/)
 *##+js(set, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set, document.exitPointerLock, noopFunc)
