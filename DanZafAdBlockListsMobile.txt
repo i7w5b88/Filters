@@ -14,8 +14,8 @@
 *##+js(aopr, openPopup)
 *##+js(aopw, /^Fingerprint(?:2|JS)|Notification|_pop$/)
 *##+js(aeld, , system.popunder)
-*##+js(aeld, /^mouse(?:down|up)$/)
-*,~/(?:audinifer|earnvidjavgg|hanerix|javstreamhq|ryderjet|str(?:eamtape|p2p)|turbo(?:plays|vidhls)|vibuxer)\.(?:c(?:lick|om)|to|xyz)/##+js(aeld, /^mousemove$/)
+*,~/xhamster\.com/##+js(aeld, /^mouse(?:down|up)$/)
+*,~/(?:audinifer|earnvidjavgg|hanerix|javstreamhq|playmogo|ryderjet|str(?:eamtape|p2p)|t(?:racylocalschool|urbo(?:plays|vidhls))|vibuxer|xhamster)\.(?:c(?:lick|om)|to|xyz)/##+js(aeld, /^mousemove$/)
 *##+js(aeld, adb.updated)
 xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(aeld, click, openPopup)
@@ -32,7 +32,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(no-fetch-if, /hpyjmp|marzaent/)
 *##+js(rmnt, script, /AdProvider|__CLP|adsbyjuicy|fuckAdBlock|lczxsusin|pop(?:ads|cash)/)
 *##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
-*##+js(disable-newtab-links)
+*,~/javenglish\.cc/##+js(disable-newtab-links)
 *##+js(nowoif)
 *$subdocument,third-party
 *$popup
@@ -50,5 +50,14 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
 *##[class*="ad-placement"]
+*##[class*="cookiesAnnounce"]
 *##[style*="2147483647"]
 a2zapk.*##[class*="modalpop"]
+xhamster.*##:is([aria-label*="Third Party Content"], [class*="premium-n-overlay"], [class*="video-thumb"]):has([href*="faphouse"])
+xhamster.*##:is([aria-label*="Third Party Content"], [class*="bottom-widget"], [class*="ts-init"], [class*="video-thumb"]):has([href*="xham.live"])
+xhamster.*##:is([aria-label*="Third Party Content"], [class*="video-thumb"]):has([src*="flirtify"])
+xhamster.*##[class$="containerBottomSpot"]
+xhamster.*##[class$="xp-subscribe"]
+xhamster.*##[class$="xplayer-hover-menu"]
+xhamster.*##[data-role$="banner-underplayer"]
+xhamster.*##[data-role*="promo-messages"]
