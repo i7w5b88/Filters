@@ -15,7 +15,7 @@
 *##+js(aopw, /^Fingerprint(?:2|JS)|Notification|_pop$/)
 *##+js(aeld, , system.popunder)
 *##+js(aeld, /^mouse(?:down|up)$/)
-*,~/(?:earnvidjavgg|javstreamhq|streamtape|turbovidhls)\.(?:com|to|xyz)/##+js(aeld, /^mousemove$/)
+*,~/(?:audinifer|earnvidjavgg|hanerix|javstreamhq|ryderjet|str(?:eamtape|p2p)|turbo(?:plays|vidhls)|vibuxer)\.(?:c(?:lick|om)|to|xyz)/##+js(aeld, /^mousemove$/)
 *##+js(aeld, adb.updated)
 xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(aeld, click, openPopup)
@@ -36,14 +36,14 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(nowoif)
 *$subdocument,third-party
 *$popup
-*$xmlhttprequest,third-party
+*$xmlhttprequest,third-party,domain=~player.upn.one
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsolutions|githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:doodstream|e(?:arnvidjavgg|mturbovid)|h(?:anerix|glink)|javstreamhq|playmogo|ryderjet|str(?:eam)?(?:p2p|tape)|t(?:racylocalschool|urbo(?:plays|vidhls))|upn|v(?:ibuxer|oe))(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:audinifer|doodstream|e(?:arnvidjavgg|mturbovid)|h(?:anerix|glink)|javstreamhq|playmogo|ryderjet|str(?:eam)?(?:p2p|tape)|t(?:racylocalschool|urbo(?:plays|vidhls))|upn|v(?:ibuxer|oe))(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:e(?:ro|xternulls)|g(?:ithubassets|oogleusercontent)|schale|tiktok|unlockapk)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\/[^?#]*\/(?:embed[0-9]{1,3}|j(?:query|wplayer[0-9]{0,3})|lazyload|provider|video)(?:[-.](?:core|hls|lazyload|ui))?(?:js)?(?:\.(?:controls|hotkeys))?(?:\.min)?\.js(?:[?#].*)?$/$script,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\/[^?#]*\/(?:embed[0-9]{1,3}|j(?:query|wplayer[0-9]{0,3})|lazyload|p(?:lyr|rovider)|video)(?:[-.](?:core|hls|lazyload|ui))?(?:js)?(?:\.(?:controls|hotkeys))?(?:\.min)?\.js(?:[?#].*)?$/$script,third-party
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:turnstile|recaptcha)(?:\/[^?#]*)?(?:[?#].*)?$/$subdocument,third-party
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:recaptcha(?:\/[^?#]*)?|[^\/?#]+\.(?:m3u8|mp4|txt|ts|woff2?))(?:[?#].*)?$/$xmlhttprequest,third-party
 !----------------------------------------------------------!
