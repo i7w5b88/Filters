@@ -52,4 +52,3 @@
 *##[id^="ifad"]
 *##[target="_blank"]:remove-attr(target)
 a2zapk.*##[class*="modalpop"]
-
