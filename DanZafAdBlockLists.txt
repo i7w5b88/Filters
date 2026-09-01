@@ -41,7 +41,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *$subdocument,third-party,domain=~bysejikuar.com|~ystream.id
 *$popup
 *$xmlhttprequest,third-party,domain=~player.upn.one
-! *$image
+*$image
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
@@ -65,7 +65,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##[style*="9999999"]
 *##[target="_blank"]:remove-attr(target)
 *##^script:has-text(/(?:bossy-hat|histats|pemsrv|yandex)\.(?:com|ru)/i)
-*##^script[src*="/js/pop"],[src*="cloudflareinsights.com"],[src*="frozenpayerpregnant.com"],[src*="googletagmanager.com"],[src*="waust.at"]
+*##^script[src*="/js/pop"],[src*="cloudflareinsights.com"],[src*="frozenpayerpregnant.com"],[src*="googletagmanager.com"],[src*="magsrv.com"],[src*="waust.at"]
 a2zapk.*##[class*="modalpop"]
 eporner.*##[class^="adnative"]
 eporner.*##[class^="adsinfo"]
