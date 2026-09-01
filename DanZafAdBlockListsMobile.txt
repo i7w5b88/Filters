@@ -62,6 +62,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##[id^="ifad"]
 *##[style*="2147483647"]
 *##[target="_blank"]:remove-attr(target)
+*##^script:has-text(/histats\.com/i)
 *##^script[src*="/js/popup"],[src*="cloudflareinsights.com"],[src*="googletagmanager.com"]
 a2zapk.*##[class*="modalpop"]
 eporner.*##[class^="adnative"]
