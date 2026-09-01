@@ -9,16 +9,17 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,third-party
-/\/ads\/(?:pre-roll|video-ads)\.js$/$script
+/\/(?:ads\/(?:pre-roll|video-ads)|pop(?:Code)?[0-9-]+)\.(?:js|php)$/$script
+! /\/pop(?:Code)?[0-9-]+\.(?:js|php)$/$script
 *##+js(aopr, /^Fingerprint(?:2|JS)|Notification|_pop$/)
 *##+js(aopr, openPopup)
 *##+js(aopw, /^Fingerprint(?:2|JS)|Notification|_pop$/)
 *##+js(aopw, openPopup)
 *##+js(aeld, , system.popunder)
-*,~/xhamster\.com/##+js(aeld, /^mouse(?:down|up)$/)
-*,~/(?:audinifer|earnvidjavgg|hanerix|javstreamhq|playmogo|ryderjet|str(?:eamtape|p2p)|t(?:racylocalschool|urbo(?:plays|vidhls))|vibuxer|xhamster)\.(?:c(?:lick|om)|to|xyz)/##+js(aeld, /^mousemove$/)
-*,~/eporner\.com/##+js(aeld, /^pointer(?:down|up)$/)
-*##+js(aeld, /^pointermove$/)
+*,~/(?:eporner|xhamster)\.com/##+js(aeld, /^mouse(?:down|up)$/)
+*,~/(?:audinifer|e(?:arnvidjavgg|porner)|fapdiner|hanerix|javstreamhq|playmogo|ryderjet|str(?:eamtape|p2p)|t(?:racylocalschool|urbo(?:plays|vidhls))|vibuxer|xhamster)\.(?:c(?:lick|om)|to|xyz)/##+js(aeld, /^mousemove$/)
+*,~/(?:eporner|fapdiner)\.com/##+js(aeld, /^pointer(?:down|up)$/)
+*,~/fapdiner\.com/##+js(aeld, /^pointermove$/)
 *,~/(?:eporner|fapdiner|s(?:avedvids|treambeast))(\.upn)?\.(?:com|one)/##+js(aeld, /^touch(?:end|start)$/)
 *##+js(aeld, /^touchmove$/)
 *##+js(aeld, adb.updated)
@@ -54,21 +55,22 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##*:has(> :is(.ads,.adv-footer,#footadframe))
+*##*:has(> :is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayerIfr"],[id*="ifdeskadmiddle"]))
 *##[class*="-ad-"]:has([href*="adstub"])
 *##[class*="ad-placement"]
+*##[class*="ad300"]
 *##[class*="cookiesAnnounce"]
 *##[id*="admobile"]
 *##[id*="adstripe"]
+*##[id*="box-adv"]
 *##[id*="floatadsbawah"]
 *##[id^="ifad"]
 *##[style*="2147483647"]
 *##[style*="9999999"]
 *##[target="_blank"]:remove-attr(target)
 *##^script:has-text(/(?:bossy-hat|histats|magsrv|yandex)\.(?:com|ru)/i)
-*##^script[src*="/js/pop"], [src*="cloudflareinsights.com"], [src*="frozenpayerpregnant.com"], [src*="googletagmanager.com"], [src*="waust.at"]
+*##^script[src*="/js/pop"], [src*="cloudflareinsights.com"], [src*="frozenpayerpregnant.com"], [src*="googletagmanager.com"], [src*="piwik.js"], [src*="waust.at"]
 a2zapk.*##[class*="modalpop"]
-eporner.*##[class^="adnative"]
 eporner.*##[class^="adsinfo"]
 hitomi.*##:is(.content,.top-content) > :first-child
 xhamster.*##:is([aria-label*="Third Party Content"], [class*="bottom-widget"], [class*="ts-init"], [class*="video-thumb"]):has([href*="xham.live"])
