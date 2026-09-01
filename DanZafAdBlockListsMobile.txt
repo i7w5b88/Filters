@@ -35,7 +35,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(no-fetch-if, /hpyjmp|marzaent/)
 *##+js(rmnt, script, /AdProvider|__CLP|adsbyjuicy|fuckAdBlock|lczxsusin|pop(?:ads|cash)/)
 *##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
-*,~/javenglish\.cc/##+js(disable-newtab-links)
+*,~/(?:duckduckgo|javenglish)\.(?:c(?:c|om))/##+js(disable-newtab-links)
 /dzpa\.com/##+js(window-close-if, /^/)
 *##+js(nowoif)
 *$subdocument,third-party
