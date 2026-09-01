@@ -41,7 +41,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *$subdocument,third-party,domain=~bysejikuar.com|~ystream.id
 *$popup
 *$xmlhttprequest,third-party,domain=~player.upn.one
-! *$image
+*$image
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
@@ -67,6 +67,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 a2zapk.*##[class*="modalpop"]
 eporner.*##[class^="adnative"]
 eporner.*##[class^="adsinfo"]
+hitomi.*##:is(.content,.top-content) > :first-child
 xhamster.*##:is([aria-label*="Third Party Content"], [class*="bottom-widget"], [class*="ts-init"], [class*="video-thumb"]):has([href*="xham.live"])
 xhamster.*##:is([aria-label*="Third Party Content"], [class*="premium-n-overlay"], [class*="video-thumb"]):has([href*="faphouse"])
 xhamster.*##:is([aria-label*="Third Party Content"], [class*="video-thumb"]):has([src*="flirtify"])
