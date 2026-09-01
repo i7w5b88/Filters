@@ -34,14 +34,14 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(no-xhr-if, /hpyjmp|marzaent/)
 *##+js(no-fetch-if, /hpyjmp|marzaent/)
 *##+js(rmnt, script, /AdProvider|__CLP|adsbyjuicy|fuckAdBlock|lczxsusin|pop(?:ads|cash)/)
-*##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP/)
+*##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP|t=decodeURI/)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|om))/##+js(disable-newtab-links)
 /dzpa\.com/##+js(window-close-if, /^/)
 *##+js(nowoif)
 *$subdocument,third-party,domain=~bysejikuar.com|~ystream.id
 *$popup
 *$xmlhttprequest,third-party,domain=~player.upn.one
-*$image
+! *$image
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
@@ -54,6 +54,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
+*##*:has(> :is(.ads,.adv-footer))
 *##[class*="-ad-"]:has([href*="adstub"])
 *##[class*="ad-placement"]
 *##[class*="cookiesAnnounce"]
@@ -63,8 +64,8 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##[style*="2147483647"]
 *##[style*="9999999"]
 *##[target="_blank"]:remove-attr(target)
-*##^script:has-text(/(?:histats|pemsrv|yandex)\.(?:com|ru)/i)
-*##^script[src*="/js/pop"],[src*="cloudflareinsights.com"],[src*="googletagmanager.com"]
+*##^script:has-text(/(?:bossy-hat|histats|pemsrv|yandex)\.(?:com|ru)/i)
+*##^script[src*="/js/pop"],[src*="cloudflareinsights.com"],[src*="frozenpayerpregnant.com"],[src*="googletagmanager.com"],[src*="waust.at"]
 a2zapk.*##[class*="modalpop"]
 eporner.*##[class^="adnative"]
 eporner.*##[class^="adsinfo"]
