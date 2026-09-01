@@ -55,6 +55,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 !----------------------------------------------------------!
 *##[class*="ad-placement"]
 *##[class*="cookiesAnnounce"]
+*##[id*="adstripe"]:has([href*="twinrdengine"])
 *##[style*="2147483647"]
 a2zapk.*##[class*="modalpop"]
 eporner.*##[class^="adnative"]
