@@ -64,8 +64,8 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##[style*="2147483647"]
 *##[style*="9999999"]
 *##[target="_blank"]:remove-attr(target)
-*##^script:has-text(/(?:bossy-hat|histats|pemsrv|yandex)\.(?:com|ru)/i)
-*##^script[src*="/js/pop"],[src*="cloudflareinsights.com"],[src*="frozenpayerpregnant.com"],[src*="googletagmanager.com"],[src*="magsrv.com"],[src*="waust.at"]
+*##^script:has-text(/(?:bossy-hat|histats|magsrv|pemsrv|tsyndicate|yandex)\.(?:com|ru)/i)
+*##^script[src*="/js/pop"],[src*="cloudflareinsights.com"],[src*="frozenpayerpregnant.com"],[src*="googletagmanager.com"],[src*="magsrv.com"],[src*="tsyndicate.com"],[src*="waust.at"]
 a2zapk.*##[class*="modalpop"]
 eporner.*##[class^="adnative"]
 eporner.*##[class^="adsinfo"]
