@@ -17,7 +17,7 @@
 *##+js(aopw, openPopup)
 *##+js(aeld, , system.popunder)
 *,~/(?:eporner|xhamster)\.com/##+js(aeld, /^mouse(?:down|up)$/)
-*,~/(?:audinifer|e(?:arnvidjavgg|porner)|fapdiner|hanerix|javstreamhq|playmogo|ryderjet|str(?:eamtape|p2p)|t(?:racylocalschool|urbo(?:plays|vidhls))|vibuxer|xhamster)\.(?:c(?:lick|om)|to|xyz)/##+js(aeld, /^mousemove$/)
+*,~/(?:audinifer|e(?:arnvidjavgg|porner)|fapdiner|hanerix|javstreamhq|playmogo|ryderjet|str(?:eamtape|p2p)|t(?:racylocalschool|urbo(?:plays|vidhls))|v(?:ibuxer|stream)|xhamster|ystream)\.(?:c(?:lick|om)|id|to|xyz)/##+js(aeld, /^mousemove$/)
 *,~/(?:eporner|fapdiner)\.com/##+js(aeld, /^pointer(?:down|up)$/)
 *,~/fapdiner\.com/##+js(aeld, /^pointermove$/)
 *,~/(?:eporner|fapdiner|s(?:avedvids|treambeast))(\.upn)?\.(?:com|one)/##+js(aeld, /^touch(?:end|start)$/)
@@ -32,6 +32,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(set, document.hidden, false)
 *##+js(set, document.visibilityState, visible)
 *##+js(set, popundersPerIP, 0)
+playmogo.*##+js(nostif, /^/)
 *##+js(no-xhr-if, /hpyjmp|marzaent/)
 *##+js(no-fetch-if, /hpyjmp|marzaent/)
 *##+js(rmnt, script, /AdProvider|__CLP|adsbyjuicy|fuckAdBlock|initEPNB|lczxsusin|pop(?:ads|cash)/)
@@ -69,7 +70,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##[style*="9999999"]
 *##[target="_blank"]:remove-attr(target)
 *##^script:has-text(/(?:bossy-hat|histats|magsrv|yandex)\.(?:com|ru)/i)
-*##^script[src*="/js/pop"], [src*="cloudflareinsights.com"], [src*="frozenpayerpregnant.com"], [src*="googletagmanager.com"], [src*="piwik.js"], [src*="waust.at"]
+*##^script[src*="/js/pop"], [src*="blockadsnot.com"], [src*="cloudflareinsights.com"], [src*="frozenpayerpregnant.com"], [src*="googletagmanager.com"], [src*="piwik.js"], [src*="waust.at"]
 a2zapk.*##[class*="modalpop"]
 eporner.*##[class^="adsinfo"]
 hitomi.*##:is(.content,.top-content) > :first-child
