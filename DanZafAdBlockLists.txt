@@ -33,7 +33,7 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(set, popundersPerIP, 0)
 *##+js(no-xhr-if, /hpyjmp|marzaent/)
 *##+js(no-fetch-if, /hpyjmp|marzaent/)
-*##+js(rmnt, script, /AdProvider|__CLP|adsbyjuicy|fuckAdBlock|lczxsusin|pop(?:ads|cash)/)
+*##+js(rmnt, script, /AdProvider|__CLP|adsbyjuicy|fuckAdBlock|initEPNB|lczxsusin|pop(?:ads|cash)/)
 *##+js(rmnt, script[data-cfasync], /h=decodeURIComponent|popundersPerIP|t=decodeURI/)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|om))/##+js(disable-newtab-links)
 /dzpa\.com/##+js(window-close-if, /^/)
@@ -54,11 +54,12 @@ xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##*:has(> :is(.ads,.adv-footer))
+*##*:has(> :is(.ads,.adv-footer,#footadframe))
 *##[class*="-ad-"]:has([href*="adstub"])
 *##[class*="ad-placement"]
 *##[class*="cookiesAnnounce"]
-*##[id*="adstripe"]:has([href*="twinrdengine"])
+*##[id*="admobile"]
+*##[id*="adstripe"]
 *##[id*="floatadsbawah"]
 *##[id^="ifad"]
 *##[style*="2147483647"]
