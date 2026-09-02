@@ -16,7 +16,7 @@
 *##+js(aopw, openPopup)
 *##+js(aeld, , system.popunder)
 *,~/(?:eporner|xhamster)\.com/##+js(aeld, /^mouse(?:down|up)$/)
-*,~/(?:audinifer|cloudwish|e(?:arnvidjavgg|porner)|fapdiner|hanerix|javstreamhq|mycloudz|playmogo|ryderjet|s(?:avedvids|tr(?:eamtape|p2p))|t(?:racylocalschool|urbo(?:plays|vid(hls)?))|v(?:ibuxer|stream)|xhamster|ystream)\.(?:c(?:c|lick|om)|id|to|vip|xyz)/##+js(aeld, /^mousemove$/)
+*,~/(?:audinifer|cloudwish|e(?:arnvidjavgg|porner)|fapdiner|hanerix|javstreamhq|mycloudz|playmogo|ryderjet|s(?:avedvids|tr(?:eam(?:rizz|tape)|p2p))|t(?:racylocalschool|urbo(?:plays|vid(hls)?))|v(?:ibuxer|stream)|xhamster|ystream)\.(?:c(?:c|lick|om)|id|to|vip|xyz)/##+js(aeld, /^mousemove$/)
 *,~/(?:eporner|fapdiner)\.com/##+js(aeld, /^pointer(?:down|up)$/)
 *,~/fapdiner\.com/##+js(aeld, /^pointermove$/)
 *,~/(?:eporner|fapdiner|s(?:avedvids|treambeast))(\.upn)?\.(?:com|one)/##+js(aeld, /^touch(?:end|start)$/)
