@@ -15,12 +15,12 @@
 *##+js(aopw, /^Fingerprint(?:2|JS)|Notification|_pop$/)
 *##+js(aopw, openPopup)
 *##+js(aeld, , system.popunder)
-*,~/(?:eporner|xhamster)\.com/##+js(aeld, /^mouse(?:down|up)$/)
-*,~/(?:audinifer|cloudwish|e(?:arnvidjavgg|porner)|fapdiner|hanerix|javstreamhq|mycloudz|playmogo|ryderjet|s(?:avedvids|tr(?:eam(?:rizz|tape)|p2p))|t(?:racylocalschool|urbo(?:plays|vid(hls)?))|v(?:ibuxer|stream)|xhamster|ystream)\.(?:c(?:c|lick|om)|id|to|vip|xyz)/##+js(aeld, /^mousemove$/)
-*,~/(?:eporner|fapdiner)\.com/##+js(aeld, /^pointer(?:down|up)$/)
-*,~/fapdiner\.com/##+js(aeld, /^pointermove$/)
-*,~/(?:eporner|fapdiner|s(?:avedvids|treambeast))(\.upn)?\.(?:com|one)/##+js(aeld, /^touch(?:end|start)$/)
-*##+js(aeld, /^touchmove$/)
+! *,~/(?:eporner|xhamster)\.com/##+js(aeld, /^mouse(?:down|up)$/)
+! *,~/(?:audinifer|cloudwish|e(?:arnvidjavgg|porner)|fapdiner|hanerix|javstreamhq|mycloudz|playmogo|ryderjet|s(?:avedvids|tr(?:eam(?:rizz|tape)|p2p))|t(?:racylocalschool|urbo(?:plays|vid(hls)?))|v(?:ibuxer|stream)|xhamster|ystream)\.(?:c(?:c|lick|om)|id|to|vip|xyz)/##+js(aeld, /^mousemove$/)
+! *,~/(?:eporner|fapdiner)\.com/##+js(aeld, /^pointer(?:down|up)$/)
+! *,~/fapdiner\.com/##+js(aeld, /^pointermove$/)
+! *,~/(?:eporner|fapdiner|s(?:avedvids|treambeast))(\.upn)?\.(?:com|one)/##+js(aeld, /^touch(?:end|start)$/)
+! *##+js(aeld, /^touchmove$/)
 *##+js(aeld, adb.updated)
 xhamster.*##+js(aeld, click, [native code], elements, .main-wrap)
 *##+js(aeld, click, openPopup)
@@ -40,9 +40,9 @@ playmogo.*##+js(nostif, /^/)
 /dzpa\.com/##+js(window-close-if, /^/)
 *##+js(nowoif)
 *$subdocument,third-party,domain=~bysejikuar.com|~ystream.id
-*$popup
+! *$popup
 *$xmlhttprequest,third-party,domain=~player.upn.one
-! *$image
+*$image
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
@@ -60,6 +60,7 @@ playmogo.*##+js(nostif, /^/)
 *##[class*="ad-placement"]
 *##[class*="ad300"]
 *##[class*="cookiesAnnounce"]
+*##[class*="header-ad-"]
 *##[id*="admobile"]
 *##[id*="adstripe"]
 *##[id*="box-adv"]
