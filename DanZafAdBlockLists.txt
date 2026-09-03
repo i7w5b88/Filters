@@ -1,15 +1,3 @@
-! Title: DanZaf AdBlock Lists
-! Author: Dwi Arianto
-! Version: 202608281147
-! Description: DanZaf Custom Filter
-! Last modified: Wed, 28 Aug 2026 11:47:24 +0000
-! Expires: 1 days (update frequency)
-!
-!----------------------------------------------------------!
-!------------------------- Filter -------------------------!
-!----------------------------------------------------------!
-*$script,third-party
-/\/(?:ads\/(?:pre-roll|video-ads)|pop(?:Code)?[0-9-]+)\.(?:js|php)$/$script,important
 *##+js(aopr, /^Fingerprint(?:2|JS)|Notification|_pop$/)
 *##+js(aopr, openPopup)
 *##+js(aopw, /^Fingerprint(?:2|JS)|Notification|_pop$/)
@@ -39,25 +27,8 @@ playmogo.*##+js(nostif, /^/)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|om))/##+js(disable-newtab-links)
 /dzpa\.com/##+js(window-close-if, /^/)
 *##+js(nowoif)
-*$subdocument,third-party,domain=~bysejikuar.com|~ystream.id
-! *$popup
-*$xmlhttprequest,third-party,domain=~player.upn.one
-! /(?:https?:\/\/(?:[^/]+\.)?(?:sacdnssedge)\.(?:com)\/|\/faphouse-crown\.(?:mp4)(?:[?#]|$))/$media,important
-! *$image
-/(?:https?:\/\/(?:[^/]+\.)?(?:doppiocdn|f(?:hcdnmedia|lirtify)|xxxviijmp)\.(?:com|online)\/|\/faphouse-crown\.(?:gif|jpe?g|svg)(?:[?#]|$))/$image,important
-!----------------------------------------------------------!
-!-------------------- Filter Exception --------------------!
-!----------------------------------------------------------!
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsolutions|githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:audinifer|bysejikuar|c(?:dnahihi|loudwish)|do(?:oo)?od(?:stream)?|e(?:arnvidjavgg|mturbovid)|firestream|h(?:anerix|glink|ostvideo|ugstream)|javstreamhq|m(?:orencius|ycloudz)|ornop|play(?:er|mogo)|ryderjet|s(?:avedvids|tr(?:eam)?(?:beast|p2p|tape))|t(?:racylocalschool|urbo(?:plays|vid(?:hls)?))|v(?:ibuxer|oe|stream)|ystream)(?:-?cdn)?(?:\.(?:my|upn))?\.(?:c(?:c|l(?:ick|oud)|om)?|i(?:d|o)|media|net(?:work)?|o(?:n(?:e|line)|rg|vh)|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|e(?:ro|xternulls)|g(?:ithubassets|oogleusercontent)|schale|tiktok|unlockapk)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:recaptcha(?:\/[^?#]*)?|(?:silvermine[-.])?(?:embed[0-9]{1,3}|hls|j(?:query|wplayer[0-9]{0,3})|lazyload|navigation|p(?:lyr|rovider)|video)(?:[-.](?:bxslider|core|hls|lazyload|polyfilled|touchSwipe|ui))?(?:js)?(?:[-.](?:controls|hotkeys|quality))?(?:[-.](?:html5|selector))?(?:\.min)?\.js)(?:[?#].*)?$/$script,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:turnstile|recaptcha)(?:\/[^?#]*)?(?:[?#].*)?$/$subdocument,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:recaptcha|hls2)(?:\/[^?#]*)?|[^\/?#]+\.(?:m3u8|mp4|svg|t(?:s|xt)|woff2?))(?:[?#].*)?$/$xmlhttprequest,third-party
-!----------------------------------------------------------!
-!-------------------- Cosmetics Filter --------------------!
-!----------------------------------------------------------!
-*##*:has(> :is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayerIfr"],[id*="ifdeskadmiddle"]))
+
+
 *##[class*="-ad-"]:has([href*="adstub"])
 *##[class*="ad-placement"]
 *##[class*="ad300"]
@@ -77,10 +48,7 @@ playmogo.*##+js(nostif, /^/)
 a2zapk.*##[class*="modalpop"]
 eporner.*##[class^="adsinfo"]
 hitomi.*##:is(.content,.top-content) > :first-child
-xhamster.*##:is([aria-label*="Third Party Content1"],[class*="premium-n-overlay1"],[class*="video-thumb1"],[class^="container"],[class^="thumbContainer"]):has([href*="faphouse"])
-xhamster.*##:is([aria-label*="Third Party Content1"],[class*="bottom-widget1"],[class*="item--type1"],[class*="item--widget"],[class*="ts-init"],[class*="video-thumb1"]):has([href*="xham.live"])
-xhamster.*##:is([class*="player-banner"]):has([src*="cdnsolutions.media"])
-xhamster.*##:is([aria-label*="Third Party Content1"],[class*="item--type"],[class*="video-thumb"]):has([src*="flirtify"])
+
 xhamster.*##[class$="containerBottomSpot"]
 xhamster.*##[class$="xp-subscribe"]
 xhamster.*##[class$="xplayer-hover-menu"]
