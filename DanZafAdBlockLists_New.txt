@@ -41,3 +41,32 @@
 *##[class*="xplayer-ads-block-companion"]:remove()
 *##[class*="xplayer-ads-block__link"]:remove()
 *##[class*="player-banner"]:remove()
+
+
+
+
+
+
+! Title: DanZaf AdBlock Lists
+! Author: Dwi Arianto
+! Version: 202608281147
+! Description: DanZaf Custom Filter
+! Last modified: Wed, 28 Aug 2026 11:47:24 +0000
+! Expires: 1 days (update frequency)
+!
+!----------------------------------------------------------!
+!------------------------- Filter -------------------------!
+!----------------------------------------------------------!
+*$script,third-party
+/^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?(?:faphouse|flirtify)[A-Za-z0-9._-]*\.svg$/$image,important
+!----------------------------------------------------------!
+!-------------------- Filter Exception --------------------!
+!----------------------------------------------------------!
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:xh-(?:mobile24|shared24)\/.*|.*\.(?:(?:en)[-.])?(?:assetsLoader5|chore24|ext8|manifest|page24|pornstar24|runtime6|start)(?:[-.](?:detect8|modal7|visible24)?)?(?:[-.](?:min24))?)\.js(?:on)?$/$script,third-party
+!----------------------------------------------------------!
+!-------------------- Cosmetics Filter --------------------!
+!----------------------------------------------------------!
+*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayerIfr"],[id*="ifdeskadmiddle"])):remove()
+*##[class*="cookiesAnnounce"]:remove()
+*##[class*="ts-init"]:remove()
