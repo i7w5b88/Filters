@@ -58,15 +58,17 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,third-party
-/^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?(?:faphouse|flirtify)[A-Za-z0-9._-]*\.svg$/$image,important
+/^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile))|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg)$/$image,script,important
+! /^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?(?:faphouse|flirtify)[A-Za-z0-9._-]*\.svg$/$image,important
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
-@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:xh-(?:mobile24|shared24)\/.*|.*\.(?:(?:en)[-.])?(?:assetsLoader5|chore24|ext8|manifest|page24|pornstar24|runtime6|start)(?:[-.](?:detect8|modal7|visible24)?)?(?:[-.](?:min24))?)\.js(?:on)?$/$script,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha)(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:as(?:setsLoader|ync-[A-Za-z0-9._-]+)|chore|detect|en|face|m(?:anifest|odal)|pornstar|runtime|start|visible)(?:\.min)?\.js(?:on)?)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayerIfr"],[id*="ifdeskadmiddle"])):remove()
+*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
 *##[class*="cookiesAnnounce"]:remove()
 *##[class*="ts-init"]:remove()
+
