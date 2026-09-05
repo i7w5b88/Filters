@@ -10,11 +10,13 @@
 !----------------------------------------------------------!
 *$script,third-party
 /^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg)$/$image,script,important
-*##+js(aeld, /^(?:mouse(?:down|up)|click|dblclick)|pointer(?:down|up|cancel)|auxclick|contextmenu|touch(?:start|end|cancel))$/, , elements, .main-wrap)
-*##+js(aeld, /^(?:mouse(?:down|up)|click|dblclick)|pointer(?:down|up|cancel)|auxclick|contextmenu|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
+*##+js(aeld, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
+*##+js(aeld, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
 *##+js(aeld, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
-*##+js(set-cookie, parental-control, yes)
-*##+js(set-cookie, x_preroll_shown, yes)
+*##+js(aeld, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, [class*="xplayer-hover-menu"])
+*##+js(aeld, /^dblclick$/)
+xhamster.*##+js(set-cookie, parental-control, yes, , reload, 1)
+xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
@@ -23,12 +25,13 @@
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
-*##:is([class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-*##:is([class*="bottom-widget"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-*##:is([class*="clipstore-bottom"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
 ! *##[class*="cam-thumb"]:remove()
 ! *##[class*="cam-wgt"]:remove()
-*##[class*="cookiesAnnounce"]:remove()
 ! *##[class*="premium-n-overlay"]:remove()
+*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
+*##:is([class*="bottom-widget"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="clipstore-bottom"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##[class*="cookiesAnnounce"]:remove()
 *##[class*="ts-init"]:remove()
+*##[data-role*="banner-underplayer"]:remove()
