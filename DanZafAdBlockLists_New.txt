@@ -9,66 +9,26 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,third-party
-/\/(?:ads\/(?:pre-roll|video-ads)|pop(?:Code)?[0-9-]+)\.(?:js|php)$/$script,important
-*##+js(aeld, click, [native code], elements, .main-wrap)
-*$subdocument,third-party,domain=~bysejikuar.com|~ystream.id
-! *$popup
-*$xmlhttprequest,third-party,domain=~player.upn.one
-! /(?:https?:\/\/(?:[^/]+\.)?(?:sacdnssedge)\.(?:com)\/|\/faphouse-crown\.(?:mp4)(?:[?#]|$))/$media,important
-! *$image
-/(?:https?:\/\/(?:[^/]+\.)?(?:doppiocdn|f(?:hcdnmedia|lirtify)|strpst|xxxviijmp)\.(?:com|online)\/|\/promo\/|\/faphouse-crown\.(?:gif|jpe?g|svg)(?:[?#]|$))/$image,important
-!----------------------------------------------------------!
-!-------------------- Filter Exception --------------------!
-!----------------------------------------------------------!
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsolutions1|githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:audinifer|bysejikuar|c(?:dnahihi|loudwish)|do(?:oo)?od(?:stream)?|e(?:arnvidjavgg|mturbovid)|firestream|h(?:anerix|glink|ostvideo|ugstream)|javstreamhq|m(?:orencius|ycloudz)|ornop|play(?:er|mogo)|ryderjet|s(?:avedvids|tr(?:eam)?(?:beast|p2p|tape))|t(?:racylocalschool|urbo(?:plays|vid(?:hls)?))|v(?:ibuxer|oe|stream)|ystream)(?:-?cdn)?(?:\.(?:my|upn))?\.(?:c(?:c|l(?:ick|oud)|om)?|i(?:d|o)|media|net(?:work)?|o(?:n(?:e|line)|rg|vh)|sx|to|vip|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)*(?:cdnsync|e(?:ro|xternulls)|g(?:ithubassets|oogle(?:usercontent|video))|schale|tiktok|unlockapk)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|om)?|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:recaptcha(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:e(?:n|xt)|silvermine[-.])?(?:assetsLoader|chore1|detect|embed[0-9]{1,3}|hls|fr?ont|j(?:query|wplayer[0-9]{0,3})|manifest|lazyload|navigation|p(?:age|lyr|rovider)|runtime|start|video|x)(?:[-.]?(?:bxslider|core|face|lazyload|modal|p(?:layer|olyfilled)|sta(?:rt|ts)|touchSwipe|ui|visible))?(?:js)?(?:[-.](?:controls|hotkeys|quality))?(?:[-.](?:html5|mobile|selector))?(?:\.min)?\.js|[^?#\/]+(?:\.[a-z]{2}(?:-[a-z0-9]+)*)\.js)(?:[?#].*)?$/$script,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:turnstile|recaptcha)(?:\/[^?#]*)?(?:[?#].*)?$/$subdocument,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:recaptcha|hls2)(?:\/[^?#]*)?|[^\/?#]+\.(?:m3u8|mp4|svg|t(?:s|xt)|woff2?))(?:[?#].*)?$/$xmlhttprequest,third-party
-!----------------------------------------------------------!
-!-------------------- Cosmetics Filter --------------------!
-!----------------------------------------------------------!
-*##*:has(> :is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayerIfr"],[id*="ifdeskadmiddle"])):remove()
-*##:is([aria-label*="Third Party"]):has([class*="banner-container"]):remove()
-*##:is([aria-label*="Third Party"]):has([class*="clipstore"]):remove()
-*##:is([aria-label*="Third Party"],[class*="thumbContainer"],[class^="container"],[data-role*="promo-messages"]):has([href*="faphouse"]):remove()
-*##:is([class*="bottom-widget"],[class*="item--widget"],[class*="ts-init"],[class*="video-thumb"]):has([href*="xham.live"]):remove()
-*##:is([class*="video-thumb"]):has([class*="animated"]):remove()
-*##:is([class*="video-thumb"]):has([src*="flirtify"]):remove()
-*##[class*="cookiesAnnounce"]:remove()
-*##[class*="xplayer-hover-menu"]:remove()
-*##[class*="xplayer-ads-block-companion"]:remove()
-*##[class*="xplayer-ads-block__link"]:remove()
-*##[class*="player-banner"]:remove()
-
-
-
-
-
-
-! Title: DanZaf AdBlock Lists
-! Author: Dwi Arianto
-! Version: 202608281147
-! Description: DanZaf Custom Filter
-! Last modified: Wed, 28 Aug 2026 11:47:24 +0000
-! Expires: 1 days (update frequency)
-!
-!----------------------------------------------------------!
-!------------------------- Filter -------------------------!
-!----------------------------------------------------------!
-*$script,third-party
-/^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile))|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg)$/$image,script,important
-! /^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?(?:faphouse|flirtify)[A-Za-z0-9._-]*\.svg$/$image,important
+/^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg)$/$image,script,important
+*##+js(aeld, /^(?:mouse(?:down|up)|click|dblclick)|pointer(?:down|up|cancel)|auxclick|contextmenu|touch(?:start|end|cancel))$/, , elements, .main-wrap)
+*##+js(aeld, /^(?:mouse(?:down|up)|click|dblclick)|pointer(?:down|up|cancel)|auxclick|contextmenu|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
+*##+js(aeld, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
+*##+js(set-cookie, parental-control, yes)
+*##+js(set-cookie, x_preroll_shown, yes)
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha)(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:as(?:setsLoader|ync-[A-Za-z0-9._-]+)|chore|detect|en|face|m(?:anifest|odal)|pornstar|runtime|start|visible)(?:\.min)?\.js(?:on)?)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha)(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:as(?:setsLoader|ync-[A-Za-z0-9._-]+)|chore|detect|en|face|hls-[0-9.]+|index|m(?:anifest|odal)|pornstar|r(?:esults|untime)|s(?:ingle|tart)|visible|x?player)(?:[-.](?:no)[-.](?:ads))?(?:\.min)?\.js(?:on)?)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
 *##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
+*##:is([class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="bottom-widget"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="clipstore-bottom"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+! *##[class*="cam-thumb"]:remove()
+! *##[class*="cam-wgt"]:remove()
 *##[class*="cookiesAnnounce"]:remove()
+! *##[class*="premium-n-overlay"]:remove()
 *##[class*="ts-init"]:remove()
-
