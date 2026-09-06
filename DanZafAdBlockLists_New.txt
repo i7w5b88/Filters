@@ -9,7 +9,8 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,third-party
-/^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg)$/$image,script,important
+! /^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg)$/$image,script,important
+/^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:modusygunaciro)\.(?:com)\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg))$/$image,script,important
 *##+js(aeld, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
 *##+js(aeld, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
 *##+js(aeld, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
@@ -21,7 +22,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha)(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:as(?:setsLoader|ync-[A-Za-z0-9._-]+)|chore|detect|en|face|hls-[0-9.]+|index|m(?:anifest|odal)|pornstar|r(?:esults|untime)|s(?:ingle|tart)|visible|x?player)(?:[-.](?:no)[-.](?:ads))?(?:\.min)?\.js(?:on)?)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha)(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:as(?:setsLoader|ync-[A-Za-z0-9._-]+)|chore|detect|en|face|hls-[0-9.]+|index|m(?:anifest|odal)|pornstar|r(?:esults|untime)|s(?:ingle|tart)|vi(?:ew|sible)|x?player)(?:[-.](?:(?:mobile[-.])?no)[-.](?:ads))?(?:\.min)?\.js(?:on)?)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
@@ -29,9 +30,11 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 ! *##[class*="cam-wgt"]:remove()
 ! *##[class*="premium-n-overlay"]:remove()
 *##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
-*##:is([class*="bottom-widget"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-*##:is([class*="clipstore-bottom"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-*##:is([class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="bottom-widget"],[class*="clipstore-bottom"],[class*="item--widget"],[class*="thumbContainer"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##[class^="container"]:has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):has([id*="info"]):remove()
 *##[class*="cookiesAnnounce"]:remove()
 *##[class*="ts-init"]:remove()
-*##[data-role*="banner-underplayer"]:remove()
+! *##[data-role*="banner-underplayer"]:remove()
+*##[class*="player-banner"]:remove()
+! *##^script[src*="/gsi/intermediate"]
+! *##^script:has-text(/(?:histats|magsrv|yandex)\.(?:com|ru)/i)
