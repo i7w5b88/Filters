@@ -9,32 +9,64 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,third-party
-! /^https?:\/\/(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg)$/$image,script,important
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:modusygunaciro)\.(?:com)\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg))$/$image,script,important
-*##+js(aeld, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
-*##+js(aeld, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
-*##+js(aeld, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
-*##+js(aeld, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, [class*="xplayer-hover-menu"])
-*##+js(aeld, /^dblclick$/)
+! *##+js(abort-current-script, jQuery, cookie)
+*##+js(abort-current-script, showAds)
+*##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
+*##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
+*##+js(prevent-addEventListener, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
+*##+js(prevent-addEventListener, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, [class*="xplayer-hover-menu"])
+*##+js(prevent-addEventListener, /^dblclick$/)
+*##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
+*##+js(set-constant, document.exitPointerLock, noopFunc)
+! *##+js(set-constant, playerResponse.adPlacements, undefined)
+! *##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
+! *##+js(set-constant, ytInitialPlayerResponse.adSlots, undefined)
+! *##+js(set-constant, ytInitialPlayerResponse.playerAds, undefined)
 xhamster.*##+js(set-cookie, parental-control, yes, , reload, 1)
 xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
+*##+js(prevent-setTimeout, adBlockerDetected)
+! javgg.*##+js(prevent-xhr)
+! javgg.*##+js(prevent-fetch)
+! *##+js(prevent-xhr, /(cdnsolutions)\.(media)/)
+! *##+js(prevent-fetch, /(buzzer\.xhamster)\.(com)/)
+*,~/javenglish\.cc/##+js(disable-newtab-links)
+*##+js(prevent-window-open)
+! *##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
+! *##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots important)
+! *##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
+! *##+js(json-prune-xhr-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
+*$subdocument,third-party
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha)(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:as(?:setsLoader|ync-[A-Za-z0-9._-]+)|chore|detect|en|face|hls-[0-9.]+|index|m(?:anifest|odal)|pornstar|r(?:esults|untime)|s(?:ingle|tart)|vi(?:ew|sible)|x?player)(?:[-.](?:(?:mobile[-.])?no)[-.](?:ads))?(?:\.min)?\.js(?:on)?)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha)(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:as(?:setsLoader|ync-[A-Za-z0-9._-]+)|chore|detect|e(?:mbed(?:[0-9]{1,3})?|n)|face|hls(?:-[0-9.]+|js)|index|j(?:query|wplayer(?:[0-9]{1,3})?)|lazyload|m(?:anifest|odal)|navigation|pornstar|r(?:esults|untime)|s(?:ingle|tart)|vi(?:deo(?:js)?|ew|sible)|x?player)(?:[-.](?:(?:core|(?:mobile[-.])?no)[-.](?:ads|controls)(?:[-.](?:html5))?|bxslider|hotkeys|touchSwipe))?(?:\.min)?\.js(?:on)?)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:doodstream|emturbovid|earnvidjavgg|javstreamhq|streamtape|playmogo|turbovidhls|voe)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
+*##:is([class*="cam-thumb"],[class*="bottom"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##[class*="cookiesAnnounce"]:remove()
+*##[class*="header-ad"]:remove()
+*##[style*="2147483647"]:remove()
+*##[style*="9999999"]:remove()
+! *##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
+! *##[class*="no-ts-init"]:remove()
+! *##:is([data-role*="under-comments"]):has([class*="clipstore-bottom"]):remove()
+! *##:is([data-role*="banner-underplayer"]):has([class*="banner-container"]):remove()
+! *##:is([class*="no-ts-init"]):has([class*="dots-loader"]):remove()
 ! *##[class*="cam-thumb"]:remove()
 ! *##[class*="cam-wgt"]:remove()
 ! *##[class*="premium-n-overlay"]:remove()
-*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
-*##:is([class*="bottom-widget"],[class*="clipstore-bottom"],[class*="item--widget"],[class*="thumbContainer"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-*##[class^="container"]:has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):has([id*="info"]):remove()
-*##[class*="cookiesAnnounce"]:remove()
-*##[class*="ts-init"]:remove()
+! *##:is([class*="ts-init"],[data-role*="under"]):has([class*="loader"]):remove()
+! *##:is([class*="thumb"]):has([class*="animated"]):remove()
+! *##:is([class*="bottom-widget"],[class*="clipstore-bottom"],[class*="item--widget"],[class*="player1"],[class*="thumbContainer"],[class*="video-thumb"],[data-role*="banner-underplayer"],[data-role*="under-comments"]):has([class*="banner-container"],[class*="clipstore-bottom"],[class*="dots-loader"],[href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+! *##[class^="container"]:has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):has([id*="info"]):remove()
+! *##[class*="ts-init"]:remove()
 ! *##[data-role*="banner-underplayer"]:remove()
-*##[class*="player-banner"]:remove()
+! *##[class*="player-banner"]:remove()
+! *##script[src*="googletagmanager.com"]
+! <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TLDPV3J"></script>
 ! *##^script[src*="/gsi/intermediate"]
 ! *##^script:has-text(/(?:histats|magsrv|yandex)\.(?:com|ru)/i)
