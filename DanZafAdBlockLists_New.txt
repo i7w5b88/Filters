@@ -41,6 +41,10 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
+! *##^script:has-text(/(?:histats|magsrv|yandex)\.(?:com|ru)/i)
+! *##^script[src*="/gsi/intermediate"]
+*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
+*##.strpchad:remove()
 *##:is([class*="cam-thumb"],[class*="bottom"],[class*="item--widget"],[class*="thumbContainer"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
 *##:is([class*="container"]):has([class*="scrollable"]):remove()
 *##[class*="cookiesAnnounce"]:remove()
@@ -50,7 +54,3 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 xhamster.*##[class*="--middle"]:remove()
 xhamster.*##[class*="--top"]:remove()
 xhamster.*##[class*="layout-ad"]:remove()
-*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
-! *##^script[src*="/gsi/intermediate"]
-! *##^script:has-text(/(?:histats|magsrv|yandex)\.(?:com|ru)/i)
-*##.strpchad:remove()
