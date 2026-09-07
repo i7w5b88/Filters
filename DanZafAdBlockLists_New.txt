@@ -50,11 +50,15 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##:is([class*="cam-thumb"],[class*="bottom"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="cam-thumb"],[class*="bottom"],[class*="item--widget"],[class*="thumbContainer"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="container"]):has([class*="scrollable"]):remove()
 *##[class*="cookiesAnnounce"]:remove()
 *##[class*="header-ad"]:remove()
 *##[style*="2147483647"]:remove()
 *##[style*="9999999"]:remove()
+xhamster.*##[class*="--middle"]:remove()
+xhamster.*##[class*="--top"]:remove()
+xhamster.*##[class*="layout-ad"]:remove()
 ! *##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
 ! *##[class*="no-ts-init"]:remove()
 ! *##:is([data-role*="under-comments"]):has([class*="clipstore-bottom"]):remove()
