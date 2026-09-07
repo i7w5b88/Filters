@@ -41,16 +41,18 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
+! *##:is([class*="cam-thumb"],[class*="bottom"],[class*="item--widget"],[class*="thumbContainer"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
 ! *##^script:has-text(/(?:histats|magsrv|yandex)\.(?:com|ru)/i)
 ! *##^script[src*="/gsi/intermediate"]
 *##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
 *##.strpchad:remove()
-*##:is([class*="cam-thumb"],[class*="bottom"],[class*="item--widget"],[class*="thumbContainer"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-*##:is([class*="container"]):has([class*="scrollable"]):remove()
+*##:is([aria-label="Third Party Content"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="cam-thumb__look-like-item"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="thumb-list__item"][class*="video-thumb"][tabindex="0"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##:is([class*="thumbContainer"][class="video-thumb"][class="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+*##[aria-label="Third Party Content"][data-role*="banner-underplayer"]:remove()
 *##[class*="cookiesAnnounce"]:remove()
 *##[class*="header-ad"]:remove()
+*##[class*="insideVideoList"][class*="thumbsScrollable"][data-block="moments"]:remove()
 *##[style*="2147483647"]:remove()
 *##[style*="9999999"]:remove()
-xhamster.*##[class*="--middle"]:remove()
-xhamster.*##[class*="--top"]:remove()
-xhamster.*##[class*="layout-ad"]:remove()
