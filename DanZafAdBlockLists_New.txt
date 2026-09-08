@@ -19,6 +19,7 @@
 *##+js(prevent-addEventListener, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
 *##+js(prevent-addEventListener, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, [class*="xplayer-hover-menu"])
 *##+js(prevent-addEventListener, /^dblclick$/)
+*##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, popMagic)
 ! logging
 ! *##+js(prevent-addEventListener)
 *##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
@@ -35,24 +36,41 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:githubassets)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha)(?:\/[^?#]*)?|(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:as(?:setsLoader|ync-[A-Za-z0-9._-]+)|chore|detect|e(?:mbed(?:[0-9]{1,3})?|n)|face|hls(?:-[0-9.]+|js)|index|j(?:query|wplayer(?:[0-9]{1,3})?)|lazyload|m(?:anifest|odal)|navigation|pornstar|r(?:esults|untime)|s(?:ingle|tart)|vi(?:deo(?:js)?|ew|sible)|x?player)(?:[-.](?:(?:core|(?:mobile[-.])?no)[-.](?:ads|controls)(?:[-.](?:html5))?|bxslider|hotkeys|touchSwipe))?(?:\.min)?\.js(?:on)?)(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$script,third-party
-@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:doodstream|e(?:arnvidjavgg|mturbovid)|hugstream|javstreamhq|kameha(?:meha)?(?:a|us)|listeamed|m(?:ii)?xdrop|playmogo|streamtape|tur(?:bo|tle)vi(?:dhls|play)|voe)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|top?|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party
-@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:googleusercontent|tiktok)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:dzpa)(?:\/[^?#]*)?|[^?#\/]*\.(?:m(?:3u8|4s|p4)|txt|woff2?))(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:audinifer|cdnahihi|doodstream|e(?:arnvidjavgg|mturbovid)|hu?g(?:link|stream)|javstreamhq|kameha(?:meha)?(?:a|us)|listeamed|m(?:orencius|(?:ii)?xdrop)|playmogo|ryderjet|str(?:(?:eam)?tape|p2p)|tur(?:bo|tle)(?:vi)?(?:dhls|plays?)|upn|v(?:ibuxer|oe|stream)|ystream)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|i(?:d|o)|m(?:edia|y\.id)|net(?:work)?|o(?:ne|rg)|sx|top?|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:[a-z][a-z0-9]{6})\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|i(?:d|o)|media|net(?:work)?|o(?:ne|rg)|sx|top?|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$subdocument,third-party,domain=/^(?:www\.)?ystream\.(?:com|id)$/
+@@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:googleusercontent|tiktok|vd)(?:-?cdn)?\.(?:c(?:c|l(?:ick|oud)|o(?:\.id|m))|io|media|net(?:work)?|o(?:ne|rg)|sx|to|xyz)(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,third-party
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:dzpa)(?:\/[^?#]*)?|[^?#\/]*\.(?:m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?)*)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^]*)?$/$xmlhttprequest,third-party
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-! *##:is([class*="cam-thumb"],[class*="bottom"],[class*="item--widget"],[class*="thumbContainer"],[class*="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
 ! *##^script:has-text(/(?:histats|magsrv|yandex)\.(?:com|ru)/i)
 ! *##^script[src*="/gsi/intermediate"]
-*##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
-*##.strpchad:remove()
-*##:is([aria-label="Third Party Content"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-*##:is([class*="__layout-ad"],[class*="cam-thumb__look-like-item"],[class*="item--type-video"],[class*="item--widget"],[class*="thumb-list__item"][class*="video-thumb"][tabindex="0"],[class*="thumbContainer"][class="video-thumb"][class="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-*##:is([class*="container"]):has([src*="fhcdnmedia"]):remove()
-*##[aria-label="Third Party Content"][data-role*="banner-underplayer"]:remove()
-*##[class*="container"][class*="no-ts-init"][class*="--middle"]:remove()
-*##[class*="cookiesAnnounce"]:remove()
-*##[class*="header-ad"]:remove()
-*##[class*="insideVideoList"][class*="thumbsScrollable"][data-block="moments"]:remove()
+! *##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
+! *##.strpchad:remove()
+! *##:is([aria-label="Third Party Content"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+! *##:is([class*="__layout-ad"],[class*="cam-thumb__look-like-item"],[class*="item--type-video"],[class*="item--widget"],[class*="thumb-list__item"][class*="video-thumb"][tabindex="0"],[class*="thumbContainer"][class="video-thumb"][class="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
+! *##:is([class*="container"]):has([src*="fhcdnmedia"]):remove()
+! *##[aria-label="Third Party Content"][data-role*="banner-underplayer"]:remove()
+! *##[class*="container"][class*="no-ts-init"][class*="--middle"]:remove()
+! *##[class*="cookiesAnnounce"]:remove()
+! *##[class*="header-ad"]:remove()
+! *##[class*="insideVideoList"][class*="thumbsScrollable"][data-block="moments"]:remove()
+*##[class~="sidebar-ads"]:remove()
+*##[class^="player-ads"]:remove()
+! *##[class*="under-player-ad"]:remove()
 *##[style*="2147483647"]:remove()
 *##[style*="9999999"]:remove()
+*##*:has(>:is([src*="/ads/"],[src*="/adsx/"])):remove()
+*##[id~="floatadsbawah"]:remove()
+*##:is([class*="item--widget"]):has([href*="xham.live"]):remove()
+*##:is([class^="container"],[class*="thumbContainer"]):has([href*="faphouse"]):remove()
+*##:is([class*="item--type-video"]):has([src*="video.flirtify"]):remove()
+*##[class*="insideVideoList"]:remove()
+*##[class~="player-handy-sponsor"]:remove()
+*##[class~="video-controls"]:remove()
+*##[class*="no-ts-init"]:remove()
+*##[class^="relatedContainerList"]:remove()
+! *##[class^="cookiesAnnounce-"]:remove()
+*##[class*="cookiesAnnounce-"]:remove()
+*##[class*="primary"][class*="root"]:remove()
+*##[class*="thumbsScrollable"][class*="root"]:remove()
