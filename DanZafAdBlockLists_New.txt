@@ -78,3 +78,4 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 ! *##[class~="player-handy-sponsor"],[class~="sidebar-ads"],[class~="video-controls"]:remove()
 ! *##[id~="floatadsbawah"]:remove()
 ! *##[style*="2147483647"],[style*="9999999"]:remove()
+3hentai.*##[id*="-ban-"]
