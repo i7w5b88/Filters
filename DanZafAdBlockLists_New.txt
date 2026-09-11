@@ -14,6 +14,7 @@
 *##+js(abort-current-script, showAds)
 *##+js(abort-on-property-read, /^(?:notification)$/i)
 *##+js(abort-on-property-write, /^(?:fingerprint(?:2|3|js)|_pop)$/i)
+saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, popMagic)
