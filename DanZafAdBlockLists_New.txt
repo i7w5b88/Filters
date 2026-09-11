@@ -46,36 +46,36 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
 ! *##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"])):remove()
+! *##*:has(>:is([src*="/ads/"],[src*="/adsx/"])):remove()
 ! *##.strpchad:remove()
 ! *##:is([aria-label="Third Party Content"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
 ! *##:is([class*="__layout-ad"],[class*="cam-thumb__look-like-item"],[class*="item--type-video"],[class*="item--widget"],[class*="thumb-list__item"][class*="video-thumb"][tabindex="0"],[class*="thumbContainer"][class="video-thumb"][class="video-thumb"]):has([href*="faphouse"],[href*="xham.live"],[src*="flirtify"]):remove()
-! *##:is([class*="container"]):has([src*="fhcdnmedia"]):remove()
-! *##[class*="container"][class*="no-ts-init"][class*="--middle"]:remove()
-! *##[class*="cookiesAnnounce"]:remove()
-! *##[class*="header-ad"]:remove()
-! *##[class*="insideVideoList"][class*="thumbsScrollable"][data-block="moments"]:remove()
-! *##[class*="under-player-ad"]:remove()
-! *##[class^="cookiesAnnounce-"]:remove()
-! *##^script:has-text(/(?:histats|magsrv|yandex)\.(?:com|ru)/i)
-! *##^script[src*="/gsi/intermediate"]
-! *##*:has(>:is([src*="/ads/"],[src*="/adsx/"])):remove()
 ! *##:is([class*="cam-thumb__look-like-item"]):has([href*="xham.live"]):remove()
+! *##:is([class*="container"]):has([src*="fhcdnmedia"]):remove()
 ! *##:is([class*="item--type-video"]):has([src*="video.flirtify"]):remove()
 ! *##:is([class*="item--widget"]):has([href*="xham.live"]):remove()
 ! *##:is([class*="thumb-list__item"]):has([href*="xham.live"]):remove()
 ! *##:is([class*="thumb-list__item"][tabindex="0"]):has([src*="flirtify"]):remove()
 ! *##:is([class^="container"],[class*="thumbContainer"]):has([href*="faphouse"]):remove()
 ! *##[aria-label="Third Party Content"][data-role*="banner-underplayer"]:remove()
-##[class*="cookiesAnnounce-"]
-##[class*="no-ts-init"]
-##[class*="under-player-banner-wrapper"]
-##:is([class*="primary"][class*="root"],[class*="scrollable"]):has([href*="faphouse2.com"])
-##:is([class*="item--widget"]):has([href*="xham.live"])
-##:is([class*="item--type-video"]):has([src*="video.flirtify"])
+! *##[class*="container"][class*="no-ts-init"][class*="--middle"]:remove()
+! *##[class*="cookiesAnnounce"]:remove()
+! *##[class*="header-ad"]:remove()
 ! *##[class*="insideVideoList"],[class*="no-ts-init"]:remove()
+! *##[class*="insideVideoList"][class*="thumbsScrollable"][data-block="moments"]:remove()
 ! *##[class*="primary"][class*="root"],[class*="thumbsScrollable"][class*="root"]:remove()
+! *##[class*="under-player-ad"]:remove()
+! *##[class^="cookiesAnnounce-"]:remove()
 ! *##[class^="player-ads"],[class^="relatedContainerList"]:remove()
 ! *##[class~="player-handy-sponsor"],[class~="sidebar-ads"],[class~="video-controls"]:remove()
 ! *##[id~="floatadsbawah"]:remove()
 ! *##[style*="2147483647"],[style*="9999999"]:remove()
+! *##^script:has-text(/(?:histats|magsrv|yandex)\.(?:com|ru)/i)
+! *##^script[src*="/gsi/intermediate"]
+##:is([class*="item--type-video"]):has([src*="video.flirtify"])
+##:is([class*="item--widget"]):has([href*="xham.live"])
+##:is([class*="primary"][class*="root"],[class*="scrollable"]):has([href*="faphouse2.com"])
+##[class*="cookiesAnnounce-"]
+##[class*="no-ts-init"]
+##[class*="under-player-banner-wrapper"]
 3hentai.*##[id*="-ban-"]
