@@ -9,7 +9,7 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,third-party
-/^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:cloudfront|f(?:hcdnmedia|lirtify)|modusygunaciro)\.(?:com|net|online)\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg))$/$image,media,script,important
+/^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:cloudfront|f(?:hcdnmedia|lirtify)|m(?:agsrv|odusygunaciro))\.(?:com|net|online)\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg))$/$image,media,script,important
 *##+js(abort-current-script, jQuery, cookie)
 *##+js(abort-current-script, showAds)
 *##+js(abort-on-property-read, /^(?:notification)$/i)
