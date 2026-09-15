@@ -26,7 +26,7 @@ saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set-constant, ServiceWorker, noopFunc)
 *##+js(set-constant, SharedWorker, noopFunc)
-*,~/(?:beeg|earnvidjavgg|hanerix|javstreamhq|turboplays|vibuxer)\.(?:c(?:lick|om)|xyz)/##+js(set-constant, Worker, noopFunc)
+*,~/(?:beeg|earnvidjavgg|hanerix|javstreamhq|turboplays|vibuxer|xhamster)\.(?:c(?:lick|om)|xyz)/##+js(set-constant, Worker, noopFunc)
 *##+js(set-constant, document.exitPointerLock, noopFunc)
 xhamster.*##+js(set-cookie, parental-control, yes, , reload, 1)
 xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
@@ -50,14 +50,16 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-##:is([class*="item--type-video"]):has([src*="video.flirtify"])
-##:is([class*="item--widget"]):has([href*="xham.live"])
-##:is([class*="primary"][class*="root"],[class*="scrollable"]):has([href*="faphouse2.com"])
+##:is([class*="cam-thumb__look-like-item"],[class*="item--widget"]):has([href*="xham.live"])
+##:is([class*="item--type-video"],[class*="thumb-list__item"]):has([src*="video.flirtify"])
+##:is([class*="primary"][class*="root"],[class*="scrollable"],[class*="thumb-list__item"]):has([href*="faphouse2.com"])
 ##:is([data-testid*="grey-fox"]):has([href*="stripchat"])
 ##[class*="cookiesAnnounce-"]
 ##[class*="no-ts-init"]
 ##[class*="under-player-banner-wrapper"]
 ##[class^="FinishBlock"]
+##[data-role*="banner-underplayer"]
+##[data-role*="promo-messages-wrapper"]
 *##*:has(>:is(#adinhead,#footadframe,.ads,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"]))
 *##*:has(>:is([src*="/ads/"],[src*="/adsx/"]))
 *##[id~="floatadsbawah"]
