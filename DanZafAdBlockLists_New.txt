@@ -10,10 +10,15 @@
 !----------------------------------------------------------!
 *$script,third-party
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:f(?:hcdnmedia|lirtify)|modusygunaciro)(?:-?cdn)?\.(?:com|net|on(?:e|line))\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg))$/$image,media,script,important
+*##+js(abort-current-script, adblockDetected, /anti.?adblock/i)
 *##+js(abort-current-script, jQuery, cookie)
 *##+js(abort-current-script, showAds)
+*##+js(abort-on-property-read, /^(?:adblock|adBlock|adsBlocked|adblockDetected|isAdBlock|isAdBlocked)$/i)
 *##+js(abort-on-property-read, /^(?:notification)$/i)
+*##+js(abort-on-property-read, adBlockDetected)
+*##+js(abort-on-property-write, /^(?:adblock|adBlock|adsBlocked|adblockDetected|isAdBlock|isAdBlocked)$/i)
 *##+js(abort-on-property-write, /^(?:fingerprint(?:2|3|js)|_pop)$/i)
+*##+js(abort-on-property-write, adBlockDetected)
 saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
@@ -37,6 +42,8 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:javx)\.(?:cc)\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:dzpa(?!header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:mp4))$/$subdocument,important
 *$xmlhttprequest,third-party
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:googlesyndication)\..*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:dzpa)[A-Za-z0-9._-]*\.(?:js|svg))$/$xmlhttprequest,important
+*$popup,third-party
+*$popunder,third-party
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
