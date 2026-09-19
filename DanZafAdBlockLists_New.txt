@@ -31,7 +31,7 @@ saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set-constant, ServiceWorker, noopFunc)
 *##+js(set-constant, SharedWorker, noopFunc)
-*,~/(?:beeg|earnvidjavgg|hanerix|javstreamhq|turbo(?:vidhls|plays)|vibuxer|xhamster)\.(?:c(?:lick|om)|xyz)/##+js(set-constant, Worker, noopFunc)
+*,~/(?:audinifer|beeg|earnvidjavgg|h(?:anerix|ugstream)|javstreamhq|ryderjet|turbo(?:vidhls|plays)|v(?:ibuxer|oe)|xhamster)\.(?:c(?:lick|om)|sx|xyz)/##+js(set-constant, Worker, noopFunc)
 *##+js(set-constant, document.exitPointerLock, noopFunc)
 xhamster.*##+js(set-cookie, parental-control, yes, , reload, 1)
 xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
@@ -62,6 +62,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 ##:is([class*="primary"][class*="root"],[class*="scrollable"],[class*="thumb-list__item"]):has([href*="faphouse2.com"])
 ##:is([data-testid*="grey-fox"]):has([href*="stripchat"])
 ##[class*="cookiesAnnounce-"]
+##[class*="header-ad-"]
 ##[class*="no-ts-init"]
 ##[class*="under-player-banner-wrapper"]
 ##[class^="FinishBlock"]
@@ -72,5 +73,5 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 *##*:has(>:is([src*="/adsx/"]))
 *##[id~="floatadsbawah"]
 *##[style*="2147483647"],[style*="9999999"]
-saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 3hentai.*##[id*="-ban-"]
+saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
