@@ -74,6 +74,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 *##[id~="floatadsbawah"]
 *##[style*="2147483647"],[style*="9999999"]
 3hentai.*##[id*="-ban-"]
-saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
-javhdporn.net##[class*="-player-ad-"]
-javhdporn.net##[class~="sidebar-ads"]
+saymanhwa.*#@#*:has(>:is([src*="/ads/"]))
+javct.*##[class*="player-ads"]
+javhdporn.*##[class*="-player-ad-"]
+javhdporn.*##[class~="sidebar-ads"]
