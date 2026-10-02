@@ -77,6 +77,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 ##[data-role*="banner-underplayer"]
 ##[data-role*="promo-messages-wrapper"]
 ##[data-testid*="trending-live-models"]
+##[id~="previewBox"]
 *##*:has(>:is(#adinhead,#footadframe,.ads1,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"]))
 *##*:has(>:is([src*="/ads/"]))
 *##*:has(>:is([src*="/adsx/"]))
