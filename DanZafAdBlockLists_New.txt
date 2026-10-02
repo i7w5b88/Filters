@@ -42,7 +42,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:javx)\.(?:cc)\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:dzpa(?!header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:mp4))$/$subdocument,important
 *$xmlhttprequest,third-party
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:googlesyndication)\..*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:dzpa)[A-Za-z0-9._-]*\.(?:js|svg))$/$xmlhttprequest,important
-*$popup,third-party
+*,~/(?:duckduckgo)\.(?:c(?:c|om?))(?:\.(?:id))?/$popup,third-party
 *$popunder,third-party
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
