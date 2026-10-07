@@ -8,6 +8,9 @@
 !----------------------------------------------------------!
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
+||eporner.com/js/bowser.php
+||eporner.com/cppb/
+||eporner.com/dotm/
 *$script,third-party
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:f(?:hcdnmedia|lirtify)|modusygunaciro)(?:-?cdn)?\.(?:com|net|on(?:e|line))\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:chunk(?!comments|header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:js|svg))$/$image,media,script,important
 *##+js(abort-current-script, adblockDetected, /anti.?adblock/i)
@@ -19,6 +22,7 @@
 *##+js(abort-on-property-write, /^(?:adblock|adBlock|adsBlocked|adblockDetected|isAdBlock|isAdBlocked)$/i)
 *##+js(abort-on-property-write, /^(?:fingerprint(?:2|3|js)|_pop)$/i)
 *##+js(abort-on-property-write, adBlockDetected)
+eporner.com##+js(abort-on-property-write, EPeventFire)
 saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .xp-preload-image)
@@ -31,17 +35,21 @@ saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
 *,~/(?:cloudflare)\.(?:com|xyz)/##+js(set-constant, ServiceWorker, noopFunc)
 *,~/(?:cloudflare)\.(?:com|xyz)/##+js(set-constant, SharedWorker, noopFunc)
-*,~/(?:audinifer|beeg|cloud(?:flare|wish)|earnvidjavgg|filelions|h(?:anerix|ugstream)|javstreamhq|mycloudz|playmogo|ryderjet|savedvids|turbo(?:vid(?:hls)?|plays)|upload18|v(?:ibuxer|oe)|xhamster)\.(?:c(?:c|lick|om)|org|s(?:ite|x)|vip|xyz)/##+js(set-constant, Worker, noopFunc)
+*,~/(?:audinifer|beeg|cloud(?:flare|wish)|earnvidjavgg|eporner|filelions|h(?:anerix|ugstream)|javstreamhq|mycloudz|playmogo|ryderjet|savedvids|turbo(?:vid(?:hls)?|plays)|upload18|v(?:ibuxer|oe)|xhamster)\.(?:c(?:c|lick|om)|net|org|s(?:ite|x)|vip|xyz)/##+js(set-constant, Worker, noopFunc)
 *##+js(set-constant, document.exitPointerLock, noopFunc)
+eporner.com##+js(set-cookie, ADBp, yes)
+eporner.com##+js(set-cookie, ADBpcount, 1)
 xhamster.*##+js(set-cookie, parental-control, yes, , reload, 1)
 xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 *##+js(prevent-setTimeout, adBlockerDetected)
+eporner.com##+js(prevent-setTimeout, additional_src, 300)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|om?))(?:\.(?:id))?/##+js(disable-newtab-links)
 *##+js(prevent-window-open)
 *$subdocument,third-party
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:javx)\.(?:cc)\/.*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:dzpa(?!header(?:mobile)|layoutbottom(?:mobile)?|relatedvideos)|f(?:aphouse|lirtify))[A-Za-z0-9._-]*\.(?:mp4))$/$subdocument,important
 *$xmlhttprequest,third-party
 /^https?:\/\/(?:(?:[A-Za-z0-9-]+\.)*(?:googlesyndication)\..*|(?:[A-Za-z0-9-]+\.)+[A-Za-z0-9-]+\/(?:.*\/)?[A-Za-z0-9._-]*(?:dzpa)[A-Za-z0-9._-]*\.(?:js|svg))$/$xmlhttprequest,important
+*.xml$xmlhttprequest,third-party,domain=eporner.com
 *,~/(?:duckduckgo)\.(?:c(?:c|om?))(?:\.(?:id))?/$popup,third-party
 *$popunder,third-party
 !----------------------------------------------------------!
@@ -68,6 +76,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 ##[class*="cookiesAnnounce-"]
 ##[class*="doubleclick"]
 ##[class*="header-ad-"]
+##[class*="home_iframead"]
 ##[class*="no-ts-init"]
 ##[class*="thumbContainer"]
 ##[class*="under-player-banner-wrapper"]
@@ -77,6 +86,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 ##[data-role*="banner-underplayer"]
 ##[data-role*="promo-messages-wrapper"]
 ##[data-testid*="trending-live-models"]
+##[id$="box-adv"]
 ##[id~="previewBox"]
 *##*:has(>:is(#adinhead,#footadframe,.ads1,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"]))
 *##*:has(>:is([src*="/ads/"]))
