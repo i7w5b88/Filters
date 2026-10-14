@@ -106,3 +106,5 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 ##[href*="bmop45.com/"]
 ##.hg-ssp-pause__card
 ##.hg-ssp-slot
+##[id*="video-page-banner"]
+##[class*="video-page-banner"]
