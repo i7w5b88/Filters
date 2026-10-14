@@ -100,3 +100,9 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 *##[style*="2147483647"],[style*="9999999"]
 3hentai.*##[id*="-ban-"]
 saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
+##[class*="cookiesAnnounce"]
+##[href*="dd3jn3n.top"]
+##[href*="py4ns3j.top"]
+##[href*="bmop45.com/"]
+##.hg-ssp-pause__card
+##.hg-ssp-slot
