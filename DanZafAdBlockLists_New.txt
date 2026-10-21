@@ -77,6 +77,8 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 ##[class*="cookiesAnnounce-"]
 ##[class*="doubleclick"]
 ##[class*="header-ad-"]
+##[class*="hg-ssp-floating"]
+##[class*="hg-ssp-slot"]
 ##[class*="hg-ssp-slot"]
 ##[class*="home_iframead"]
 ##[class*="no-ts-init"]
