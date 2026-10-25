@@ -119,5 +119,5 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 ##[href*="me356s"]
 ##[src*="watermelogic.com"]
 ##[src*="greatestglasses.com"]
-##[class="clip-banner"]
-##[class="banner-content"]
+##[class*="clip-banner"]
+##[class*="banner-content"]
