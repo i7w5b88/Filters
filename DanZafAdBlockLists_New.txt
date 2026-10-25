@@ -116,3 +116,8 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 *##[style*="10000"],[style*="2147483647"],[style*="9999999"]
 3hentai.*##[id*="-ban-"]
 saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
+##[href*="me356s"]
+##[src*="watermelogic.com"]
+##[src*="greatestglasses.com"]
+##[class="clip-banner"]
+##[class="banner-content"]
