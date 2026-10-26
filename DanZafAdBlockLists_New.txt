@@ -121,3 +121,4 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 ##[src*="greatestglasses.com"]
 ##[class*="clip-banner"]
 ##[class*="banner-content"]
+##[class*="floating-vip-shortcut"]
