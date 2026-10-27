@@ -110,7 +110,7 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 *##:is([class*="clipstore-bottom"],[class*="primary"][class*="root"],[class*="scrollable"],[class*="thumb-list__item"]):has([href*="faphouse2.com"])
 *##:is([class*="item--type-video"],[class*="thumb-list__item"]):has([src*="video.flirtify"])
 *##:is([class*="thumb-list"]>li):has([data-previewvideo*="fhcdnmedia.online"])
-*##:is([class*="ts-init"]):has([class*="traffic-stars"])
+*##:is([class*="ts-init"]):has([class*="traffic-stars"], [class*="scrollable"])
 *##:is([class*="widget-info"]):has([src*="watermelogic.com"])
 *##:is([data-testid*="grey-fox"]):has([href*="stripchat"])
 *##[id~="floatadsbawah"]
