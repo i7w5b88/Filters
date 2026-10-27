@@ -122,3 +122,7 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 ##[class*="clip-banner"]
 ##[class*="banner-content"]
 ##[class*="floating-vip-shortcut"]
+##[class*="ads-responsive"]
+##[id*="cookie-banner"]
+###site-banner-top
+##.spot_under
