@@ -133,6 +133,5 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 *##[id*="adstripe"]
 *##[id~="EPimLayerOuter"]
 *##[class*="banner-slot"]
-*##[data-ssp-slot-key*="banner_home"]
-*##[data-ssp-slot-key*="overlay_card"]
 *##[class*="hg-ssp-floating"]
+*##:is([data-ssp-slot-key*="overlay_card"], [data-ssp-slot-key*="banner_home"])
