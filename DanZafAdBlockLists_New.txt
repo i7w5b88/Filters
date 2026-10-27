@@ -109,7 +109,7 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 *##:is([class*="bottom-widget-section"],[class*="cam-thumb__look-like-item"],[class*="item--widget"]):has([href*="xham.live"])
 *##:is([class*="clipstore-bottom"],[class*="primary"][class*="root"],[class*="scrollable"],[class*="thumb-list__item"]):has([href*="faphouse2.com"])
 *##:is([class*="item--type-video"],[class*="thumb-list__item"]):has([src*="video.flirtify"])
-*##:is([class*="thumb-list__item"]):has([data-previewvideo="fhcdnmedia.online"])
+*##:is([class*="thumb-list"]):has([data-previewvideo="fhcdnmedia.online"])
 *##:is([class*="widget-info"]):has([src*="watermelogic.com"])
 *##:is([data-testid*="grey-fox"]):has([href*="stripchat"])
 *##[id~="floatadsbawah"]
@@ -126,3 +126,5 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 ##[id*="cookie-banner"]
 ###site-banner-top
 ##.spot_under
+##[data-role*="promo-messages"]
+##[data-role*="cookies-modal"]
