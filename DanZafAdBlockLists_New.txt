@@ -129,3 +129,6 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 ##.spot_under
 ##[data-role*="promo-messages"]
 ##[data-role*="cookies-modal"]
+##[id*="admobile"]
+##[id*="adstripe"]
+##[id~="EPimLayerOuter"]
