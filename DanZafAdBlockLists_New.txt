@@ -132,3 +132,4 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 ##[id*="admobile"]
 ##[id*="adstripe"]
 ##[id~="EPimLayerOuter"]
+*##[class*="banner-slot"]
