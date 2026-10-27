@@ -135,3 +135,5 @@ saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
 *##[class*="banner-slot"]
 *##[class*="hg-ssp-floating"]
 *##:is([data-ssp-slot-key*="overlay_card"], [data-ssp-slot-key*="banner_home"])
+*##[class*="-ad-mobile"]
+*##[id*="floatadsbawah"]
