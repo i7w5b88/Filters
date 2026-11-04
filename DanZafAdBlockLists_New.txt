@@ -61,7 +61,7 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 @@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|js|m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)*)*|\?)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?$/$subdocument,third-party
 @@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:[a-z][a-z0-9]{6})\.(?:c(?:c|l(?:ick|oud)|om?)|i(?:d|o)|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:ne|rg|vh)|s(?:ite|x)|top?|xyz)(?:\.(?:id))?(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)*)*|\?)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?$/$subdocument,third-party,domain=/^(?:www\.)?(?:bysejikuar|ystream)\.(?:com|id)$/
 @@/^https?:\/\/(?:[A-Za-z0-9-]+\.)*(?:b|c(?:dnsync|kthislk78)|drleao|e(?:ro|xternulls)|freeanimehentai|google(?:usercontent|video)|helvid|maxstream|p(?:arklogic|la?ye?r(?:ufa7)?)|s(?:b|chale|ebokep|tream(?:[0-9]{1,2})?\.javhdz)|tiktok|vd|worker[0-9]{1,2}\.savedvids)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|x)|to(?:day)?|xyz)(?:\.(?:id))?(?:\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/]*)?(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)*)*|\?)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?$/$xmlhttprequest,third-party
-@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:segs)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|j(?:pe?g|s)|m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)*)*|\?)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?$/$xmlhttprequest,third-party,domain=/^(?:www\.)?(?:h(?:anime|uangguoai)|lumierecore)\.(?:com|id|tv)$/
+@@/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+\/(?:[^?#]*\/)?(?:(?:segs)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|j(?:pe?g|s)|m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:\?[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?(?:&[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]+(?:=[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)*)*|\?)?(?:#[A-Za-z0-9\-._~%!$&'()*+,;=:@/?\^\[\]]*)?$/$xmlhttprequest,third-party,domain=/^(?:www\.)?(?:earnvidjavgg|h(?:anime|uangguoai)|lumierecore|vidara)\.(?:com|id|so|tv|xyz)$/
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
@@ -105,7 +105,6 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 ##[class*="mobilefree"]
 ##[class*="no-ts-init"]
 ##[class*="rdads-"]
-##[class*="sidebar-ads"]
 ##[class*="spot_under"]
 ##[class*="thumbContainer"]
 ##[class*="top-content"]
