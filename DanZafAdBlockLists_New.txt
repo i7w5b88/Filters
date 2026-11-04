@@ -2,7 +2,7 @@
 ! Author: Dwi Arianto
 ! Version: 202608281147
 ! Description: DanZaf Custom Filter
-! Last modified: Wed, 28 Aug 2026 11:47:24 +0000
+! Last modified: Sat, 24 Oct 2026 12:30:24 +0000
 ! Expires: 1 days (update frequency)
 !
 !----------------------------------------------------------!
@@ -65,13 +65,21 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
+##[class*=""]
+##[class*=""]
+##[class*="--middle"][class*="ts-init"]
+##[class*="-ad-mobile"]
 ##[class*="-ad-mobile"]
 ##[class*="ad-placement"]
 ##[class*="ad-wrapper"]
 ##[class*="ads-responsive"]
+##[class*="ads-responsive"]
 ##[class*="adsbox"]
 ##[class*="banner-content"]
 ##[class*="banner-slot"]
+##[class*="banner-slot"]
+##[class*="box"][class*="search-cloud"]
+##[class*="cam-thumb"][class~="mobile-video-thumb"][class*="--lv-red"]
 ##[class*="cam-thumb__look-like-item"]
 ##[class*="cam-wgt"]
 ##[class*="carbon-ads"]
@@ -85,14 +93,22 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 ##[class*="doubleclick"]
 ##[class*="floating-vip-shortcut"]
 ##[class*="header-ad-"]
+##[class*="hg-play__fb"]
+##[class*="hg-play__side"]
+##[class*="hg-ssp-floating"]
 ##[class*="hg-ssp-floating"]
 ##[class*="hg-ssp-floating"]
 ##[class*="hg-ssp-slot"]
 ##[class*="hg-ssp-slot"]
 ##[class*="home_iframead"]
+##[class*="l-cooperation"]
+##[class*="mobilefree"]
 ##[class*="no-ts-init"]
 ##[class*="rdads-"]
+##[class*="sidebar-ads"]
+##[class*="spot_under"]
 ##[class*="thumbContainer"]
+##[class*="top-content"]
 ##[class*="under-player-banner-wrapper"]
 ##[class*="video-page-banner"]
 ##[class*="video-player-banner"]
@@ -101,22 +117,39 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 ##[class~="ads"]
 ##[class~="banner-video"]
 ##[class~="spot_under"]
+##[class~="thumb-list-mobile-item"][class~="thumb-list-mobile-item--widget"]
 ##[data-role*="banner-underplayer"]
+##[data-role*="bottom"]
+##[data-role*="cookies-modal"]
 ##[data-role*="cookies-modal"]
 ##[data-role*="promo-messages"]
+##[data-role*="promo-messages"]
 ##[data-role*="promo-messages-wrapper"]
+##[data-role*="top"]
+##[data-say-banner-group~="bottom"]
+##[data-say-banner-group~="sticky"]
+##[data-say-banner-group~="top"]
+##[data-ssp-pause-target~="cyberPlayer"]
+##[data-ssp-slot-key*="banner_home"]
+##[data-ssp-slot-key*="overlay_card"]
 ##[data-testid*="trending-live-models"]
 ##[href*="bmop45.com/"]
 ##[href*="dd3jn3n.top"]
 ##[href*="me356s"]
 ##[href*="py4ns3j.top"]
 ##[id$="box-adv"]
+##[id*=""]
 ##[id*="admobile"]
+##[id*="admobile"]
+##[id*="adstripe"]
 ##[id*="adstripe"]
 ##[id*="cookie-banner"]
 ##[id*="floatadsbawah"]
+##[id*="floatadsbawah"]
 ##[id*="site-banner"]
+##[id*="site-banner-top"]
 ##[id*="video-page-banner"]
+##[id~="EPimLayerOuter"]
 ##[id~="EPimLayerOuter"]
 ##[id~="as-gate"]
 ##[id~="click-overlay"]
@@ -125,6 +158,9 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 ##[src*="greatestglasses.com"]
 ##[src*="watermelogic.com"]
 ##[style*="10000"],[style*="2147483647"],[style*="9999999"]
+##previewBox
+##vv-cookie-banner
+##vvhc-bar
 *##*:has(>:is(#adinhead,#footadframe,.adv-footer,[class*="adnative"],[id*="adPlayer"],[id*="admiddle"]))
 *##*:has(>:is([src*="/ads/"]))
 *##*:has(>:is([src*="/adsx/"]))
@@ -139,40 +175,3 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 *##:is([data-testid*="grey-fox"]):has([href*="stripchat"])
 3hentai.*##[id*="-ban-"]
 saymanhwa.com#@#*:has(>:is([src*="/ads/"]))
-rule34video.com##.spot_under
-qxciw.com###site-banner-top
-porntasia.app##[class*="l-cooperation"]
-virtuavixen.com###vv-cookie-banner
-javhd.today##.ads-responsive
-javhd.today###previewBox
-javhd.today##div.mobilefree
-xhamster.com##[data-role*="cookies-modal"]
-xhamster.com##div.Ynpvd-ngvTT.Ynpvd-ngvTT--middle.Ynpvd-ngvTTno-ts-init
-xhamster.com##[data-role*="top"]
-xhamster.com##[data-role*="promo-messages"]
-xhamster.com##[data-role*="bottom"]
-xhamster.com##[role="button"]
-xhamster.com##:is([class*="thumb-list"]>li):has([data-previewvideo*="fhcdnmedia.online"])
-xhamster.com##:is([class*="ts-init"]):has([class*="traffic-stars"], [class*="scrollable"])
-xhamster.com##a.wNs-aCrHRcam-thumb.mobile-video-thumb.wNs-aCrHRcam-thumb--lv-red
-xhamster.com##li.thumb-list-mobile-item.thumb-list-mobile-item--widget
-eporner.com##[id*="adstripe"]
-eporner.com##[id*="admobile"]
-eporner.com##[id~="EPimLayerOuter"]
-indoav.com##[class*="banner-slot"]
-huangguoai.com##[data-ssp-slot-key*="banner_home"]
-huangguoai.com##[class*="hg-ssp-floating"]
-huangguoai.com##[data-ssp-slot-key*="overlay_card"]
-avtub.net##[class*="-ad-mobile"]
-avtub.net##[id*="floatadsbawah"]
-javhdporn.net##.sidebar-ads
-javhdporn.nett##[class*="-ad-mobile"]
-javbangers.com##div.box.search-cloud
-saymanhwa.net##aside[data-say-banner-group="top"]
-saymanhwa.net##[data-say-banner-group="sticky"]
-saymanhwa.net##[data-say-banner-group="bottom"]
-hitomi.la##.top-content
-virtuavixen.com###vvhc-bar
-huangguoai.com##div[data-ssp-pause-target="cyberPlayer"]
-huangguoai.com##button.hg-play__fb
-huangguoai.com##div.hg-play__side
