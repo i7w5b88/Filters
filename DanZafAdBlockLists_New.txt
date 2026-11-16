@@ -70,6 +70,7 @@ eporner.com##+js(prevent-setTimeout, additional_src, 300)
 ##[class*="--middle"][class*="ts-init"]
 ##[class*="-ad-mobile"]
 ##[class*="-ad-mobile"]
+##[class*="ad-configured"]
 ##[class*="ad-placement"]
 ##[class*="ad-wrapper"]
 ##[class*="ads-responsive"]
