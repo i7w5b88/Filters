@@ -1,0 +1,12 @@
+*$xmlhttprequest,third-party
+*$popup
+*$popunder
+*##+js(prevent-setTimeout, /^/)
+*##+js(prevent-canvas)
+*##+js(disable-newtab-links)
+*##+js(prevent-window-open)
+*##+js(prevent-requestAnimationFrame, /^/)
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:danzaff)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|x)|to(?:day)?|xyz)(?:\.id)?(?:[/?#]|$)/$xmlhttprequest,third-party
+*##:is([class*="item--widget"]):has([class*="cam-thumb"])
+*##:is([class*="ts-init"]):has([href*="xham.live"])
+*##:is([class*="thumbContainer"]):has([href*="fhcdnmedia.online"])
