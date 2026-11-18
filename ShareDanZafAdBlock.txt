@@ -1,12 +1,43 @@
-*$xmlhttprequest,third-party
+! Title: DanZaf AdBlock Lists
+! Author: Dwi Arianto
+! Version: 202608281147
+! Description: DanZaf Custom Filter
+! Last modified: Sat, 24 Oct 2026 12:30:24 +0000
+! Expires: 1 days (update frequency)
+!
+!----------------------------------------------------------!
+!------------------------- Filter -------------------------!
+!----------------------------------------------------------!
+*$script
+*$subdocument
+*$xmlhttprequest
+! *,~/(?:duckduckgo)\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?/$popup
 *$popup
 *$popunder
-*##+js(prevent-setTimeout, /^/)
-*##+js(prevent-canvas)
-*##+js(disable-newtab-links)
+!----------------------------------------------------------!
+!----------------------- Scriptlets -----------------------!
+!----------------------------------------------------------!
+*##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
+*##+js(set-constant, document.exitPointerLock, noopFunc)
+*,~/(?:duckduckgo|javenglish)\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?/##+js(disable-newtab-links)
 *##+js(prevent-window-open)
-*##+js(prevent-requestAnimationFrame, /^/)
-@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:danzaff)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|x)|to(?:day)?|xyz)(?:\.id)?(?:[/?#]|$)/$xmlhttprequest,third-party
+!----------------------------------------------------------!
+!-------------------- Filter Exception --------------------!
+!----------------------------------------------------------!
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:danzaff)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?(?:[/?#]|$)/$script,first-party
+! @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))(?:(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:embed[0-9]{1,2}|hls|j(?:query|wplayer(?:[0-9]{1,2})?)|masonry|lazyload|navigation|p(?:2p|lyr|rovider)|video(?:js)?)(?:[-.](?:(?:[1-9]|core|hls|media)[-.](?:[0-9]|controls|loader|quality)(?:[-.](?:[0-9]|core|html5|hlsjs|selector))?|bxslider|h(?:lsjs|otkeys|touchSwipe)|p(?:kgd|olyfilled)|ui))?(?:\.min)?\.js(?:on)?))(?:[/?#]|$)/$script,first-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:b)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?(?:[/?#]|$)/$script,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))(?:(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:embed[0-9]{1,2}|hls|j(?:query|wplayer(?:[0-9]{1,2})?)|masonry|lazyload|navigation|p(?:2p|lyr|rovider)|video(?:js)?)(?:[-.](?:(?:[1-9]|core|hls|media)[-.](?:[0-9]|controls|loader|quality)(?:[-.](?:[0-9]|core|html5|hlsjs|selector))?|bxslider|h(?:lsjs|otkeys|touchSwipe)|p(?:kgd|olyfilled)|ui))?(?:\.min)?\.js(?:on)?))(?:[/?#]|$)/$script,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:danzaff)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?(?:[/?#]|$)/$subdocument,first-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:advtpe|earnvidjavgg|stream(?:hgjav|tape)|vidara)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?(?:[/?#]|$)/$subdocument,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|js|m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:[/?#]|$)$/$subdocument,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:earnvidjavgg|github|streamhgjav|vidara)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?(?:[/?#]|$)/$xmlhttprequest,first-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:premilkyway|tiktok)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|om?)|io|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?(?:[/?#]|$)/$xmlhttprequest,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:segs)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|j(?:pe?g|s)|m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:[/?#]|$)/$xmlhttprequest,third-party,domain=/^(?:www\.)?(?:earnvidjavgg|h(?:anime|uangguoai)|lumierecore|mycloudz|streamhgjav|vidara)\.(?:c(?:c|om)|id|so|tv|xyz)$/
+!----------------------------------------------------------!
+!-------------------- Cosmetics Filter --------------------!
+!----------------------------------------------------------!
 *##:is([class*="item--widget"]):has([class*="cam-thumb"])
-*##:is([class*="ts-init"]):has([href*="xham.live"])
 *##:is([class*="thumbContainer"]):has([href*="fhcdnmedia.online"])
+*##:is([class*="ts-init"]):has([href*="xham.live"])
+
