@@ -19,8 +19,11 @@
 !----------------------- Scriptlets -----------------------!
 !----------------------------------------------------------!
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
+*##+js(prevent-addEventListener, click, popMagic, runAt, idle)
+*##+js(prevent-addEventListener, click, return"undefined", elements, a.indirect)
 *##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set-constant, document.exitPointerLock, noopFunc)
+*##+js(set, popundersPerIP, 0)
 xhamster.*##+js(set-cookie, parental-control, yes, , reload, 1)
 xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|l(?:ick|oud)|n|om?)|i(?:d|o)|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?/##+js(disable-newtab-links)
@@ -30,7 +33,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:b|cdnsolutions|githubassets|vstream)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$script,third-party
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))(?:(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:embed(?:[1-9]{1,3})?|hls|j(?:query|wplayer(?:[1-9]{1,2})?)|masonry|p(?:lyr|rovider)|video(?:js)?)(?:[-.](?:core|h(?:lsjs|otkeys)|lazyload|p(?:kgd|olyfilled)|ui)(?:[-.](?:controls))?(?:[-.](?:html5))?)?(?:\.min)?\.js(?:on)?))(?:[/?#].*)?$/$script,third-party,domain=/^(?:(?:stream(?:(?:[1-9]|[1-9][0-9]){1,3})?|video|w(?:orker(?:[1-9]{1,3})?|ww))\.)?(?:a2zapk|javhd(?:porn|z)|p(?:inetools|laymogo)|savedvids)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|dev|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)$/
-@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:advtpe|cloudwish|doodstream|javhdz|playmogo|s(?:avedvids|tr(?:eam)?tape)|upload(?:[1-9]{1,3})?|v(?:idara|oe|stream))(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$subdocument,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:advtpe|cloudwish|doodstream|hentaimo|javhdz|playmogo|s(?:avedvids|tr(?:eam)?tape)|upload(?:[1-9]{1,3})?|v(?:idara|oe|stream))(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$subdocument,third-party
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|js|m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:[/?#].*)?$/$subdocument,third-party,domain=/^(?:www\.)?(?:playmogo)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)$/
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:b|cdnsolutions|helvid|tiktok|v(?:idara|stream))(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$xmlhttprequest,third-party
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:hls(?:[1-9]{1,3})?|segs)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|j(?:pe?g|s)|m(?:3u8|4s|p4)|svg|t(?:s|xt)|woff2?))(?:[/?#].*)?$/$xmlhttprequest,third-party,domain=/^(?:(?:stream(?:(?:[1-9]|[1-9][0-9]){1,3})?|w(?:orker(?:[1-9]{1,3})?|ww))\.)?(?:savedvids|v(?:idara|stream))\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)$/
@@ -46,6 +49,8 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 *##[class*="clipstore-bottom"]
 *##[class*="insideVideoList"]
 *##[class*="premium-n-overlay"]
+*##[class~="say-banner-group"]
+*##[class~="say-site-popup-backdrop"]
 *##[data-block*="moments"]
 *##[data-role*="banner-underplayer"]
 *##[data-role*="cookies-modal"]
