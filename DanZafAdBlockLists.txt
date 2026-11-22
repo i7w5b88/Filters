@@ -44,7 +44,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 ##:is([class*="scrollable"]):has([srcset*="fhcdnmedia.online"])
 ##:is([class*="thumb-list__item"]):has([src*="flirtify"])
-*##*:has(> :is([class*="adnative"],[data-cfasync~="false"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"]))
+*##*:has(> :is([class*="adnative"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"]))
 *##:is([class*="thumbContainer"]):has([class*="native"])
 *##[class*="cam-thumb"]
 *##[class*="cam-wgt"]
@@ -59,3 +59,4 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 *##[data-role*="promo-messages"]
 *##[id~="adinhead"]
 *##[id~="btasd"]
+hitomi.*##*:has(> :is([data-cfasync~="fals1e"]))
