@@ -18,14 +18,19 @@
 !----------------------------------------------------------!
 !----------------------- Scriptlets -----------------------!
 !----------------------------------------------------------!
+*##+js(abort-current-script, showAds)
+*##+js(abort-on-property-read, adBlockDetected)
+*##+js(abort-on-property-write, adBlockDetected)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
-*##+js(prevent-addEventListener, click, popMagic, runAt, idle)
-*##+js(prevent-addEventListener, click, return"undefined", elements, a.indirect)
+*##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, popMagic)
+*##+js(prevent-addEventListener, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
+saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set-constant, document.exitPointerLock, noopFunc)
 *##+js(set, popundersPerIP, 0)
 xhamster.*##+js(set-cookie, parental-control, yes, , reload, 1)
 xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
+*##+js(prevent-setTimeout, adBlockDetected)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|l(?:ick|oud)|n|om?)|i(?:d|o)|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?/##+js(disable-newtab-links)
 *##+js(prevent-window-open)
 !----------------------------------------------------------!
@@ -44,7 +49,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 !----------------------------------------------------------!
 ##:is([class*="scrollable"]):has([srcset*="fhcdnmedia.online"])
 ##:is([class*="thumb-list__item"]):has([src*="flirtify"])
-*##*:has(> :is([class*="adnative"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"]))
+*##*:has(> :is([class*="adnative"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src*="magsrv"]))
 *##:is([class*="thumbContainer"]):has([class*="native"])
 *##[class*="cam-thumb"]
 *##[class*="cam-wgt"]
