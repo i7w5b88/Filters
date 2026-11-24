@@ -100,3 +100,4 @@ xhamster.*##+js(trusted-replace-node-text, script, popunder, '', condition, popu
 *##[id~="btasd"]
 *##[id~="player-sponsor-link"]
 hitomi.*##*:has(> :is([data-cfasync~="fals1e"]))
+*##ul.thumb-list-mobile > :not(.thumb-list-mobile-item--type-video)
