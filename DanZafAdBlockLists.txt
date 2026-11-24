@@ -67,6 +67,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 *##[data-role*="banner-underplayer"]
 *##[data-role*="cookies-modal"]
 *##[data-role*="promo-messages"]
+*##[id*="admobile"]
 *##[id~="adinhead"]
 *##[id~="btasd"]
 hitomi.*##*:has(> :is([data-cfasync~="fals1e"]))
