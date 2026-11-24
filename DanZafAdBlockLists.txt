@@ -15,6 +15,7 @@
 *$subdocument,third-party
 *$xmlhttprequest,third-party,domain=~303in.top
 /xhr/vast/$xmlhttprequest
+&spotpagetype=*&statsuid=$xmlhttprequest
 *$popup,third-party
 *$popunder
 *$other
@@ -88,4 +89,5 @@ xhamster.*##+js(trusted-replace-node-text, script, popunder, '', condition, popu
 *##[id*="admobile"]
 *##[id~="adinhead"]
 *##[id~="btasd"]
+*##[id~="player-sponsor-link"]
 hitomi.*##*:has(> :is([data-cfasync~="fals1e"]))
