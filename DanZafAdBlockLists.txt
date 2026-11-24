@@ -10,6 +10,7 @@
 !----------------------------------------------------------!
 *$script,third-party
 /piwik.$script
+||cdn.*.com/sdk/v*/dd.master.spot.js$script
 *$subdocument,third-party
 *$xmlhttprequest,third-party,domain=~303in.top
 /xhr/vast/$xmlhttprequest
