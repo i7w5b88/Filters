@@ -9,14 +9,8 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,third-party
-! /piwik.$script
-! /player/jw8/vast.js?$script
-! ||cdn.*.com/sdk/v*/dd.master.spot.js$script
-! ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager_gtm.js:5
 *$subdocument,third-party
 *$xmlhttprequest,third-party,domain=~303in.top
-! /xhr/vast/$xmlhttprequest
-! &spotpagetype=*&statsuid=$xmlhttprequest
 *$popup,third-party
 *$popunder
 *$other
@@ -25,19 +19,17 @@
 !----------------------------------------------------------!
 !----------------------- Scriptlets -----------------------!
 !----------------------------------------------------------!
-*##+js(abort-current-script, showAds)
 *##+js(abort-current-script, document.createElement, window.ts)
-*##+js(abort-on-property-read, adBlockDetected)
 *##+js(abort-on-property-read, asgPopScript)
-*##+js(abort-on-property-write, adBlockDetected)
-eporner.com##+js(abort-on-property-write, EPeventFire)
+*##+js(abort-on-property-write, EPeventFire)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, popMagic)
 *##+js(prevent-addEventListener, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
 saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set-constant, document.exitPointerLock, noopFunc)
-*##+js(set, popundersPerIP, 0)
+*##+js(set-constant, popundersPerIP, 0)
+*##+js(set-constant, /^(?:FVPOA|VVADS)$/, undefined)
 eporner.*##+js(set-cookie, ADBpcount, 1)
 eporner.*##+js(set-cookie, ADBp, yes)
 xhamster.*##+js(set-cookie, parental-control, yes, , reload, 1)
@@ -45,15 +37,13 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 xhamster.*##+js(set-cookie, pShowMob, true, , reload, 1)
 xhamster.*##+js(set-cookie, ts_popunder, true, '', reload, 1)
 xhamster.*##+js(remove-cookie, video_view_count)
-*##+js(prevent-setTimeout, adBlockDetected)
 *##+js(prevent-setTimeout, additional_src, 300)
-*##+js(prevent-clipboard-write, /^ms(hta|iexec)(\.exe)? |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd(\.exe)? \/c .*?\bcurl(\.exe)? .+?\.(exe|bat|ps1)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |(^|\\)powershell(\.exe)? .*?-w(indowStyle)? h(idden)?\b|(^|\\)powershell(\.exe)? .*?-w[a-z]* m[a-z]* |(^|\\)powershell(\.exe)? .*?-NoP\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? b(ypass)?\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? u(nrestricted)?\b|(^|\\)powershell(\.exe)? .*?\biex\(|(^|\\)powershell(\.exe)? .*?Invoke-Expression|(^|\\)powershell(\.exe)? .+?\bDownloadString\b|(^|\\)powershell.+?Invoke-WebRequest|(^|\\)powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|(^|\\)powershell(\.exe)? .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^c(onhost|md) .*?--headless |^iex\(i(rm|wr) |^\(?irm .+?\biex\b|^%COMSPEC% .*?\bstart .*?\/min\b|^cmd .*?\/c .*?%TEMP%.*?\.bat\b|^cmd .*?\/c .*?\bCMDCMDLINE\b|^cmd \/(v:on|d) \/q \/c |^cmd .*?\/q \/c .*?\bfor |\bconvert\b.*?\$env:ComSpec\b|^<#Verification|^Invoke-WebRequest .+?\bwscript(\.exe)?\b|^\$url\b.+?\n\$filename\b.+?\.exe\b|^<html\b.+navigator\.clipboard/msi, domAlert, 'Beware. uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^\{|^http|^(git|import|require|use) /i)
-xhamster.*##+js(edit-object-on-setter, initials, $.xplayerPluginSettings./^(ads|banner|bannerBottom)$/)
-xhamster.*##+js(edit-object-on-setter, initials, .*[?.advertiser])
+*##+js(edit-object-on-setter, initials, $.xplayerPluginSettings./^(ads|banner|bannerBottom)$/)
+*##+js(edit-object-on-setter, initials, .*[?.advertiser])
+*##+js(edit-object-on-setter, initials, $./^(bannerUnderComments|bannerBottom)$/)
 *##+js(prevent-xhr, /hpyjmp|marzaent/)
 *##+js(prevent-fetch, /hpyjmp|marzaent/)
 xhamster.*##+js(remove-node-text, script, bannerRight)
-xhamster.*##+js(trusted-replace-node-text, script, popunder, '', condition, popunder, stay, 1)
 *##+js(prevent-canvas)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|l(?:ick|oud)|n|om?)|i(?:d|o)|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?/##+js(disable-newtab-links)
 *##+js(prevent-window-open)
@@ -61,7 +51,7 @@ xhamster.*##+js(trusted-replace-node-text, script, popunder, '', condition, popu
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:b|gold|cdnsolutions|githubassets|hanime|vstream)(?:-?(?:cdn?|usergeneratedcontent))?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$script,third-party
-@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))(?:(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:embed(?:[1-9]{1,3})?|hls|j(?:query|wplayer(?:[1-9]{1,2})?)|masonry|p(?:lyr|rovider)|video(?:js)?)(?:[-.](?:core|h(?:lsjs|otkeys)|lazyload|p(?:kgd|olyfilled)|ui)(?:[-.](?:controls))?(?:[-.](?:html5))?)?(?:\.min)?\.js(?:on)?))(?:[/?#].*)?$/$script,third-party,domain=/^(?:(?:stream(?:(?:[1-9]|[1-9][0-9]){1,3})?|playto|video|w(?:orker(?:[1-9]{1,3})?|ww))\.)?(?:303in|a2zapk|javhd(?:porn|z)|p(?:inetools|laymogo)|savedvids)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|dev|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day|p)?|xyz)$/
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))(?:(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:embed(?:[1-9]{1,3})?|hls|j(?:query|wplayer(?:[1-9]{1,2})?)|masonry|p(?:lyr|rovider)|video(?:js)?)(?:[-.](?:core|h(?:lsjs|otkeys)|lazyload|p(?:kgd|olyfilled)|ui)(?:[-.](?:controls))?(?:[-.](?:html5))?)?(?:\.min)?\.js(?:on)?))(?:[/?#].*)?$/$script,third-party,domain=/^(?:(?:stream(?:(?:[1-9]|[1-9][0-9]){1,3})?|playto|video|w(?:orker(?:[1-9]{1,3})?|ww))\.)?(?:303in|a2zapk|javhd(?:porn|z)|p(?:inetools|laymogo|orntrex)|savedvids)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|dev|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day|p)?|xyz)$/
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:303in|advtpe|cloudwish|doodstream|hentaimo|javhdz|n1mwq|playmogo|s(?:avedvids|tr(?:eam)?tape)|upload(?:[1-9]{1,3})?|v(?:idara|oe|stream)|ystream)(?:-?cdn?)?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day|p)?|xyz)(?:[/?#].*)?$/$subdocument,third-party
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|js|m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:[/?#].*)?$/$subdocument,third-party,domain=/^(?:www\.)?(?:playmogo)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)$/
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:b|cdnsolutions|freeanimehentai|gold|helvid|tiktok|v(?:idara|stream))(?:-?(?:cdn?|usergeneratedcontent))?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$xmlhttprequest,third-party
@@ -71,38 +61,11 @@ xhamster.*##+js(trusted-replace-node-text, script, popunder, '', condition, popu
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-##:is([class*="scrollable"]):has([srcset*="fhcdnmedia.online"])
-##:is([class*="thumb-list__item"]):has([src*="flirtify"])
-*##*:has(> :is([class*="adnative"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src*="magsrv"]))
-*##:is([class*="mb"]):has(> [class*="adnative"])
-*##:is([class*="thumbContainer"]):has([class*="native"])
-*##[class*="cam-thumb"]
-*##[class*="cam-wgt"]
-*##[class*="banner-container"]
-*##[class*="clipstore-bottom"]
-*##[class*="insideVideoList"]
-*##[class*="premium-n-overlay"]
-*##[class~="hptab"]
-*##[class~="ADTop"]
-*##[class~="player-ads-col"]
-*##[class~="AdCenter"]
-*##[class~="WidthAd"]
-*##[class~="say-banner-group"]
-*##[class~="say-site-popup-backdrop"]
-*##[class~="video-page__layout-ad"]
-*##[class*="sp-l"]
-*##[data-block*="moments"]
-*##[data-role*="banner-underplayer"]
-*##[data-role*="cookies-modal"]
-*##[data-role*="promo-messages"]
-*##[href*="flirtify"]
-*##[id*="admobile"]
-*##[id~="adinhead"]
-*##[id~="adDiv"]
-*##[id*="adSlot"]
-*##[id~="btasd"]
-*##[id~="player-sponsor-link"]
-###adbd.overdiv
-##[data-asg-ins]
-hitomi.*##*:has(> :is([data-cfasync~="fals1e"]))
-*##ul.thumb-list-mobile > :not(.thumb-list-mobile-item--type-video)
+*##*:has(> :is([class*="adnative"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="adstripe"]:has(+ [id~="channelpromote"]),[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src*="magsrv"]))
+*##:is([class*="--bottom"],[class*="--top"])[role~="complementary"]
+*##:is([class*="cookie-banner"],[class~="hptab"])
+*##:is([class*="isExp"][class*="isOneLine"]):has([data-previewvideo*="flixcdn.com"])
+*##:is([class*="thumb-list-mobile-item"]):has([class*="imageContainer"])
+*##:is([data-role*="bottom"]):has(> [class*="--bottom"])
+*##:is([data-role*="cookies-modal"],[data-role*="promo-messages"])
+*##:is([id*="admobile"],[id*="cookie-banner"],[id~="btasd"])
