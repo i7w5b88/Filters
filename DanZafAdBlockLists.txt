@@ -28,6 +28,7 @@
 *##+js(abort-current-script, showAds)
 *##+js(abort-current-script, document.createElement, window.ts)
 *##+js(abort-on-property-read, adBlockDetected)
+*##+js(abort-on-property-read, asgPopScript)
 *##+js(abort-on-property-write, adBlockDetected)
 eporner.com##+js(abort-on-property-write, EPeventFire)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
