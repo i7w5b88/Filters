@@ -19,8 +19,11 @@
 !----------------------------------------------------------!
 !----------------------- Scriptlets -----------------------!
 !----------------------------------------------------------!
+*##+js(abort-current-script, showAds)
 *##+js(abort-current-script, document.createElement, window.ts)
+*##+js(abort-on-property-read, adBlockDetected)
 *##+js(abort-on-property-read, asgPopScript)
+*##+js(abort-on-property-write, adBlockDetected)
 *##+js(abort-on-property-write, EPeventFire)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, popMagic)
@@ -37,6 +40,7 @@ xhamster.*##+js(set-cookie, x_preroll_shown, yes, , reload, 1)
 xhamster.*##+js(set-cookie, pShowMob, true, , reload, 1)
 xhamster.*##+js(set-cookie, ts_popunder, true, '', reload, 1)
 xhamster.*##+js(remove-cookie, video_view_count)
+*##+js(prevent-setTimeout, adBlockDetected)
 *##+js(prevent-setTimeout, additional_src, 300)
 *##+js(edit-object-on-setter, initials, $.xplayerPluginSettings./^(ads|banner|bannerBottom)$/)
 *##+js(edit-object-on-setter, initials, .*[?.advertiser])
@@ -61,11 +65,11 @@ xhamster.*##+js(remove-node-text, script, bannerRight)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##*:has(> :is([class*="adnative"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="adstripe"]:has(+ [id~="channelpromote"]),[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src*="magsrv"]))
-*##:is([class*="--bottom"],[class*="--top"])[role~="complementary"]
-*##:is([class*="cookie-banner"],[class~="hptab"])
-*##:is([class*="isExp"][class*="isOneLine"]):has([data-previewvideo*="flixcdn.com"])
+*##*:has(> :is([class*="adnative"],[class*="premium-n-overlay"],[class*="under-player-banner"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="adstripe"]:has(+ [id~="channelpromote"]),[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src*="magsrv"]))
+*##:is([class*="--bottom"],[class*="--middle"],[class*="--top"])[role~="complementary"]
+*##:is([class*="isExp"]:is([class*="isOneLine"],[class*="container"]),[class*="thumb-list"][class*="thumbContainer"],[class*="cookie-banner"],[class*="item--widget"],[class*="insideVideoList"],[class~="hptab"])
 *##:is([class*="thumb-list-mobile-item"]):has([class*="imageContainer"])
 *##:is([data-role*="bottom"]):has(> [class*="--bottom"])
+*##:is([class*="--middle"]):has(> [class*="Horizontal"])
 *##:is([data-role*="cookies-modal"],[data-role*="promo-messages"])
 *##:is([id*="admobile"],[id*="cookie-banner"],[id~="btasd"])
