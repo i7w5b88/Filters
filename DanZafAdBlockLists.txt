@@ -9,14 +9,14 @@
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
 *$script,third-party
-/piwik.$script
-/player/jw8/vast.js?$script
-||cdn.*.com/sdk/v*/dd.master.spot.js$script
-||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager_gtm.js:5
+! /piwik.$script
+! /player/jw8/vast.js?$script
+! ||cdn.*.com/sdk/v*/dd.master.spot.js$script
+! ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager_gtm.js:5
 *$subdocument,third-party
 *$xmlhttprequest,third-party,domain=~303in.top
-/xhr/vast/$xmlhttprequest
-&spotpagetype=*&statsuid=$xmlhttprequest
+! /xhr/vast/$xmlhttprequest
+! &spotpagetype=*&statsuid=$xmlhttprequest
 *$popup,third-party
 *$popunder
 *$other
