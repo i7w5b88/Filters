@@ -10,6 +10,7 @@
 !----------------------------------------------------------!
 *$script,third-party
 /piwik.$script
+/player/jw8/vast.js?$script
 ||cdn.*.com/sdk/v*/dd.master.spot.js$script
 ||googletagmanager.com/gtm.js$script,redirect-rule=googletagmanager_gtm.js:5,from=~nerc.com
 *$subdocument,third-party
@@ -82,6 +83,7 @@ xhamster.*##+js(trusted-replace-node-text, script, popunder, '', condition, popu
 *##[class*="premium-n-overlay"]
 *##[class~="hptab"]
 *##[class~="ADTop"]
+*##[class~="player-ads-col"]
 *##[class~="AdCenter"]
 *##[class~="WidthAd"]
 *##[class~="say-banner-group"]
@@ -99,5 +101,7 @@ xhamster.*##+js(trusted-replace-node-text, script, popunder, '', condition, popu
 *##[id*="adSlot"]
 *##[id~="btasd"]
 *##[id~="player-sponsor-link"]
+###adbd.overdiv
+##[data-asg-ins]
 hitomi.*##*:has(> :is([data-cfasync~="fals1e"]))
 *##ul.thumb-list-mobile > :not(.thumb-list-mobile-item--type-video)
