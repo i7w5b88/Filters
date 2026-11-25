@@ -8,11 +8,11 @@
 !----------------------------------------------------------!
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
-*$script,third-party
+*$script,third-party,domain=~googletagmanager.com
 ! /piwik.$script
 ! /player/jw8/vast.js?$script
 ! ||cdn.*.com/sdk/v*/dd.master.spot.js$script
-! ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager_gtm.js:5
+||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager_gtm.js:5
 *$subdocument,third-party
 *$xmlhttprequest,third-party,domain=~303in.top
 ! /xhr/vast/$xmlhttprequest
