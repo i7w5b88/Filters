@@ -8,7 +8,12 @@
 !----------------------------------------------------------!
 !------------------------- Filter -------------------------!
 !----------------------------------------------------------!
+||cloudflareinsights.com^
+||mc.yandex.ru^
+||wpnsrv.com^
 *$script,third-party
+/assets/jquery/*.js?type=adult^$script,first-party
+/player/jw8/vast.js?^$script,first-party
 *$subdocument,third-party
 *$xmlhttprequest,third-party,domain=~303in.top
 *$popup,third-party
@@ -51,6 +56,7 @@ xhamster.*##+js(remove-node-text, script, bannerRight)
 *##+js(prevent-canvas)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|l(?:ick|oud)|n|om?)|i(?:d|o)|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?/##+js(disable-newtab-links)
 *##+js(prevent-window-open)
+*##+js(prevent-requestAnimationFrame, /^/)
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
@@ -58,7 +64,7 @@ xhamster.*##+js(remove-node-text, script, bannerRight)
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:chunks|recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))(?:(?:[^?#\/]*[.-])?(?:[A-Za-z0-9]+[-.])?(?:embed(?:[1-9]{1,3})?|hls|j(?:query|wplayer(?:[1-9]{1,2})?)|lazyload|masonry|p(?:la?ye?r|rovider)|video(?:js)?)(?:[-.](?:core|h(?:lsjs|otkeys)|lazyload|p(?:kgd|olyfilled)|ui)(?:[-.](?:controls))?(?:[-.](?:html5))?)?(?:\.min)?\.js(?:on)?))(?:[/?#].*)?$/$script,third-party,domain=/^(?:(?:stream(?:(?:[1-9]|[1-9][0-9]){1,3})?|playto|video|w(?:orker(?:[1-9]{1,3})?|ww))\.)?(?:303in|a2zapk|f4splay|jav(?:ct|hd(?:porn|z))|p(?:inetools|laymogo|orntrex)|savedvids)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|dev|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day|p)?|vip|xyz)$/
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:303in|advtpe|ca?l(?:listanise|oudwish)|doodstream|f4s|hentaimo|javhdz|n1mwq|playmogo|s(?:avedvids|tr(?:eam)?tape)|ryderjet|upload(?:[1-9]{1,3})?|v(?:idara|oe|stream)|ystream)(?:-?(?:cdn?|play))?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day|p)?|vip|xyz)(?:[/?#].*)?$/$subdocument,third-party
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:recaptcha|turnstile)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|js|m(?:3u8|4s|p4)|t(?:s|xt)|woff2?))(?:[/?#].*)?$/$subdocument,third-party,domain=/^(?:www\.)?(?:playmogo)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)$/
-@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:b|cdnsolutions|freeanimehentai|gold|helvid|tiktok|v(?:idara|stream))(?:-?(?:cdn?|usergeneratedcontent))?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$xmlhttprequest,third-party
+@@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:acek|b|cdnsolutions|freeanimehentai|gold|helvid|tiktok|v(?:idara|stream))(?:-?(?:cdn?|usergeneratedcontent))?\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$xmlhttprequest,third-party
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:hls(?:[1-9]{1,3})?|segs)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:css|j(?:pe?g|s)|m(?:3u8|4s|p4)|svg|t(?:s|xt)|woff2?))(?:[/?#].*)?$/$xmlhttprequest,third-party,domain=/^(?:(?:stream(?:(?:[1-9]|[1-9][0-9]){1,3})?|w(?:orker(?:[1-9]{1,3})?|ww))\.)?(?:n1mwq|savedvids|v(?:idara|stream))\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)$/
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*(?:githubusercontent)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:[/?#].*)?$/$popup,third-party
 @@/^https?:\/\/(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)*[A-Za-z0-9-]+\/(?:[^?#]*\/)?(?:(?:DanZaf)(?:\/[^?#]*)?|(?!(?:ad))[^?#\/]*\.(?:svg))(?:[/?#].*)?$/$other,domain=/^(?:www\.)?(?:streamtape)\.(?:c(?:c|l(?:ick|oud)|n|o(?:\.id|m)?)|i(?:d|o)|li|m(?:e(?:dia)?|y)|net(?:\.id|work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)$/
@@ -68,8 +74,10 @@ xhamster.*##+js(remove-node-text, script, bannerRight)
 *##*:has(> :is([class*="adnative"],[class*="premium-n-overlay"],[class*="under-player-banner"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="adstripe"]:has(+ [id~="channelpromote"]),[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src*="magsrv"]))
 *##:is([class*="--bottom"],[class*="--middle"],[class*="--top"])[role~="complementary"]
 *##:is([class*="--middle"]):has(> [class*="Horizontal"])
-*##:is([class*="isExp"]:is([class*="isOneLine"],[class*="container"]),[class*="thumb-list"][class*="thumbContainer"],[class*="cookie-banner"],[class*="item--widget"],[class*="insideVideoList"],[class~="hptab"])
+*##:is([class*="isExp"]:is([class*="isOneLine"],[class*="container"]),[class*="thumb-list"][class*="thumbContainer"],[class*="cookie-banner"],[class*="item--widget"],[class*="insideVideoList"],[class~="hptab"],[class~="player-ads-col"],[class~="player-banner"])
 *##:is([class*="thumb-list-mobile-item"]):has([class*="imageContainer"])
+*##:is([data-asg-ins])
 *##:is([data-role*="bottom"]):has(> [class*="--bottom"])
 *##:is([data-role*="cookies-modal"],[data-role*="promo-messages"])
-*##:is([id*="admobile"],[id*="cookie-banner"],[id~="btasd"])
+*##:is([id*="admobile"],[id*="cookie-banner"],[id~="btasd"],[id~="adbd"][class~="overdiv"])
+*##:is([style*="2147483647"],[style*="9999999"])
