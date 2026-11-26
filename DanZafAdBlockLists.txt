@@ -27,11 +27,14 @@
 *##+js(abort-current-script, $, alertmsg)
 *##+js(abort-current-script, document.createElement, window.ts)
 a2zapk.*##+js(abort-current-script, atob, decodeURIComponent)
+hitomi.la##+js(abort-current-script, WebAssembly, atob)
+hitomi.la##+js(noeval)
+*##+js(abort-on-property-read, open)
 *##+js(abort-on-property-read, AaDetector)
 *##+js(abort-on-property-read, asgPopScript)
 *##+js(abort-on-property-write, EPeventFire)
 *##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, , elements, .main-wrap)
-*##+js(prevent-addEventListener, /^(?:auxclick|click|contextmenu|dblclick|mouse(?:down|up)|pointer(?:down|up|cancel)|touch(?:start|end|cancel))$/, popMagic)
+*##+js(prevent-addEventListener, '', popMagic)
 *##+js(prevent-addEventListener, /^(?:mouse(?:over|enter|move|out|leave)|pointer(?:over|enter|move|out|leave)|touch(?:start|move|end))$/, , elements, .xp-preload-image)
 saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(set-constant, /^(?:FVPOA|VVADS)$/, undefined)
@@ -71,7 +74,7 @@ xhamster.*##+js(remove-node-text, script, bannerRight)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##*:has(> :is([class*="adnative"],[class*="premium-n-overlay"],[class*="under-player-banner"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="adstripe"]:has(+ [id~="channelpromote"]),[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src*="magsrv"]))
+*##*:has(> :is([class*="adnative"],[class*="premium-n-overlay"],[class*="under-player-banner"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="adstripe"]:has(+ [id~="channelpromote"]),[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src$="/bn.js"],[src$="/code.js"],[src*="magsrv"]))
 *##:is([class*="--bottom"],[class*="--middle"],[class*="--top"])[role~="complementary"]
 *##:is([class*="--middle"]):has(> [class*="Horizontal"])
 *##:is([class*="isExp"]:is([class*="isOneLine"],[class*="container"]),[class*="thumb-list"][class*="thumbContainer"],[class*="cookie-banner"],[class*="item--widget"],[class*="insideVideoList"],[class~="hptab"],[class~="player-ads-col"],[class~="player-banner"])
