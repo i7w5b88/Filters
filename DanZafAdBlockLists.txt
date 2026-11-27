@@ -56,7 +56,6 @@ xhamster.*##+js(remove-node-text, script, bannerRight)
 *,~/(?:duckduckgo|javenglish)\.(?:c(?:c|l(?:ick|oud)|n|om?)|i(?:d|o)|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?/##+js(disable-newtab-links)
 *##+js(prevent-window-open)
 hitomi.la##+js(noeval)
-*,~/(?:callistanise)\.(?:c(?:c|l(?:ick|oud)|n|om?)|i(?:d|o)|li|m(?:e(?:dia)?|y)?|net(?:work)?|o(?:n(?:lin)?e|rg|vh)|s(?:ite|o|x)|to(?:day)?|xyz)(?:\.id)?/##+js(prevent-requestAnimationFrame, /^/)
 !----------------------------------------------------------!
 !-------------------- Filter Exception --------------------!
 !----------------------------------------------------------!
