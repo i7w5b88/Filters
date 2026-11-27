@@ -35,7 +35,6 @@ saymanhwa.*##+js(prevent-addEventListener, /^contextmenu$/)
 *##+js(set-constant, /^(?:FVPOA|VVADS)$/, undefined)
 *##+js(set-constant, Element.prototype.requestPointerLock, noopFunc)
 *##+js(set-constant, document.exitPointerLock, noopFunc)
-*##+js(prevent-clipboard-write, /^ms(hta|iexec)(\.exe)? |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd(\.exe)? \/c .*?\bcurl(\.exe)? .+?\.(exe|bat|ps1)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |(^|\\)powershell(\.exe)? .*?-w(indowStyle)? h(idden)?\b|(^|\\)powershell(\.exe)? .*?-w[a-z]* m[a-z]* |(^|\\)powershell(\.exe)? .*?-NoP\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? b(ypass)?\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? u(nrestricted)?\b|(^|\\)powershell(\.exe)? .*?\biex\(|(^|\\)powershell(\.exe)? .*?Invoke-Expression|(^|\\)powershell(\.exe)? .+?\bDownloadString\b|(^|\\)powershell.+?Invoke-WebRequest|(^|\\)powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|(^|\\)powershell(\.exe)? .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^c(onhost|md) .*?--headless |^iex\(i(rm|wr) |^\(?irm .+?\biex\b|^%COMSPEC% .*?\bstart .*?\/min\b|^cmd .*?\/c .*?%TEMP%.*?\.bat\b|^cmd .*?\/c .*?\bCMDCMDLINE\b|^cmd \/(v:on|d) \/q \/c |^cmd .*?\/q \/c .*?\bfor |\bconvert\b.*?\$env:ComSpec\b|^<#Verification|^Invoke-WebRequest .+?\bwscript(\.exe)?\b|^\$url\b.+?\n\$filename\b.+?\.exe\b|^<html\b.+navigator\.clipboard/msi, domAlert, 'Beware. uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^\{|^http|^(git|import|require|use) /i)
 *##+js(set-constant, notifyMe, noopFunc)
 *##+js(set-constant, popundersPerIP, 0)
 eporner.*##+js(set-cookie, ADBp, yes)
@@ -70,13 +69,14 @@ hitomi.la##+js(noeval)
 !----------------------------------------------------------!
 !-------------------- Cosmetics Filter --------------------!
 !----------------------------------------------------------!
-*##*:has(> :is([class*="adnative"],[class*="premium-n-overlay"],[class*="under-player-banner"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id~="adPlayerIfr"],[id~="adstripe"]:has(+ [id~="channelpromote"]),[id~="footadframe"],[id~="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src$="/bn.js"],[src$="/code.js"],[src*="magsrv"]))
-*##:is([class*="--bottom"],[class*="--middle"],[class*="--top"])[role~="complementary"]
+*##*:has(> :is([class*="adnative"],[class*="premium-n-overlay"],[class*="under-player-banner"],[href*="servingbase"],[href*="tsyndicate"],[id*="adv-iframe"],[id="adPlayerIfr"],[id="adstripe"]:has(+ [id="channelpromote"]),[id="footadframe"],[id="ifdeskadmiddle"],[src*="campfirecroutondecorator"],[src$="/bn.js"],[src$="/code.js"],[src*="magsrv"]))
+*##:is([class*="--bottom"],[class*="--middle"],[class*="--top"])[role="complementary"]
 *##:is([class*="--middle"]):has(> [class*="Horizontal"])
-*##:is([class*="isExp"]:is([class*="isOneLine"],[class*="container"]),[class*="thumb-list"][class*="thumbContainer"],[class*="cookie-banner"],[class*="item--widget"],[class*="insideVideoList"],[class~="hptab"],[class~="player-ads-col"],[class~="player-banner"])
+*##:is([class*="isExp"]:is([class*="isOneLine"],[class*="container"]),[class*="thumb-list"][class*="thumbContainer"],[class*="cookie-banner"],[class*="item--widget"],[class*="insideVideoList"],[class="hptab"],[class="player-ads-col"],[class="player-banner"],[class="say-banner-group"][aria-label="Advertisement"],[class="say-site-popup-backdrop"],[class~="adsbox"],[class~="ad-banner"],[class~="ad-unit"],[class~="text-ad"],[class*="_300x250"],[class~="adsbygoogle"],[class~="say-site-popup-backdrop"],[class~="say-site-popup-backdrop"] + *)
 *##:is([class*="thumb-list-mobile-item"]):has([class*="imageContainer"])
 *##:is([data-asg-ins])
 *##:is([data-role*="bottom"]):has(> [class*="--bottom"])
 *##:is([data-role*="cookies-modal"],[data-role*="promo-messages"])
-*##:is([id*="admobile"],[id*="cookie-banner"],[id~="btasd"],[id~="adbd"][class~="overdiv"])
+*##:is([id*="admobile"],[id*="cookie-banner"],[id="btasd"],[id~="adbd"][class~="overdiv"])
 *##:is([style*="2147483647"],[style*="9999999"])
+*##:matches-attr(/^data-say-ads/)
